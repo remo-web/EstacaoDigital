@@ -1,0 +1,55 @@
+html, body, .mdc-layout-grid, .mdc-layout-grid__inner{height: 100%}
+
+@import url('https://fonts.googleapis.com/css?family=Catamaran:100,300,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900');
+
+/* NATIVO */
+
+body {margin: 0}
+
+/* MDL */
+
+.mdc-typography,
+.mdc-typography--display4,
+.mdc-typography--display3,
+.mdc-typography--display2,
+.mdc-typography--display1,
+.mdc-typography--headline,
+.mdc-typography--title,
+.mdc-typography--button{
+    font-family: 'Catamaran', sans-serif;
+}
+
+.mdc-typography--subheading2,
+.mdc-typography--subheading1,
+.mdc-typography--body2,
+.mdc-typography--body1,
+.mdc-typography--caption{
+    font-family: ;
+}
+
+/* ESTAÇÃO DIGITAL */
+
+.ed-hide{display: none}
+
+.ed-home{
+    background-color: #454545;
+    background-image: url(./images/remo_w-ed-home__bg--img.jpg);
+    background-size: cover;
+    background-position: top;
+    background-blend-mode: multiply
+}
+
+.ed-home__bg--overlay{background-image: url(images/remo_w-ed-home__bg--overlay.png)}
+
+.ed-home__button--menu{height: 7rem;}
+.ed-home__button--menu > .ed-cyan{color: cyan;}
+.ed-home__button--menu > .ed-yellow{color: yellow;}
+.ed-home__button--menu > .ed-magenta{color: magenta;}
+.ed-home__button--menu > .ed-black{color: black;}
+
+.ed-home__button--menu h1, .ed-home__button--menu h4{
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    font-weight: 900
+}

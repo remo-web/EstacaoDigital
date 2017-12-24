@@ -10,8 +10,17 @@
         
         <title>Estação Digital</title>
         
+        <!-- PLUGINS | Animate.css -->
+        <link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+              integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+              crossorigin="anonymous">
+        
         <!-- FONTS | Google -->
-
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Catamaran:100,300,500,700,900">
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900">
         <!-- CSS | Material Components -->
         <link rel="stylesheet"
               href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
@@ -22,6 +31,31 @@
     </head>
     
     <body>
+        <div class="mdc-layout-grid ed-home">
+            <div class="mdc-layout-grid__inner ed-home__bg--overlay">
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-3">
+                    <img src="images/remo_w-ed-home__logo.svg">
+                </div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-3">
+                    <button class="mdc-button ed-home__button--menu">
+                        <h1 class="mdc-typography--display4 ed-cyan">Lonas</h1>
+                        <h4 class="mdc-typography--title ed-cyan ed-hide">banners / letreiros / front light</h4>
+                    </button>
+                    <button class="mdc-button ed-home__button--menu">
+                        <h1 class="mdc-typography--display4 ed-yellow">Adesivos</h1>
+                    </button>
+                    <button class="mdc-button ed-home__button--menu">
+                        <h1 class="mdc-typography--display4 ed-magenta">Placas</h1>
+                    </button>
+                    <button class="mdc-button ed-home__button--menu">
+                        <h1 class="mdc-typography--display4 ed-black">Papel</h1>
+                    </button>
+                </div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
+            </div>
+        </div>
     
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
@@ -32,9 +66,7 @@
     <script src="scripts.js"></script>
     <!-- JS | MDC -->
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-    <script type="text/javascript">
-        window.mdc.autoInit();
-    </script>
+    <script type="text/javascript">window.mdc.autoInit();</script>
 
     </body>
     
