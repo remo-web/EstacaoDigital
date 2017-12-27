@@ -31,7 +31,27 @@
     </head>
     
     <body>
-        <div class="mdc-layout-grid ed-home">
+        <header class="mdc-toolbar ed-header">
+            <div class="mdc-toolbar__row">
+                <section class="mdc-toolbar__section">
+                    <nav id="mdc-tab-bar"
+                         class="mdc-tab-bar mdc-tab-bar--indicator-accent">
+                        <a class="mdc-tab"
+                           href="#">Home</a>
+                        <a class="mdc-tab"
+                           href="#">Quem Somos</a>
+                        <a class="mdc-tab"
+                           href="#">Serviços</a>
+                        <a class="mdc-tab"
+                           href="#">Fizemos</a>
+                        <a class="mdc-tab"
+                           href="#">Contato</a>
+                        <span class="mdc-tab-bar__indicator"></span>
+                    </nav>
+                </section>
+            </div>
+        </header>
+        <section class="mdc-layout-grid ed-home">
             <div class="mdc-layout-grid__inner ed-home__bg--overlay">
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-3">
@@ -57,8 +77,9 @@
                     </button>
                 </div>
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
+                <div class="ed-home__mouse"><span></span></div>
             </div>
-        </div>
+        </section>
     
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 

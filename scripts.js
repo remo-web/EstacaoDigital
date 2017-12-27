@@ -5,6 +5,8 @@ $(function() {
         mdc.ripple.MDCRipple.attachTo(btn);
     }
     
+    mdc.tabs.MDCTabBar.attachTo(document.querySelector('#mdc-tab-bar'));
+    
 });
 
 $('.ed-home__button--menu--text').mouseenter(
