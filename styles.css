@@ -17,7 +17,7 @@ body {margin: 0}
 .mdc-typography--headline,
 .mdc-typography--title,
 .mdc-typography--button{
-    font-family: 'Catamaran', sans-serif !important;
+    font-family: 'Titillium Web', sans-serif !important;
 }
 
 .mdc-typography--subheading2,
@@ -25,7 +25,7 @@ body {margin: 0}
 .mdc-typography--body2,
 .mdc-typography--body1,
 .mdc-typography--caption{
-    font-family: ;
+    font-family: 'Titillium Web', sans-serif !important;
 }
 
 /* ESTAÇÃO DIGITAL */
@@ -40,12 +40,6 @@ body {margin: 0}
 .ed-yellow{color: yellow !important;}
 .ed-magenta{color: magenta !important;}
 .ed-black{color: black !important;}
-
-
-.ed-animation--shrink{
-    -webkit-transition: height 0.25s ease-in;
-    transition: height 0.25s ease-in
-}
 
 .ed-home{
     background-color: #454545;
@@ -75,10 +69,9 @@ body {margin: 0}
 .ed-home__button--menu--hover{
     position: absolute;
     bottom: 0;
-    opacity: 0
+    opacity: 0;
+    top: 50%
 }
-
-.ed-appear{opacity: 1}
 
 .ed-home__mouse{
     display: block;
