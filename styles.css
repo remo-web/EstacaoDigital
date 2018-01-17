@@ -1,4 +1,4 @@
-html, body, .mdc-layout-grid, .mdc-layout-grid__inner{height: 100%}
+html, body, #fullpage, .mdc-layout-grid, .mdc-layout-grid__inner{height: 100%}
 
 @import url('https://fonts.googleapis.com/css?family=Catamaran:100,300,500,700,900');
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900');
@@ -33,7 +33,8 @@ body {margin: 0}
 .ed-header{
     position: absolute;
     margin-top: 24px;
-    background-color: transparent
+    background-color: transparent;
+    z-index: 999
 }
 
 .ed-cyan{color: cyan !important;}
@@ -41,99 +42,109 @@ body {margin: 0}
 .ed-magenta{color: magenta !important;}
 .ed-black{color: black !important;}
 
-.ed-home{
-    background-color: #454545;
-    background-image: url(./images/remo_w-ed-home__bg--img.jpg);
-    background-size: cover;
-    background-position: top;
-    background-blend-mode: multiply
-}
+    /* HOME */
 
-.ed-home__bg--overlay{background-image: url(images/remo_w-ed-home__bg--overlay.png)}
-
-.ed-home__button--menu{
-    height: 7rem;
-    text-align: left;
-}
-
-.ed-home__button--menu--text, .ed-home__button--menu--hover{
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    font-weight: 900;
-    height: 7rem;
-    display: block
-}
-
-.ed-home__button--menu--text{-vendor-animation-duration: .05s;}
-
-.ed-home__button--menu--hover{
-    position: absolute;
-    bottom: 0;
-    opacity: 0;
-    top: 50%
-}
-
-.ed-home__mouse{
-    display: block;
-    width: 26px;
-    height: 46px;
-    border-radius: 13px;
-    border: 1px solid #fff;
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    margin-left: -13px;
-    z-index: 99999;
-}
-
-.ed-home__mouse span{
-    display: block;
-    margin: 6px auto;
-    width: 2px;
-    height: 6px;
-    border-radius: 4px;
-    background: #fff;
-    border: 1px solid transparent;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-name: scroll;
-    animation-name: scroll;
-}
-
-@-webkit-keyframes scroll {
-    0% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
+    .ed-home{
+        background-color: #454545;
+        background-image: url(./images/remo_w-ed-home__bg--img.jpg);
+        background-size: cover;
+        background-position: top;
+        background-blend-mode: multiply
     }
 
-    100% {
+    .ed-home__bg--overlay{background-image: url(images/remo_w-ed-home__bg--overlay.png)}
+
+    .ed-home__button--menu{
+        height: 7rem;
+        text-align: left;
+    }
+
+    .ed-home__button--menu--text, .ed-home__button--menu--hover{
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+        font-weight: 900;
+        display: block
+    }
+
+    .ed-home__button--menu--text{
+        animation-duration: .5s;
+        -webkit-animation-duration: .5s;
+        -moz-animation-duration: .5s;
+    }
+
+    .ed-home__button--menu--hover{
+        animation-duration: .5s;
+        -webkit-animation-duration: .5s;
+        -moz-animation-duration: .5s;
+        position: absolute;
+        bottom: 0;
         opacity: 0;
-        -webkit-transform: translateY(20px);
-        transform: translateY(20px);
-    }
-}
-
-@keyframes scroll {
-    0% {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-        transform: translateY(0);
     }
 
-    100% {
-        opacity: 0;
-        -webkit-transform: translateY(20px);
-        -ms-transform: translateY(20px);
-        transform: translateY(20px);
+    .ed-home__mouse{
+        display: block;
+        width: 26px;
+        height: 46px;
+        border-radius: 13px;
+        border: 1px solid #fff;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        margin-left: -13px;
+        z-index: 99999;
     }
-}
 
+    .ed-home__mouse span{
+        display: block;
+        margin: 6px auto;
+        width: 2px;
+        height: 6px;
+        border-radius: 4px;
+        background: #fff;
+        border: 1px solid transparent;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: scroll;
+        animation-name: scroll;
+    }
+
+    @-webkit-keyframes scroll {
+        0% {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        100% {
+            opacity: 0;
+            -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+        }
+    }
+
+    @keyframes scroll {
+        0% {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+            -ms-transform: translateY(0);
+            transform: translateY(0);
+        }
+
+        100% {
+            opacity: 0;
+            -webkit-transform: translateY(20px);
+            -ms-transform: translateY(20px);
+            transform: translateY(20px);
+        }
+    }
+
+    /* QUEM SOMOS */
+
+    .ed-quemsomos{background-color: white}
 
 
 

@@ -3,30 +3,35 @@
     
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible"
-              content="IE=edge">
+        <meta content="width=device-width, initial-scale=1.0"
+              name="viewport">
+        <meta content="IE=edge"
+              http-equiv="X-UA-Compatible">
         
         <title>Estação Digital</title>
         
+        <!-- FONTS | Google -->
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,300,500,700,900"
+              rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900"
+              rel="stylesheet">
+        
+        <!-- PLUGINS | fullPage.js -->
+        <link href="plugins/fullPage/jquery.fullpage.min.css"
+              rel="stylesheet"
+              type="text/css" />
         <!-- PLUGINS | Animate.css -->
-        <link rel="stylesheet"
+        <link crossorigin="anonymous"
               href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
               integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
-              crossorigin="anonymous">
+              rel="stylesheet" />
         
-        <!-- FONTS | Google -->
-        <link rel="stylesheet"
-              href="https://fonts.googleapis.com/css?family=Catamaran:100,300,500,700,900">
-        <link rel="stylesheet"
-              href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900">
         <!-- CSS | Material Components -->
-        <link rel="stylesheet"
-              href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+        <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+              rel="stylesheet" />
         <!-- CSS | Custom -->
-        <link rel="stylesheet"
-              href="styles.css">
+        <link href="styles.css"
+              rel="stylesheet" />
         
     </head>
     
@@ -34,63 +39,89 @@
         <header class="mdc-toolbar ed-header">
             <div class="mdc-toolbar__row">
                 <section class="mdc-toolbar__section">
-                    <nav id="mdc-tab-bar"
-                         class="mdc-tab-bar mdc-tab-bar--indicator-accent">
+                    <nav class="mdc-tab-bar mdc-tab-bar--indicator-accent"
+                         id="mdc-tab-bar">
                         <a class="mdc-tab mdc-typography--subheading1"
-                           href="#">Home</a>
+                           data-menuanchor="fp-home"
+                           href="#home/">
+                            Home
+                        </a>
                         <a class="mdc-tab mdc-typography--subheading1"
-                           href="#">Quem Somos</a>
+                           href="#home/quemsomos">
+                            Quem Somos
+                        </a>
                         <a class="mdc-tab mdc-typography--subheading1"
+                           data-menuanchor=""
                            href="#">Serviços</a>
                         <a class="mdc-tab mdc-typography--subheading1"
+                           data-menuanchor=""
                            href="#">Fizemos</a>
                         <a class="mdc-tab mdc-typography--subheading1"
+                           data-menuanchor=""
                            href="#">Contato</a>
                         <span class="mdc-tab-bar__indicator"></span>
                     </nav>
                 </section>
             </div>
         </header>
-        <section class="mdc-layout-grid ed-home">
-            <div class="mdc-layout-grid__inner ed-home__bg--overlay">
-                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
-                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-3">
-                    <img src="images/remo_w-ed-home__logo.svg">
-                </div>
-                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
-                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-3">
-                    <button class="mdc-button ed-home__button--menu ed-cyan">
-                        <span class="mdc-typography--display4 ed-home__button--menu--text">Lonas</span>
-                        <span class="mdc-typography--title ed-home__button--menu--hover">banners / letreiros / front light</span>
-                    </button>
-                    <button class="mdc-button ed-home__button--menu ed-yellow">
-                        <span class="mdc-typography--display4 ed-home__button--menu--text">Adesivos</span>
-                        <span class="mdc-typography--title ed-home__button--menu--hover">envelopamento / perfurado / piso</span>
-                    </button>
-                    <button class="mdc-button ed-home__button--menu ed-magenta">
-                        <span class="mdc-typography--display4 ed-home__button--menu--text">Placas</span>
-                        <span class="mdc-typography--title ed-home__button--menu--hover">impressão UV de alta definição em placas de PS</span>
-                    </button>
-                    <button class="mdc-button ed-home__button--menu ed-black">
-                        <span class="mdc-typography--display4 ed-home__button--menu--text">Papel</span>
-                        <span class="mdc-typography--title ed-home__button--menu--hover">higiênico</span>
-                    </button>
-                </div>
-                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
-                <div class="ed-home__mouse"><span></span></div>
+        <div id="fullpage">
+            <div class="section">
+                <section class="slide mdc-layout-grid ed-home"
+                         data-anchor="fp-home"
+                         id="home">
+                    <div class="mdc-layout-grid__inner ed-home__bg--overlay">
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-3">
+                            <img src="images/remo_w-ed-home__logo.svg">
+                        </div>
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-3">
+                            <button class="mdc-button ed-home__button--menu ed-cyan">
+                                <span class="mdc-typography--display4 ed-home__button--menu--text">Lonas</span>
+                                <span class="mdc-typography--title ed-home__button--menu--hover">banners / letreiros / front light</span>
+                            </button>
+                            <button class="mdc-button ed-home__button--menu ed-yellow">
+                                <span class="mdc-typography--display4 ed-home__button--menu--text">Adesivos</span>
+                                <span class="mdc-typography--title ed-home__button--menu--hover">envelopamento / vinil perfurado / decoração de piso</span>
+                            </button>
+                            <button class="mdc-button ed-home__button--menu ed-magenta">
+                                <span class="mdc-typography--display4 ed-home__button--menu--text">Placas</span>
+                                <span class="mdc-typography--title ed-home__button--menu--hover">impressão UV de alta definição em placas de PS</span>
+                            </button>
+                            <button class="mdc-button ed-home__button--menu ed-black">
+                                <span class="mdc-typography--display4 ed-home__button--menu--text">Papel</span>
+                                <span class="mdc-typography--title ed-home__button--menu--hover">higiênico</span>
+                            </button>
+                        </div>
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
+                        <div class="ed-home__mouse"><span></span></div>
+                    </div>
+                </section>
+                <section class="slide mdc-layoutgrid ed-quemsomos"
+                         data-anchor="quemsomos"
+                         id="quemsomos">
+                    <div class="mdc-layout-grid__inner"></div>
+                </section>
             </div>
-        </section>
+            <div class="section">
+                <section class="mdc-layout-grid ed-lonas"></section>
+            </div>
+        </div>
     
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
-            integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-            crossorigin="anonymous">
-    </script>
-    <!-- JS | CUSTOM -->
-    <script src="scripts.js"></script>
-    <!-- JS | MDC -->
-    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-    <script type="text/javascript">window.mdc.autoInit();</script>
+        <!-- jQuery -->
+        <script crossorigin="anonymous"
+                integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+                src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <!-- JS | CUSTOM -->
+        <script src="scripts.js"></script>
+        <!-- JS | MDC -->
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <script type="text/javascript">window.mdc.autoInit();</script>
+        <!-- JS PLUGINS | fullPage.js -->
+        <script src="plugins/fullPage/scrolloverflow.min.js"
+                type="text/javascript"></script>
+        <script src="plugins/fullPage/jquery.fullpage.min.js"
+                type="text/javascript"></script>
 
     </body>
     

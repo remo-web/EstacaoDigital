@@ -1,3 +1,5 @@
+//MDC
+
 $(function() {
     //ripple
     var btns = document.querySelectorAll('.mdc-button');
@@ -7,6 +9,15 @@ $(function() {
     
     mdc.tabs.MDCTabBar.attachTo(document.querySelector('#mdc-tab-bar'));
     
+});
+
+//fullPage
+
+$(document).ready(function() {
+	$('#fullpage').fullpage({
+        anchors:['home', 'Lonas'],
+        menu: '#mdc-tab-bar',
+    });
 });
 
 //Hover do Menu... Sim, isso tudo.
