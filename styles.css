@@ -28,7 +28,14 @@ body {margin: 0}
     font-family: 'Titillium Web', sans-serif !important;
 }
 
+/* fullPage.js */
+
+.fp-section, .fp-slide, .fp-tableCell{height: 100% !important;}
+
 /* ESTAÇÃO DIGITAL */
+
+@media screen and (min-width: 768px){ .ed-hide__desktop{ display: none !important } }
+@media screen and (max-width: 768px){ .ed-hide__mobile{ display: none !important } }
 
 .ed-header{
     position: absolute;
@@ -81,6 +88,33 @@ body {margin: 0}
         opacity: 0;
     }
 
+    .ed-home__phone{
+        display: block;
+        width: 22px;
+        height: 38px;
+        border-radius: 3px;
+        border-width: 4px 2px;
+        border-style: solid;
+        border-color: #fff;
+        position: absolute;
+        bottom: 34px;
+        left: 25%;
+        z-index: 99999;
+    }
+
+    .ed-home__phone span{
+        animation-duration: 1s;
+            -webkit-animation-duration: 1s;
+            -moz-animation-duration: 1s;
+        display: block;
+        margin: 20px auto;
+        width: 3px;
+        height: 6px;
+        border-radius: 4px;
+        background: #fff;
+        border: 1px solid transparent;
+    }
+
     .ed-home__mouse{
         display: block;
         width: 26px;
@@ -88,63 +122,27 @@ body {margin: 0}
         border-radius: 13px;
         border: 1px solid #fff;
         position: absolute;
-        bottom: 30px;
-        left: 50%;
-        margin-left: -13px;
+        bottom: 34px;
+        left: 25%;
         z-index: 99999;
     }
 
     .ed-home__mouse span{
+        animation-duration: 1s;
+            -webkit-animation-duration: 1s;
+            -moz-animation-duration: 1s;
         display: block;
-        margin: 6px auto;
+        margin: 7px auto;
         width: 2px;
         height: 6px;
         border-radius: 4px;
         background: #fff;
         border: 1px solid transparent;
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-        -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
-        -webkit-animation-name: scroll;
-        animation-name: scroll;
-    }
-
-    @-webkit-keyframes scroll {
-        0% {
-            opacity: 1;
-            -webkit-transform: translateY(0);
-            transform: translateY(0);
-        }
-
-        100% {
-            opacity: 0;
-            -webkit-transform: translateY(20px);
-            transform: translateY(20px);
-        }
-    }
-
-    @keyframes scroll {
-        0% {
-            opacity: 1;
-            -webkit-transform: translateY(0);
-            -ms-transform: translateY(0);
-            transform: translateY(0);
-        }
-
-        100% {
-            opacity: 0;
-            -webkit-transform: translateY(20px);
-            -ms-transform: translateY(20px);
-            transform: translateY(20px);
-        }
     }
 
     /* QUEM SOMOS */
 
-    .ed-quemsomos{background-color: white}
+    .ed-quemsomos{background-color: darkgray}
 
 
 

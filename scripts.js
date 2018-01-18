@@ -15,9 +15,26 @@ $(function() {
 
 $(document).ready(function() {
 	$('#fullpage').fullpage({
-        anchors:['home', 'Lonas'],
-        menu: '#mdc-tab-bar',
+        anchors:['home', 'Lonas', 'Adesivos', 'Placas', 'Papel'],
+        scrollHorizontally: true,
+        controlArrows: false,
     });
+});
+
+//Troca a mdc-tab selecionada com base no fp-slide exibido
+
+$(window).on('hashchange', function() {
+    var loc = window.location.href; // returns the full URL
+    if(/home/.test(loc)) {
+        $('#ed-tab__quemsomos').removeClass('mdc-tab--active');
+        $('#ed-tab__home').addClass('mdc-tab--active');
+        $('.mdc-tab-bar__indicator').css({ 'transform': "translateX(0px) scale(0.2, 1)" });
+    }
+    if(/quemsomos/.test(loc)) {
+        $('#ed-tab__home').removeClass('mdc-tab--active');
+        $('#ed-tab__quemsomos').addClass('mdc-tab--active');
+        $('.mdc-tab-bar__indicator').css({ 'transform': "translateX(160px) scale(0.2, 1)" });
+    }
 });
 
 //Hover do Menu... Sim, isso tudo.

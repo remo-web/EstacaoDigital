@@ -16,6 +16,9 @@
         <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900"
               rel="stylesheet">
         
+        <!-- FONTS | FontAwesome -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+        
         <!-- PLUGINS | fullPage.js -->
         <link href="plugins/fullPage/jquery.fullpage.min.css"
               rel="stylesheet"
@@ -40,13 +43,15 @@
             <div class="mdc-toolbar__row">
                 <section class="mdc-toolbar__section">
                     <nav class="mdc-tab-bar mdc-tab-bar--indicator-accent"
-                         id="mdc-tab-bar">
+                         id="mdc-tab-bar"
+                         role="tablist">
                         <a class="mdc-tab mdc-typography--subheading1"
-                           data-menuanchor="fp-home"
+                           id="ed-tab__home"
                            href="#home/">
-                            Home
+                            <i class="fas fa-home"></i>
                         </a>
                         <a class="mdc-tab mdc-typography--subheading1"
+                           id="ed-tab__quemsomos"
                            href="#home/quemsomos">
                             Quem Somos
                         </a>
@@ -59,7 +64,8 @@
                         <a class="mdc-tab mdc-typography--subheading1"
                            data-menuanchor=""
                            href="#">Contato</a>
-                        <span class="mdc-tab-bar__indicator"></span>
+                        <span class="mdc-tab-bar__indicator"
+                              id="ed-tab-bar__indicator"></span>
                     </nav>
                 </section>
             </div>
@@ -67,8 +73,8 @@
         <div id="fullpage">
             <div class="section">
                 <section class="slide mdc-layout-grid ed-home"
-                         data-anchor="fp-home"
-                         id="home">
+                         data-anchor="home"
+                         id="ed-home">
                     <div class="mdc-layout-grid__inner ed-home__bg--overlay">
                         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
                         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-3">
@@ -94,12 +100,13 @@
                             </button>
                         </div>
                         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
-                        <div class="ed-home__mouse"><span></span></div>
+                        <div class="ed-home__mouse ed-hide__mobile"><span class="ed-hide__mobile animated fadeOutDown infinite"></span></div>
+                        <div class="ed-home__phone ed-hide__desktop"><span class="ed-hide__desktop animated fadeOutUp infinite"></span></div>
                     </div>
                 </section>
                 <section class="slide mdc-layoutgrid ed-quemsomos"
                          data-anchor="quemsomos"
-                         id="quemsomos">
+                         id="ed-quemsomos">
                     <div class="mdc-layout-grid__inner"></div>
                 </section>
             </div>
@@ -120,7 +127,7 @@
         <!-- JS PLUGINS | fullPage.js -->
         <script src="plugins/fullPage/scrolloverflow.min.js"
                 type="text/javascript"></script>
-        <script src="plugins/fullPage/jquery.fullpage.min.js"
+        <script src="plugins/fullPage/jquery.fullpage.extensions.min.js"
                 type="text/javascript"></script>
 
     </body>
