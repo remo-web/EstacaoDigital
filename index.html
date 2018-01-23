@@ -52,12 +52,52 @@
                         </a>
                         <a class="mdc-tab mdc-typography--subheading1"
                            id="ed-tab__quemsomos"
-                           href="#home/quemsomos">
+                           href="#home/QuemSomos">
                             Quem Somos
                         </a>
-                        <a class="mdc-tab mdc-typography--subheading1"
-                           data-menuanchor=""
-                           href="#">Serviços</a>
+                        <a class="mdc-tab mdc-typography--subheading1 mdc-menu-anchor"
+                           id="ed-tab__servicos"
+                           href="#">
+                            Serviços
+                        </a>
+                        <div class="mdc-simple-menu"
+                             style="top: 48px; left: 320px;"
+                             tabindex="-1">
+                            <ul aria-hidden="true"
+                                class="mdc-simple-menu__items mdc-list mdc-list--dense"
+                                role="menu">
+                                <li class="mdc-list-item mdc-typography--subheading1"
+                                    onclick="window.location.href='#home/Servicos/Impressao'"
+                                    role="menuitem"
+                                    tabindex="0">
+                                    Impressão
+                                </li>
+                                <li class="mdc-list-item mdc-typography--subheading1"
+                                    onclick="window.location.href='#home/Servicos/Laminacao'"
+                                    role="menuitem"
+                                    tabindex="0">
+                                    Laminação
+                                </li>
+                                <li class="mdc-list-item mdc-typography--subheading1"
+                                    onclick="window.location.href='#'"
+                                    role="menuitem"
+                                    tabindex="0">
+                                    Recorte Eletrônico
+                                </li>
+                                <li class="mdc-list-item mdc-typography--subheading1"
+                                    onclick="window.location.href='#'"
+                                    role="menuitem"
+                                    tabindex="0">
+                                    Aplicação
+                                </li>
+                                <li class="mdc-list-item mdc-typography--subheading1"
+                                    onclick="window.location.href='#'"
+                                    role="menuitem"
+                                    tabindex="0">
+                                    Montagem
+                                </li>
+                            </ul>
+                        </div>
                         <a class="mdc-tab mdc-typography--subheading1"
                            data-menuanchor=""
                            href="#">Fizemos</a>
@@ -72,6 +112,7 @@
         </header>
         <div id="fullpage">
             <div class="section">
+                <!-- HOME -->
                 <section class="slide mdc-layout-grid ed-home"
                          data-anchor="home"
                          id="ed-home">
@@ -82,32 +123,80 @@
                         </div>
                         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
                         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-3">
-                            <button class="mdc-button ed-home__button--menu ed-cyan">
+                            <a class="mdc-button ed-home__button--menu ed-cyan"
+                               href="#Lonas"
+                               role="button">
                                 <span class="mdc-typography--display4 ed-home__button--menu--text">Lonas</span>
                                 <span class="mdc-typography--title ed-home__button--menu--hover">banners / letreiros / front light</span>
-                            </button>
-                            <button class="mdc-button ed-home__button--menu ed-yellow">
+                            </a>
+                            <a class="mdc-button ed-home__button--menu ed-yellow"
+                               href="#"
+                               role="button">
                                 <span class="mdc-typography--display4 ed-home__button--menu--text">Adesivos</span>
                                 <span class="mdc-typography--title ed-home__button--menu--hover">envelopamento / vinil perfurado / decoração de piso</span>
-                            </button>
-                            <button class="mdc-button ed-home__button--menu ed-magenta">
+                            </a>
+                            <a class="mdc-button ed-home__button--menu ed-magenta"
+                               href="#"
+                               role="button">
                                 <span class="mdc-typography--display4 ed-home__button--menu--text">Placas</span>
                                 <span class="mdc-typography--title ed-home__button--menu--hover">impressão UV de alta definição em placas de PS</span>
-                            </button>
-                            <button class="mdc-button ed-home__button--menu ed-black">
+                            </a>
+                            <a class="mdc-button ed-home__button--menu ed-black"
+                               href="#"
+                               role="button">
                                 <span class="mdc-typography--display4 ed-home__button--menu--text">Papel</span>
                                 <span class="mdc-typography--title ed-home__button--menu--hover">higiênico</span>
-                            </button>
+                            </a>
                         </div>
                         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
                         <div class="ed-home__mouse ed-hide__mobile"><span class="ed-hide__mobile animated fadeOutDown infinite"></span></div>
                         <div class="ed-home__phone ed-hide__desktop"><span class="ed-hide__desktop animated fadeOutUp infinite"></span></div>
                     </div>
                 </section>
+                <!-- QUEM SOMOS -->
                 <section class="slide mdc-layoutgrid ed-quemsomos"
-                         data-anchor="quemsomos"
+                         data-anchor="QuemSomos"
                          id="ed-quemsomos">
-                    <div class="mdc-layout-grid__inner"></div>
+                    <div class="mdc-layout-grid__inner">
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-8">
+                            <h1 class="mdc-typography--display4">Quem Somos</h1>
+                            <p class="mdc-typography--body2">Há mais de 15 anos atuando no mercado de comunicação visual, a ESTAÇÃO DIGITAL oferece as melhores soluções em impressão digital para pequenos, médios e grandes formatos, uma grande variedade de produtos e serviços nas áreas de design gráfico, sinalização, material publicitário e promocional, cenografia, além de sinalização de frotas de veículos e muito mais.</p>
+                            <p class="mdc-typography--body2">Impressão digital e recorte eletrônico são algumas das soluções que oferecemos para ajudar você a executar seu projeto de sinalização. Nossa equipe é formada por profissionais qualificados e experientes, e aliando inovação, tecnologia, qualidade e rapidez, estamos sempre prontos a atender e superar suas expectativas.</p>
+                            <p class="mdc-typography--body2">Nossos diferenciais competitivos fazem toda a diferença no sucesso do seu projeto.</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- SERVIÇOS -->
+                <section class="slide mdc-layoutgrid ed-servicos"
+                         data-anchor="Servicos"
+                         id="ed-servicos">
+                    <div class="mdc-layout-grid__inner">
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                            
+                            <h2 class="mdc-typography--display3"
+                                data-anchor="Impressao"
+                                id="ed-impressao">Impressão</h2>
+                            <p class="mdc-typography--body2">Há mais de 15 anos atuando no mercado de comunicação visual, a ESTAÇÃO DIGITAL oferece as melhores soluções em impressão digital para pequenos, médios e grandes formatos, uma grande variedade de produtos e serviços nas áreas de design gráfico, sinalização, material publicitário e promocional, cenografia, além de sinalização de frotas de veículos e muito mais.</p>
+                            <p class="mdc-typography--body2">Impressão digital e recorte eletrônico são algumas das soluções que oferecemos para ajudar você a executar seu projeto de sinalização. Nossa equipe é formada por profissionais qualificados e experientes, e aliando inovação, tecnologia, qualidade e rapidez, estamos sempre prontos a atender e superar suas expectativas.</p>
+                            <p class="mdc-typography--body2">Nossos diferenciais competitivos fazem toda a diferença no sucesso do seu projeto.</p>
+                            
+                            <h2 class="mdc-typography--display3"
+                                data-anchor="Laminacao"
+                                id="ed-laminacao">Laminação</h2>
+                            <p class="mdc-typography--body2">Há mais de 15 anos atuando no mercado de comunicação visual, a ESTAÇÃO DIGITAL oferece as melhores soluções em impressão digital para pequenos, médios e grandes formatos, uma grande variedade de produtos e serviços nas áreas de design gráfico, sinalização, material publicitário e promocional, cenografia, além de sinalização de frotas de veículos e muito mais.</p>
+                            <p class="mdc-typography--body2">Impressão digital e recorte eletrônico são algumas das soluções que oferecemos para ajudar você a executar seu projeto de sinalização. Nossa equipe é formada por profissionais qualificados e experientes, e aliando inovação, tecnologia, qualidade e rapidez, estamos sempre prontos a atender e superar suas expectativas.</p>
+                            <p class="mdc-typography--body2">Nossos diferenciais competitivos fazem toda a diferença no sucesso do seu projeto.</p>
+                            
+                            <h2 class="mdc-typography--display3"
+                                data-anchor="Laminacao"
+                                id="ed-laminacao">Laminação</h2>
+                            <p class="mdc-typography--body2">Há mais de 15 anos atuando no mercado de comunicação visual, a ESTAÇÃO DIGITAL oferece as melhores soluções em impressão digital para pequenos, médios e grandes formatos, uma grande variedade de produtos e serviços nas áreas de design gráfico, sinalização, material publicitário e promocional, cenografia, além de sinalização de frotas de veículos e muito mais.</p>
+                            <p class="mdc-typography--body2">Impressão digital e recorte eletrônico são algumas das soluções que oferecemos para ajudar você a executar seu projeto de sinalização. Nossa equipe é formada por profissionais qualificados e experientes, e aliando inovação, tecnologia, qualidade e rapidez, estamos sempre prontos a atender e superar suas expectativas.</p>
+                            <p class="mdc-typography--body2">Nossos diferenciais competitivos fazem toda a diferença no sucesso do seu projeto.</p>
+                        </div>
+                    </div>
                 </section>
             </div>
             <div class="section">
@@ -128,6 +217,9 @@
         <script src="plugins/fullPage/scrolloverflow.min.js"
                 type="text/javascript"></script>
         <script src="plugins/fullPage/jquery.fullpage.extensions.min.js"
+                type="text/javascript"></script>
+        <!-- JS PLUGINS | slimScroll.js -->
+        <script src="plugins/slimScroll/jquery.slimscroll.js"
                 type="text/javascript"></script>
 
     </body>

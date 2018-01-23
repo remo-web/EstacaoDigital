@@ -6,9 +6,12 @@ $(function() {
     for (var i = 0, btn; btn = btns[i]; i++) {
         mdc.ripple.MDCRipple.attachTo(btn);
     }
-    
+    //tabs
     mdc.tabs.MDCTabBar.attachTo(document.querySelector('#mdc-tab-bar'));
-    
+    //dropdown
+    let menu = new mdc.menu.MDCSimpleMenu(document.querySelector('.mdc-simple-menu'));
+    document.querySelector('.mdc-menu-anchor').addEventListener('click', () => menu.open = !menu.open);
+
 });
 
 //fullPage
@@ -16,10 +19,18 @@ $(function() {
 $(document).ready(function() {
 	$('#fullpage').fullpage({
         anchors:['home', 'Lonas', 'Adesivos', 'Placas', 'Papel'],
-        scrollHorizontally: true,
         controlArrows: false,
+        scrollOverflow: true,
     });
 });
+
+//slimScroll
+
+//$(function(){
+//    $('body').slimScroll({
+//        height: 'auto'
+//    });
+//});
 
 //Troca a mdc-tab selecionada com base no fp-slide exibido
 
@@ -27,13 +38,21 @@ $(window).on('hashchange', function() {
     var loc = window.location.href; // returns the full URL
     if(/home/.test(loc)) {
         $('#ed-tab__quemsomos').removeClass('mdc-tab--active');
+        $('#ed-tab__servicos').removeClass('mdc-tab--active');
         $('#ed-tab__home').addClass('mdc-tab--active');
         $('.mdc-tab-bar__indicator').css({ 'transform': "translateX(0px) scale(0.2, 1)" });
     }
-    if(/quemsomos/.test(loc)) {
+    if(/QuemSomos/.test(loc)) {
         $('#ed-tab__home').removeClass('mdc-tab--active');
+        $('#ed-tab__servicos').removeClass('mdc-tab--active');
         $('#ed-tab__quemsomos').addClass('mdc-tab--active');
         $('.mdc-tab-bar__indicator').css({ 'transform': "translateX(160px) scale(0.2, 1)" });
+    }
+    if(/Servicos/.test(loc)) {
+        $('#ed-tab__home').removeClass('mdc-tab--active');
+        $('#ed-tab__quemsomos').removeClass('mdc-tab--active');
+        $('#ed-tab__servicos').addClass('mdc-tab--active');
+        $('.mdc-tab-bar__indicator').css({ 'transform': "translateX(320px) scale(0.2, 1)" });
     }
 });
 

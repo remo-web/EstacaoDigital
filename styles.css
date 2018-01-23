@@ -28,6 +28,8 @@ body {margin: 0}
     font-family: 'Titillium Web', sans-serif !important;
 }
 
+.mdc-simple-menu{background-color: rgba(255,255,255,0.7)}
+
 /* fullPage.js */
 
 .fp-section, .fp-slide, .fp-tableCell{height: 100% !important;}
@@ -98,7 +100,7 @@ body {margin: 0}
         border-color: #fff;
         position: absolute;
         bottom: 34px;
-        left: 25%;
+        left: 16.5%;
         z-index: 99999;
     }
 
@@ -123,7 +125,7 @@ body {margin: 0}
         border: 1px solid #fff;
         position: absolute;
         bottom: 34px;
-        left: 25%;
+        left: 16.5%;
         z-index: 99999;
     }
 
@@ -142,7 +144,7 @@ body {margin: 0}
 
     /* QUEM SOMOS */
 
-    .ed-quemsomos{background-color: darkgray}
+    .ed-quemsomos, .ed-servicos{background-color: darkgray}
 
 
 
