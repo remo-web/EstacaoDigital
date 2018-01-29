@@ -28,6 +28,7 @@ body {margin: 0}
     font-family: 'Titillium Web', sans-serif !important;
 }
 
+.mdc-card{background-color: white}
 .mdc-simple-menu{background-color: rgba(255,255,255,0.7)}
 .mdc-layout-grid__cell{ margin-top: 80px }
 
@@ -147,6 +148,8 @@ body {margin: 0}
 
     .ed-quemsomos, .ed-servicos{background-color: darkgray}
 
+    /* SERVIÇOS */
+
     /* FIZEMOS */
 
     .ed-gallery figcaption {display: none}
@@ -154,6 +157,11 @@ body {margin: 0}
     .ed-gallery .mdc-card__primary {background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5))}
     .ed-gallery--card__1 {width: 100%; background-image: url(images/slj-demo.jpg); background-size: cover}
 
+    /* CONTATO */
 
+    /* LONAS */
 
-
+    .ed-lonas{
+        background-image: url(images/slj-demo3.jpg);
+        background-size: cover
+    }
