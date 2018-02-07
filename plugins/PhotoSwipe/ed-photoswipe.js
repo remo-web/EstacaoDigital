@@ -202,4 +202,4 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 };
 
 // execute above function
-initPhotoSwipeFromDOM('.ed-gallery');
+initPhotoSwipeFromDOM('.ed-fizemos--gallery');

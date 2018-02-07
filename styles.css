@@ -54,12 +54,16 @@ body {margin: 0}
 .ed-black{color: black !important;}
 
 .ed-main{
-    background-color: #454545;
+    background-color: #333333;
+/*
     background-image: url(./images/remo_w-ed-home__bg--img.jpg);
     background-size: cover;
     background-position: top;
     background-blend-mode: multiply
+*/
 }
+
+#ed-main__bg{position: absolute; opacity: 0.4}
 
     /* HOME */
 
@@ -148,19 +152,19 @@ body {margin: 0}
 
     /* QUEM SOMOS */
 
-/*    .ed-quemsomos, .ed-servicos{background-color: darkgray}*/
+    .ed-quemsomos, .ed-servicos{background-color: rgba(255,255,255,0.9)}
 
     /* SERVIÇOS */
 
     /* FIZEMOS */
 
-    .ed-gallery__format{display: inline-flex}
-    .ed-gallery figcaption {display: none}
-    .ed-gallery img {display: none}
-    .ed-gallery .mdc-card__primary {background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5))}
-    .ed-gallery--card{width: calc(33.333% - 80px)}
-    .ed-gallery--card__1 {background-image: url(images/slj-demo.jpg); background-size: cover}
-    .ed-gallery--card__2 {background-image: url(images/slj-demo2.jpg); background-size: cover}
+    .ed-fizemos--gallery__format{display: inline-flex}
+    .ed-fizemos--gallery figcaption {display: none}
+    .ed-fizemos--gallery img {display: none}
+    .ed-fizemos--gallery .mdc-card__primary {background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5))}
+    .ed-fizemos--gallery--card{width: calc(33.333% - 80px); background-position: center}
+    .ed-fizemos--gallery--card__1 {background-image: url(images/remo_w-ed--fizemos--ferdinando__img.jpg); background-size: cover}
+    .ed-fizemos--gallery--card__2 {background-image: url(images/remo_w-ed--fizemos--fitbox__img.jpg); background-size: cover}
 
     /* CONTATO */
 
@@ -168,5 +172,6 @@ body {margin: 0}
 
     .ed-lonas{
         background-image: url(images/slj-demo3.jpg);
-        background-size: cover
+        background-size: cover;
+        background-position: center
     }
