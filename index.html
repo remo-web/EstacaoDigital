@@ -50,8 +50,8 @@
         <header class="mdc-toolbar ed-header">
             <div class="mdc-toolbar__row">
                 <section class="mdc-toolbar__section">
-                    <nav class="mdc-tab-bar mdc-tab-bar--indicator-accent"
-                         id="mdc-tab-bar"
+                    <nav class="mdc-tab-bar mdc-tab-bar--indicator-accent ed-header--tab"
+                         id="ed-header--tab"
                          role="tablist">
                         <a class="mdc-tab mdc-typography--subheading1"
                            id="ed-tab__home"
@@ -68,11 +68,11 @@
                            href="#">
                             Serviços
                         </a>
-                        <div class="mdc-simple-menu"
+                        <div class="mdc-menu"
                              style="top: 48px; left: 320px;"
                              tabindex="-1">
                             <ul aria-hidden="true"
-                                class="mdc-simple-menu__items mdc-list mdc-list--dense"
+                                class="mdc-menu__items mdc-list"
                                 role="menu">
                                 <li class="mdc-list-item mdc-typography--subheading1"
                                     onclick="window.location.href='#home/Servicos/Impressao'"
@@ -81,7 +81,7 @@
                                     Impressão
                                 </li>
                                 <li class="mdc-list-item mdc-typography--subheading1"
-                                    onclick="window.location.href='#home/Servicos/Laminacao'"
+                                    onclick="window.location.href='#home/Servicos/#ed-laminacao'"
                                     role="menuitem"
                                     tabindex="0">
                                     Laminação
@@ -262,9 +262,39 @@
             <div class="section ed-lonas">
                 <section class="mdc-layout-grid">
                     <div class="mdc-layout-grid__inner ed-home__bg--overlay">
-                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-1-desktop"></div>
                         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-4-desktop">
                             <div class="mdc-card">
+                                <div class="mdc-typography--subheading2">Opções de Lonas</div>
+                                <hr class="mdc-list-divider">
+                                <div class="mdc-ripple-surface"
+                                   href="#">
+                                    <h2 class="mdc-typography--headline"><i>Banners</i> e faixas</h2>
+                                    <p class="mdc-typography--body1">Impressão Digital em alta resolução em lona vinílica semi-brilho 440g, com acabamento de canos de plásticos ou madeira e cordinha, material de alto impacto visual para pontos de vendas e divulgação.</p>
+                                </div>
+                                <hr class="mdc-list-divider">
+                                <div class="mdc-ripple-surface"
+                                   href="#">
+                                    <h2 class="mdc-typography--headline"><i>Front-light</i></h2>
+                                    <p class="mdc-typography--body1">Impressão Digital em alta resolução em lona Front-Light 440g, com acabamentos de ilhós alumínio, para letreiros com iluminação externa por meio de holofotes.</p>
+                                </div>
+                                <hr class="mdc-list-divider">
+                                <div class="mdc-ripple-surface"
+                                   href="#">
+                                    <h2 class="mdc-typography--headline"><i>Back-light</i></h2>
+                                    <p class="mdc-typography--body1">Impressão Digital em alta resolução em lona Backt-Light 440g, com acabamentos de ilhós alumínio, para letreiros com iluminação interna por meio de lampadas fluorescentes.</p>
+                                </div>
+                                <hr class="mdc-list-divider">
+                                <div class="mdc-card__actions">
+                                    <a class="mdc-button mdc-button--raised mdc-card__action mdc-card__action--button">
+                                        <i class="fas fa-shopping-cart"></i>&nbsp;
+                                        comprar
+                                    </a>
+                                    <a class="mdc-button mdc-card__action mdc-card__action--button">
+                                        ver mais
+                                    </a>
+                                </div>
+<!--
                                 <section class="mdc-card__primary ">
                                     <h1 class="mdc-card__title mdc-card__title--large mdc-typography--display2">Lonas</h1>
                                     <h2 class="mdc-card__subtitle mdc-typography--subheading1">banners | front light</h2>
@@ -282,6 +312,7 @@
                                 <section class="mdc-card__actions">
                                     <button class="mdc-button mdc-button--compact mdc-card__action mdc-typography--button">Comprar</button>
                                 </section>
+-->
                             </div>
                         </div>
                     </div>

@@ -9,6 +9,11 @@ body {margin: 0}
 
 /* MDL */
 
+:root {
+    --mdc-theme-primary: #2e3191;
+    --mdc-theme-secondary: #917E2E;
+}
+
 .mdc-typography,
 .mdc-typography--display4,
 .mdc-typography--display3,
@@ -29,7 +34,7 @@ body {margin: 0}
 }
 
 .mdc-card{background-color: white}
-.mdc-simple-menu{background-color: rgba(255,255,255,0.7)}
+.mdc-menu{background-color: rgba(255,255,255,0.7)}
 .mdc-layout-grid__cell{ margin-top: 80px }
 
 /* fullPage.js */
@@ -48,10 +53,13 @@ body {margin: 0}
     z-index: 999
 }
 
-.ed-cyan{color: cyan !important;}
-.ed-yellow{color: yellow !important;}
-.ed-magenta{color: magenta !important;}
-.ed-black{color: black !important;}
+.ed-header--tab .mdc-tab:not(.mdc-tab---active) {color: rgba(255,255,255,0.5)}
+.ed-header--tab .mdc-tab.mdc-tab--active, .ed-header--tab .mdc-tab:hover {color: rgba(255,255,255,0.7)}
+
+.ed-cyan{color: #00adee !important;}
+.ed-yellow{color: #fff100 !important;}
+.ed-magenta{color: #eb008b !important;}
+.ed-black{color: #000010 !important;}
 
 .ed-main{
     background-color: #333333;
@@ -174,4 +182,9 @@ body {margin: 0}
         background-image: url(images/slj-demo3.jpg);
         background-size: cover;
         background-position: center
+    }
+
+    .ed-lonas .mdc-card div{
+        padding: 16px;
+        text-decoration: none
     }
