@@ -203,3 +203,5 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
 // execute above function
 initPhotoSwipeFromDOM('.ed-fizemos--gallery');
+initPhotoSwipeFromDOM('.ed-destaque--lonas--gallery');
+initPhotoSwipeFromDOM('.ed-destaque--adesivos--gallery');

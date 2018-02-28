@@ -47,278 +47,1148 @@
         <video autoplay muted loop id="ed-main__bg">
             <source src="./images/MAH05057.MP4" type="video/mp4">
         </video>
-        <header class="mdc-toolbar ed-header">
-            <div class="mdc-toolbar__row">
-                <section class="mdc-toolbar__section">
-                    <nav class="mdc-tab-bar mdc-tab-bar--indicator-accent ed-header--tab"
-                         id="ed-header--tab"
-                         role="tablist">
-                        <a class="mdc-tab mdc-typography--subheading1"
-                           id="ed-tab__home"
-                           href="#home/">
-                            <i class="fas fa-home"></i>
-                        </a>
-                        <a class="mdc-tab mdc-typography--subheading1"
-                           id="ed-tab__quemsomos"
-                           href="#home/QuemSomos">
-                            Quem Somos
-                        </a>
-                        <a class="mdc-tab mdc-typography--subheading1 mdc-menu-anchor"
-                           id="ed-tab__servicos"
-                           href="#">
-                            Serviços
-                        </a>
-                        <div class="mdc-menu"
-                             style="top: 48px; left: 320px;"
-                             tabindex="-1">
-                            <ul aria-hidden="true"
-                                class="mdc-menu__items mdc-list"
-                                role="menu">
-                                <li class="mdc-list-item mdc-typography--subheading1"
-                                    onclick="window.location.href='#home/Servicos/Impressao'"
-                                    role="menuitem"
-                                    tabindex="0">
-                                    Impressão
-                                </li>
-                                <li class="mdc-list-item mdc-typography--subheading1"
-                                    onclick="window.location.href='#home/Servicos/#ed-laminacao'"
-                                    role="menuitem"
-                                    tabindex="0">
-                                    Laminação
-                                </li>
-                                <li class="mdc-list-item mdc-typography--subheading1"
-                                    onclick="window.location.href='#'"
-                                    role="menuitem"
-                                    tabindex="0">
-                                    Recorte Eletrônico
-                                </li>
-                                <li class="mdc-list-item mdc-typography--subheading1"
-                                    onclick="window.location.href='#'"
-                                    role="menuitem"
-                                    tabindex="0">
-                                    Aplicação
-                                </li>
-                                <li class="mdc-list-item mdc-typography--subheading1"
-                                    onclick="window.location.href='#'"
-                                    role="menuitem"
-                                    tabindex="0">
-                                    Montagem
-                                </li>
-                            </ul>
-                        </div>
-                        <a class="mdc-tab mdc-typography--subheading1"
-                           id="ed-tab__fizemos"
-                           href="#home/Fizemos">
-                            Fizemos
-                        </a>
-                        <a class="mdc-tab mdc-typography--subheading1"
-                           data-menuanchor=""
-                           href="#">
-                            Contato
-                        </a>
-                        <span class="mdc-tab-bar__indicator"
-                              id="ed-tab-bar__indicator"></span>
-                    </nav>
-                </section>
-            </div>
-        </header>
+
         <div id="fullpage">
-            <div class="section"
-                 id="ed-tabs">
-                <!-- HOME -->
-                <section class="slide mdc-layout-grid ed-home"
-                         data-anchor="home"
-                         id="ed-home">
-                    <div class="mdc-layout-grid__inner ed-home__bg--overlay">
-                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
-                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-3">
-                            <img src="images/remo_w-ed-home__logo.svg">
-                        </div>
-                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
-                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-3">
-                            <a class="mdc-button ed-home__button--menu ed-cyan"
-                               href="#Lonas"
-                               role="button">
-                                <span class="mdc-typography--display4 ed-home__button--menu--text">Lonas</span>
-                                <span class="mdc-typography--title ed-home__button--menu--hover">banners / front light / back light</span>
-                            </a>
-                            <a class="mdc-button ed-home__button--menu ed-yellow"
-                               href="#"
-                               role="button">
-                                <span class="mdc-typography--display4 ed-home__button--menu--text">Adesivos</span>
-                                <span class="mdc-typography--title ed-home__button--menu--hover">envelopamento / vinil perfurado / decoração de piso</span>
-                            </a>
-                            <a class="mdc-button ed-home__button--menu ed-magenta"
-                               href="#"
-                               role="button">
-                                <span class="mdc-typography--display4 ed-home__button--menu--text">Placas</span>
-                                <span class="mdc-typography--title ed-home__button--menu--hover">impressão UV de alta definição em placas de PS</span>
-                            </a>
-                            <a class="mdc-button ed-home__button--menu ed-black"
-                               href="#"
-                               role="button">
-                                <span class="mdc-typography--display4 ed-home__button--menu--text">Papel</span>
-                                <span class="mdc-typography--title ed-home__button--menu--hover">higiênico</span>
-                            </a>
-                        </div>
-                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
+            <section class="section ed-home"
+                     id="index">
+                <!-- HEADER -->
+                <header class="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--waterfall ed-header">
+                    <div class="mdc-toolbar__row">
+                        <section class="mdc-toolbar__section">
+                            <nav class="mdc-tab-bar ed-header--tab"
+                                 id="dynamic-tab-bar"
+                                 role="tablist">
+                                <a aria-controls="home"
+                                   class="mdc-tab mdc-typography--subheading1 mdc-tab--active"
+                                   href="#home"
+                                   id="ed-home-tab"
+                                   role="tab">
+                                    <i class="fas fa-home"></i>
+                                </a>
+                                <a aria-controls="QuemSomos"
+                                   class="mdc-tab mdc-typography--subheading1"
+                                   id="ed-quemsomos"
+                                   href="#QuemSomos"
+                                   role="tab">
+                                    Quem Somos
+                                </a>
+                                <a aria-controls="Servicos"
+                                   class="mdc-tab mdc-typography--subheading1 mdc-menu-anchor"
+                                   href="#Servicos"
+                                   role="tab">
+                                    Serviços
+                                </a>
+                                <div class="mdc-menu"
+                                     style="top: 48px; left: 320px;"
+                                     tabindex="-1">
+                                    <ul aria-hidden="true"
+                                        class="mdc-menu__items mdc-list"
+                                        role="menu">
+                                        <li class="mdc-list-item mdc-typography--subheading1"
+                                            onclick="window.location.href='#Servicos/impressao'"
+                                            role="menuitem"
+                                            tabindex="0">
+                                            Impressão
+                                        </li>
+                                        <li class="mdc-list-item mdc-typography--subheading1"
+                                            onclick="window.location.href='#Servicos/impressao'"
+                                            role="menuitem"
+                                            tabindex="0">
+                                            Laminação
+                                        </li>
+                                        <li class="mdc-list-item mdc-typography--subheading1"
+                                            onclick="window.location.href='#'"
+                                            role="menuitem"
+                                            tabindex="0">
+                                            Recorte Eletrônico
+                                        </li>
+                                        <li class="mdc-list-item mdc-typography--subheading1"
+                                            onclick="window.location.href='#'"
+                                            role="menuitem"
+                                            tabindex="0">
+                                            Aplicação
+                                        </li>
+                                        <li class="mdc-list-item mdc-typography--subheading1"
+                                            onclick="window.location.href='#'"
+                                            role="menuitem"
+                                            tabindex="0">
+                                            Montagem
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a aria-controls="Fizemos"
+                                   class="mdc-tab mdc-typography--subheading1"
+                                   href="#Fizemos"
+                                   role="tab">
+                                    Fizemos
+                                </a>
+                                <a class="mdc-tab mdc-typography--subheading1"
+                                   data-menuanchor=""
+                                   href="#">
+                                    Contato
+                                </a>
+                                <span class="mdc-tab-bar__indicator"
+                                      id="ed-tab-bar__indicator"></span>
+                            </nav>
+                        </section>
+                    </div>
+                    <div class="mdc-toolbar__row">
+                        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                            <span class="mdc-toolbar__title">Title</span>
+                        </section>
+                    </div>
+                </header>
+                <div class="ed-home--panels">
+                    <!-- HOME -->
+                    <section aria-hidden="false"
+                             class="ed-home--panels__panel active mdc-layout-grid ed-home"
+                             id="index"
+                             role="tabpanel">
                         <div class="ed-home__mouse ed-hide__mobile"><span class="ed-hide__mobile animated fadeOutDown infinite"></span></div>
                         <div class="ed-home__phone ed-hide__desktop"><span class="ed-hide__desktop animated fadeOutUp infinite"></span></div>
-                    </div>
-                </section>
-                <!-- QUEM SOMOS -->
-                <section class="slide mdc-layout-grid"
-                         data-anchor="QuemSomos"
-                         id="ed-quemsomos">
-                    <div class="mdc-layout-grid__inner ed-quemsomos">
-                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop"></div>
-                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
-                            <h1 class="mdc-typography--display4">Quem Somos</h1>
-                            <p class="mdc-typography--body2">Há mais de 15 anos atuando no mercado de comunicação visual, a ESTAÇÃO DIGITAL oferece as melhores soluções em impressão digital para pequenos, médios e grandes formatos, uma grande variedade de produtos e serviços nas áreas de design gráfico, sinalização, material publicitário e promocional, cenografia, além de sinalização de frotas de veículos e muito mais.</p>
-                            <p class="mdc-typography--body2">Impressão digital e recorte eletrônico são algumas das soluções que oferecemos para ajudar você a executar seu projeto de sinalização. Nossa equipe é formada por profissionais qualificados e experientes, e aliando inovação, tecnologia, qualidade e rapidez, estamos sempre prontos a atender e superar suas expectativas.</p>
-                            <p class="mdc-typography--body2">Nossos diferenciais competitivos fazem toda a diferença no sucesso do seu projeto.</p>
-                        </div>
-                    </div>
-                </section>
-                <!-- SERVIÇOS -->
-                <section class="slide mdc-layout-grid"
-                         data-anchor="Servicos"
-                         id="ed-servicos">
-                    <div class="mdc-layout-grid__inner ed-servicos">
-                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop"></div>
-                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
-                            
-                            <h2 class="mdc-typography--display3"
-                                data-anchor="Impressao"
-                                id="ed-impressao">Impressão</h2>
-                            <p class="mdc-typography--body2">Há mais de 15 anos atuando no mercado de comunicação visual, a ESTAÇÃO DIGITAL oferece as melhores soluções em impressão digital para pequenos, médios e grandes formatos, uma grande variedade de produtos e serviços nas áreas de design gráfico, sinalização, material publicitário e promocional, cenografia, além de sinalização de frotas de veículos e muito mais.</p>
-                            <p class="mdc-typography--body2">Impressão digital e recorte eletrônico são algumas das soluções que oferecemos para ajudar você a executar seu projeto de sinalização. Nossa equipe é formada por profissionais qualificados e experientes, e aliando inovação, tecnologia, qualidade e rapidez, estamos sempre prontos a atender e superar suas expectativas.</p>
-                            <p class="mdc-typography--body2">Nossos diferenciais competitivos fazem toda a diferença no sucesso do seu projeto.</p>
-                            
-                            <h2 class="mdc-typography--display3"
-                                data-anchor="Laminacao"
-                                id="ed-laminacao">Laminação</h2>
-                            <p class="mdc-typography--body2">Há mais de 15 anos atuando no mercado de comunicação visual, a ESTAÇÃO DIGITAL oferece as melhores soluções em impressão digital para pequenos, médios e grandes formatos, uma grande variedade de produtos e serviços nas áreas de design gráfico, sinalização, material publicitário e promocional, cenografia, além de sinalização de frotas de veículos e muito mais.</p>
-                            <p class="mdc-typography--body2">Impressão digital e recorte eletrônico são algumas das soluções que oferecemos para ajudar você a executar seu projeto de sinalização. Nossa equipe é formada por profissionais qualificados e experientes, e aliando inovação, tecnologia, qualidade e rapidez, estamos sempre prontos a atender e superar suas expectativas.</p>
-                            <p class="mdc-typography--body2">Nossos diferenciais competitivos fazem toda a diferença no sucesso do seu projeto.</p>
-                            
-                            <h2 class="mdc-typography--display3"
-                                data-anchor="Laminacao"
-                                id="ed-laminacao">Laminação</h2>
-                            <p class="mdc-typography--body2">Há mais de 15 anos atuando no mercado de comunicação visual, a ESTAÇÃO DIGITAL oferece as melhores soluções em impressão digital para pequenos, médios e grandes formatos, uma grande variedade de produtos e serviços nas áreas de design gráfico, sinalização, material publicitário e promocional, cenografia, além de sinalização de frotas de veículos e muito mais.</p>
-                            <p class="mdc-typography--body2">Impressão digital e recorte eletrônico são algumas das soluções que oferecemos para ajudar você a executar seu projeto de sinalização. Nossa equipe é formada por profissionais qualificados e experientes, e aliando inovação, tecnologia, qualidade e rapidez, estamos sempre prontos a atender e superar suas expectativas.</p>
-                            <p class="mdc-typography--body2">Nossos diferenciais competitivos fazem toda a diferença no sucesso do seu projeto.</p>
-                        </div>
-                    </div>
-                </section>
-                <!-- FIZEMOS -->
-                <section class="slide mdc-layout-grid"
-                         data-anchor="Fizemos"
-                         id="ed-fizemos">
-                    <div class="mdc-layout-grid__inner ed-fizemos ed-fizemos--gallery"
-                         itemscope
-                         itemtype="http://schema.org/ImageGallery">
-                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop ed-fizemos--gallery__format">
-                            <figure class="mdc-card mdc-card--theme-dark ed-fizemos--gallery--card ed-fizemos--gallery--card__1"
-                                    itemprop="associatedMedia"
-                                    itemscope
-                                    itemtype="http://schema.org/ImageObject">
-                                <a href="images/remo_w-ed--fizemos--ferdinando__img.jpg"
-                                   data-size="3000x2000"
-                                   itemprop="contentUrl">
-                                    <img alt="Image description"
-                                         itemprop="thumbnail" 
-                                         src="images/remo_w-ed--fizemos--ferdinando__img.jpg"/>
+                        <div class="mdc-layout-grid__inner ed-home__bg--overlay">
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-3">
+                                <img src="images/remo_w-ed-home__logo.svg">
+                            </div>
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-3">
+                                <a class="mdc-button ed-home__button--menu ed-cyan"
+                                   href="#Lonas"
+                                   role="button">
+                                    <span class="mdc-typography--display4 ed-home__button--menu--text">Lonas</span>
+                                    <span class="mdc-typography--title ed-home__button--menu--hover">banners / front light / back light</span>
                                 </a>
-                                <figcaption class="mdc-typography--caption"
-                                            itemprop="caption description">Poster em lona para anúncio do filme Touro Ferdinando na rede Cinemark</figcaption>
-                                <section class="mdc-card__primary">
-                                    <h1 class="mdc-card__title mdc-typography--title">Poster de cinema</h1>
-                                </section>
-                            </figure>
-                            <figure class="mdc-card mdc-card--theme-dark ed-fizemos--gallery--card ed-fizemos--gallery--card__2"
-                                    itemprop="associatedMedia"
-                                    itemscope
-                                    itemtype="http://schema.org/ImageObject">
-                                <a href="images/remo_w-ed--fizemos--fitbox__img.jpg"
-                                   data-size="3000x2000"
-                                   itemprop="contentUrl">
-                                    <img alt="Image description"
-                                         itemprop="thumbnail" 
-                                         src="images/remo_w-ed--fizemos--fitbox__img.jpg"/>
+                                <a class="mdc-button ed-home__button--menu ed-yellow"
+                                   href="#Adesivos"
+                                   role="button">
+                                    <span class="mdc-typography--display4 ed-home__button--menu--text">Adesivos</span>
+                                    <span class="mdc-typography--title ed-home__button--menu--hover">envelopamento / vinil perfurado / decoração de piso</span>
                                 </a>
-                                <figcaption class="mdc-typography--title"
-                                            itemprop="caption description">Orange like a motherfucker.</figcaption>
-                                <section class="mdc-card__primary">
-                                    <h1 class="mdc-card__title mdc-typography--title">Orange</h1>
-                                </section>
-                            </figure>
+                                <a class="mdc-button ed-home__button--menu ed-magenta"
+                                   href="#"
+                                   role="button">
+                                    <span class="mdc-typography--display4 ed-home__button--menu--text">Placas</span>
+                                    <span class="mdc-typography--title ed-home__button--menu--hover">impressão UV de alta definição em placas de PS</span>
+                                </a>
+                                <a class="mdc-button ed-home__button--menu ed-black"
+                                   href="#"
+                                   role="button">
+                                    <span class="mdc-typography--display4 ed-home__button--menu--text">Tecido</span>
+                                    <span class="mdc-typography--title ed-home__button--menu--hover">higiênico</span>
+                                </a>
+                            </div>
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
                         </div>
-                    </div>
-                </section>
-            </div>
-            
-            <!-- LONAS -->
-            <div class="section ed-lonas">
-                <section class="mdc-layout-grid">
-                    <div class="mdc-layout-grid__inner ed-home__bg--overlay">
-                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-1-desktop"></div>
-                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-4-desktop">
-                            <div class="mdc-card">
-                                <div class="mdc-typography--subheading2">Opções de Lonas</div>
-                                <hr class="mdc-list-divider">
-                                <div class="mdc-ripple-surface"
-                                   href="#">
-                                    <h2 class="mdc-typography--headline"><i>Banners</i> e faixas</h2>
-                                    <p class="mdc-typography--body1">Impressão Digital em alta resolução em lona vinílica semi-brilho 440g, com acabamento de canos de plásticos ou madeira e cordinha, material de alto impacto visual para pontos de vendas e divulgação.</p>
-                                </div>
-                                <hr class="mdc-list-divider">
-                                <div class="mdc-ripple-surface"
-                                   href="#">
-                                    <h2 class="mdc-typography--headline"><i>Front-light</i></h2>
-                                    <p class="mdc-typography--body1">Impressão Digital em alta resolução em lona Front-Light 440g, com acabamentos de ilhós alumínio, para letreiros com iluminação externa por meio de holofotes.</p>
-                                </div>
-                                <hr class="mdc-list-divider">
-                                <div class="mdc-ripple-surface"
-                                   href="#">
-                                    <h2 class="mdc-typography--headline"><i>Back-light</i></h2>
-                                    <p class="mdc-typography--body1">Impressão Digital em alta resolução em lona Backt-Light 440g, com acabamentos de ilhós alumínio, para letreiros com iluminação interna por meio de lampadas fluorescentes.</p>
-                                </div>
-                                <hr class="mdc-list-divider">
-                                <div class="mdc-card__actions">
-                                    <a class="mdc-button mdc-button--raised mdc-card__action mdc-card__action--button">
-                                        <i class="fas fa-shopping-cart"></i>&nbsp;
-                                        comprar
-                                    </a>
-                                    <a class="mdc-button mdc-card__action mdc-card__action--button">
-                                        ver mais
-                                    </a>
-                                </div>
+                    </section>
+                    <!-- QUEM SOMOS -->
+                    <section aria-hidden="true"
+                             class="ed-home--panels__panel mdc-layout-grid fp-kill"
+                             id="QuemSomos"
+                             role="tabpanel">
+                        <div class="mdc-layout-grid__inner ed-quemsomos">
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop ed-quemsomos--title">
+                                <h1 class="mdc-typography--display4 mdc-theme--text-primary-on-dark">A Estação Digital</h1>
+                            </div>
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop"></div>
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6">
+                                <p class="mdc-typography--body2">Há mais de 15 anos atuando no mercado de comunicação visual, a ESTAÇÃO DIGITAL oferece as melhores soluções em impressão digital para pequenos, médios e grandes formatos, uma grande variedade de produtos e serviços nas áreas de design gráfico, sinalização, material publicitário e promocional, cenografia, além de sinalização de frotas de veículos e muito mais.</p>
+                                <p class="mdc-typography--body2">Impressão digital e recorte eletrônico são algumas das soluções que oferecemos para ajudar você a executar seu projeto de sinalização. Nossa equipe é formada por profissionais qualificados e experientes, e aliando inovação, tecnologia, qualidade e rapidez, estamos sempre prontos a atender e superar suas expectativas.</p>
+                                <p class="mdc-typography--body2">Nossos diferenciais competitivos fazem toda a diferença no sucesso do seu projeto.</p>
+                                <h2 class="mdc-typography--display1">Conheça um pouco mais sobre o nosso dia a dia:</h2>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- SERVIÇOS -->
+                    <section aria-hidden="true"
+                             class="ed-home--panels__panel mdc-layout-grid fp-kill"
+                             id="Servicos"
+                             role="tabpanel">
+                        <div class="mdc-layout-grid__inner mdc-toolbar-fixed-adjust ed-servicos">
 <!--
-                                <section class="mdc-card__primary ">
-                                    <h1 class="mdc-card__title mdc-card__title--large mdc-typography--display2">Lonas</h1>
-                                    <h2 class="mdc-card__subtitle mdc-typography--subheading1">banners | front light</h2>
-                                </section>
-                                <section class="mdc-card__supporting-text mdc-typography--body1">
-                                    Impressão Digital em alta resolução em lona Front-Light 440g, com acabamentos de ilhós alumínio, para letreiros com iluminação externa por meio de holofotes.
-                                </section>
-                                <section class="mdc-card__primary ">
-                                    <h1 class="mdc-card__title mdc-card__title--large mdc-typography--display2">Lonas</h1>
-                                    <h2 class="mdc-card__subtitle mdc-typography--subheading1">back light</h2>
-                                </section>
-                                <section class="mdc-card__supporting-text mdc-typography--body1">
-                                    Impressão Digital em alta resolução em lona Backt-Light 440g, com acabamentos de ilhós alumínio, para letreiros com iluminação interna por meio de lampadas fluorescentes.
-                                </section>
-                                <section class="mdc-card__actions">
-                                    <button class="mdc-button mdc-button--compact mdc-card__action mdc-typography--button">Comprar</button>
-                                </section>
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop"></div>
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8">
+                                <h1 class="mdc-typography--display4">Serviços</h1>
+                                <hr>
+                            </div>
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop"></div>
 -->
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop"></div>
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-7">
+                                
+                                <h2 class="mdc-typography--display3"
+                                    id="impressao">Impressão</h2>
+                                <p class="mdc-typography--body2">Há mais de 15 anos atuando no mercado de comunicação visual, a ESTAÇÃO DIGITAL oferece as melhores soluções em impressão digital para pequenos, médios e grandes formatos, uma grande variedade de produtos e serviços nas áreas de design gráfico, sinalização, material publicitário e promocional, cenografia, além de sinalização de frotas de veículos e muito mais.</p>
+                                <p class="mdc-typography--body2">Impressão digital e recorte eletrônico são algumas das soluções que oferecemos para ajudar você a executar seu projeto de sinalização. Nossa equipe é formada por profissionais qualificados e experientes, e aliando inovação, tecnologia, qualidade e rapidez, estamos sempre prontos a atender e superar suas expectativas.</p>
+                                <p class="mdc-typography--body2">Nossos diferenciais competitivos fazem toda a diferença no sucesso do seu projeto.</p>
+
+                                <h2 class="mdc-typography--display3"
+                                    id="laminacao">Laminação</h2>
+                                <p class="mdc-typography--body2">Há mais de 15 anos atuando no mercado de comunicação visual, a ESTAÇÃO DIGITAL oferece as melhores soluções em impressão digital para pequenos, médios e grandes formatos, uma grande variedade de produtos e serviços nas áreas de design gráfico, sinalização, material publicitário e promocional, cenografia, além de sinalização de frotas de veículos e muito mais.</p>
+                                <p class="mdc-typography--body2">Impressão digital e recorte eletrônico são algumas das soluções que oferecemos para ajudar você a executar seu projeto de sinalização. Nossa equipe é formada por profissionais qualificados e experientes, e aliando inovação, tecnologia, qualidade e rapidez, estamos sempre prontos a atender e superar suas expectativas.</p>
+                                <p class="mdc-typography--body2">Nossos diferenciais competitivos fazem toda a diferença no sucesso do seu projeto.</p>
+
+                                <h2 class="mdc-typography--display3"
+                                    id="recorte">Recorte Eletrônico</h2>
+                                <p class="mdc-typography--body2">Há mais de 15 anos atuando no mercado de comunicação visual, a ESTAÇÃO DIGITAL oferece as melhores soluções em impressão digital para pequenos, médios e grandes formatos, uma grande variedade de produtos e serviços nas áreas de design gráfico, sinalização, material publicitário e promocional, cenografia, além de sinalização de frotas de veículos e muito mais.</p>
+                                <p class="mdc-typography--body2">Impressão digital e recorte eletrônico são algumas das soluções que oferecemos para ajudar você a executar seu projeto de sinalização. Nossa equipe é formada por profissionais qualificados e experientes, e aliando inovação, tecnologia, qualidade e rapidez, estamos sempre prontos a atender e superar suas expectativas.</p>
+                                <p class="mdc-typography--body2">Nossos diferenciais competitivos fazem toda a diferença no sucesso do seu projeto.</p>
+
+                                <h2 class="mdc-typography--display3"
+                                    id="aplicacao">Aplicação</h2>
+                                <p class="mdc-typography--body2">Há mais de 15 anos atuando no mercado de comunicação visual, a ESTAÇÃO DIGITAL oferece as melhores soluções em impressão digital para pequenos, médios e grandes formatos, uma grande variedade de produtos e serviços nas áreas de design gráfico, sinalização, material publicitário e promocional, cenografia, além de sinalização de frotas de veículos e muito mais.</p>
+                                <p class="mdc-typography--body2">Impressão digital e recorte eletrônico são algumas das soluções que oferecemos para ajudar você a executar seu projeto de sinalização. Nossa equipe é formada por profissionais qualificados e experientes, e aliando inovação, tecnologia, qualidade e rapidez, estamos sempre prontos a atender e superar suas expectativas.</p>
+                                <p class="mdc-typography--body2">Nossos diferenciais competitivos fazem toda a diferença no sucesso do seu projeto.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- FIZEMOS -->
+                    <section aria-hidden="true"
+                             class="ed-home--panels__panel fp-kill"
+                             id="Fizemos"
+                             role="tabpanel">
+                        <div class="mdc-layout-grid">
+                            <div class="mdc-layout-grid__inner ed-fizemos ed-gallery ed-fizemos--gallery"
+                                 itemscope
+                                 itemtype="http://schema.org/ImageGallery">
+
+                                <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                     itemprop="associatedMedia" 
+                                     itemscope 
+                                     itemtype="http://schema.org/ImageObject">
+                                    <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__1" 
+                                       data-size="3000x2000"
+                                       href="./images/remo_w-ed--fizemos--ferdinando__img.jpg"
+                                       itemprop="contentUrl">
+                                        <img alt="Image description"
+                                             itemprop="thumbnail"
+                                             src="./images/remo_w-ed--fizemos--ferdinando__img.jpg"/>
+                                        <div class="mdc-card__media-content">
+                                            <div class="ed-gallery--card__title mdc-typography--subheading2">
+                                                Poster de cinema
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <figcaption itemprop="caption description">
+                                        Poster de cinema do boizinho
+                                    </figcaption>
+                                </figure>
+
+                                <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                     itemprop="associatedMedia" 
+                                     itemscope 
+                                     itemtype="http://schema.org/ImageObject">
+                                    <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__2" 
+                                       data-size="3000x2000"
+                                       href="./images/fizemos/big/remow_ed-fizemos--gal--saopaulo__big.jpg"
+                                       itemprop="contentUrl">
+                                        <img alt="Image description"
+                                             itemprop="thumbnail"
+                                             src="./images/fizemos/big/remow_ed-fizemos--gal--saopaulo__big.jpg"/>
+                                        <div class="mdc-card__media-content">
+                                            <div class="ed-gallery--card__title mdc-typography--subheading2">
+                                                Carro de cinema
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <figcaption itemprop="caption description">
+                                        Carro de cinema dos maromba
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <!-- LONAS -->
+            <div class="section ed-destaque--lonas"
+                 data-anchor="Lonas">
+                <section class="mdc-layout-grid">
+                    <div class="mdc-layout-grid__inner">
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-1-desktop"></div>
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-5-desktop">
+                            <h2 class="mdc-typography--display1 mdc-theme--text-primary-on-dark ed-destaque__title">Opções em Lona</h2>
+                            <h3 class="mdc-typography--subheading2 mdc-theme--text-secondary-on-dark ed-destaque__subtitle">Clique na opção desejada para mais informações</h3>
+                            <div class="mdc-card ed-destaque--card__right">
+                                <div class="mdc-card__actions mdc-card__actions--full-bleed">
+                                    <a class="mdc-button mdc-card__action mdc-card__action--button"
+                                       id="lonas-banners-more"
+                                       href="#">
+                                        <h2 class="mdc-typography--headline">
+                                            <i>Banners</i> e faixas&nbsp;&nbsp;
+                                            <span class="mdc-typography--body1 mdc-theme--text-hint-on-light ed-destaque__preco">
+                                                a partir de R$ 25 /m²
+                                            </span>
+                                        </h2>
+                                        <i aria-hidden="true"
+                                           class="fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                                <div class="mdc-card__actions mdc-card__actions--full-bleed">
+                                    <a class="mdc-button mdc-card__action mdc-card__action--button"
+                                       id="lonas-front-more"
+                                       href="#">
+                                        <h2 class="mdc-typography--headline">
+                                            <i>Front-light</i>&nbsp;&nbsp;
+                                            <span class="mdc-typography--body1 mdc-theme--text-hint-on-light ed-destaque__preco">
+                                                a partir de R$ 25 /m²
+                                            </span>
+                                        </h2>
+                                        <i aria-hidden="true"
+                                           class="fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                                <div class="mdc-card__actions mdc-card__actions--full-bleed">
+                                    <a class="mdc-button mdc-card__action mdc-card__action--button"
+                                       id="lonas-back-more"
+                                       href="#">
+                                        <h2 class="mdc-typography--headline">
+                                            <i>Back-light</i>s&nbsp;&nbsp;
+                                            <span class="mdc-typography--body1 mdc-theme--text-hint-on-light ed-destaque__preco">
+                                                a partir de R$ 25 /m²
+                                            </span>
+                                        </h2>
+                                        <i aria-hidden="true"
+                                           class="fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <br>
+                            <button class="mdc-button mdc-button--raised mdc-typography--button ed-destaque--button">
+                                <i class="fas fa-shopping-cart"></i>
+                                COMPRAR
+                            </button>
+                        </div>
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-5-desktop">
+                            <div class="mdc-card ed-destaque--lonas__banners ed-hide">
+                                <div class="ed-card--content__text">
+                                    <h3 class="mdc-typography--headline">Banners e faixas</h3>
+                                    <p class="mdc-typography--body2">Impressão Digital em alta resolução em lona vinílica semi-brilho 440g, com acabamento de canos de plásticos ou madeira e cordinha, material de alto impacto visual para pontos de vendas e divulgação.</p>
+                                    <div class="mdc-list-group">
+                                        <h3 class="mdc-list-group__subheader mdc-typography--headline">Tipos</h3>
+                                        <ul class="mdc-list">
+                                            <li class="mdc-list-item">
+                                                <i aria-hidden="true"
+                                                   class="mdc-list-item__graphic fas fa-thumbtack"></i>
+                                                Brilho
+                                            </li>
+                                            <li class="mdc-list-item">
+                                                <i aria-hidden="true"
+                                                   class="mdc-list-item__graphic fas fa-thumbtack"></i>
+                                                Fosco
+                                            </li>
+                                        </ul>
+                                        <h3 class="mdc-list-group__subheader mdc-typography--headline">Acabamentos</h3>
+                                        <ul class="mdc-list">
+                                            <li class="mdc-list-item">
+                                                <i aria-hidden="true"
+                                                   class="mdc-list-item__graphic fas fa-check"></i>
+                                                <span class="mdc-list-item__text"><i>Banner</i>
+                                                    <span class="mdc-list-item__secondary-text">Cabos de madeira ou tubo de PVC inserido nas bainhas laterais ou superior e inferior.</span>
+                                                </span>
+                                            </li>
+                                            <li class="mdc-list-item">
+                                                <i aria-hidden="true"
+                                                   class="mdc-list-item__graphic fas fa-check"></i>
+                                                <span class="mdc-list-item__text">Ilhós
+                                                    <span class="mdc-list-item__secondary-text">Furação com acabamento metálico para fixação com corda ou braçadeiras.</span>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <h3 class="mdc-list-group__subheader mdc-typography--headline">Exemplos:</h3>
+                                    </div>
+                                    <div class="mdc-layout-grid__inner ed-gallery ed-destaque--lonas--gallery"
+                                         itemscope
+                                         itemtype="http://schema.org/ImageGallery">
+                                        
+                                        <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-gallery--card"
+                                             itemprop="associatedMedia" 
+                                             itemscope 
+                                             itemtype="http://schema.org/ImageObject">
+                                            <a class="mdc-card__media mdc-card__media--square ed-destaque--lonas--gallery--card__1" 
+                                               data-size="3000x2000"
+                                               href="./images/galeria/lonas/big/remow_ed-lona--gal--znorte__big.jpg"
+                                               itemprop="contentUrl">
+                                                <img alt="Image description"
+                                                     itemprop="thumbnail"
+                                                     src="./images/galeria/lonas/big/remow_ed-lona--gal--znorte__big.jpg"/>
+                                                <div class="mdc-card__media-content">
+                                                    <div class="ed-gallery--card__title mdc-typography--subheading2">
+                                                        Poster de cinema
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <figcaption itemprop="caption description">
+                                                Poster de cinema do boizinho
+                                            </figcaption>
+                                        </figure>
+                                        
+                                        <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-gallery--card"
+                                             itemprop="associatedMedia" 
+                                             itemscope 
+                                             itemtype="http://schema.org/ImageObject">
+                                            <a class="mdc-card__media mdc-card__media--square ed-destaque--lonas--gallery--card__2" 
+                                               data-size="3000x2000"
+                                               href="./images/galeria/lonas/big/remow_ed-lona--gal--nycc__big.jpg"
+                                               itemprop="contentUrl">
+                                                <img alt="Image description"
+                                                     itemprop="thumbnail"
+                                                     src="./images/galeria/lonas/big/remow_ed-lona--gal--nycc__big.jpg"/>
+                                                <div class="mdc-card__media-content">
+                                                    <div class="ed-gallery--card__title mdc-typography--subheading2">
+                                                        Poster de cinema
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <figcaption itemprop="caption description">
+                                                Poster de cinema do boizinho
+                                            </figcaption>
+                                        </figure>
+                                        
+                                        <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-gallery--card"
+                                             itemprop="associatedMedia" 
+                                             itemscope 
+                                             itemtype="http://schema.org/ImageObject">
+                                            <a class="mdc-card__media mdc-card__media--square ed-destaque--lonas--gallery--card__3" 
+                                               data-size="3000x2000"
+                                               href="./images/galeria/lonas/big/remow_ed-lona--gal--uci__big.jpg"
+                                               itemprop="contentUrl">
+                                                <img alt="Image description"
+                                                     itemprop="thumbnail"
+                                                     src="./images/galeria/lonas/big/remow_ed-lona--gal--uci__big.jpg"/>
+                                                <div class="mdc-card__media-content">
+                                                    <div class="ed-gallery--card__title mdc-typography--subheading2">
+                                                        Poster de cinema
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <figcaption itemprop="caption description">
+                                                Poster de cinema do boizinho
+                                            </figcaption>
+                                        </figure>
+                                        
+                                    </div>
+                                </div>
+                                <button class="mdc-button mdc-button--raised mdc-typography--button">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Comprar agora - direto pelo site
+                                </button>
+                                <span class="ed-pagseguro">
+                                    <img src="//static.pagseguro.com.br/ps-integration-assets/banners/pagamento/todos_animado_550_50.gif" alt="Logotipos de meios de pagamento do PagSeguro" title="Este site aceita pagamentos com as principais bandeiras e bancos, saldo em conta PagSeguro e boleto." width="550" height="50">
+                                </span>
+                            </div>
+                            <div class="mdc-card ed-destaque--lonas__front ed-hide">
+                                <div class="ed-card--content__text">
+                                    <h3 class="mdc-typography--headline"><i>Front-light</i></h3>
+                                    <p class="mdc-typography--body2">Impressão Digital em alta resolução em lona vinílica semi-brilho 440g, com acabamento de canos de plásticos ou madeira e cordinha, material de alto impacto visual para pontos de vendas e divulgação.</p>
+                                    <div class="mdc-list-group">
+                                        <h3 class="mdc-list-group__subheader mdc-typography--headline">Tipos</h3>
+                                        <ul class="mdc-list">
+                                            <li class="mdc-list-item">
+                                                <i aria-hidden="true"
+                                                   class="mdc-list-item__graphic fas fa-thumbtack"></i>
+                                                Brilho
+                                            </li>
+                                            <li class="mdc-list-item">
+                                                <i aria-hidden="true"
+                                                   class="mdc-list-item__graphic fas fa-thumbtack"></i>
+                                                Fosco
+                                            </li>
+                                        </ul>
+                                        <h3 class="mdc-list-group__subheader mdc-typography--headline">Acabamentos</h3>
+                                        <ul class="mdc-list">
+                                            <li class="mdc-list-item">
+                                                <i aria-hidden="true"
+                                                   class="mdc-list-item__graphic fas fa-check"></i>
+                                                <span class="mdc-list-item__text"><i>Banner</i>
+                                                    <span class="mdc-list-item__secondary-text">Cabos de madeira ou tubo de PVC inserido nas bainhas laterais ou superior e inferior.</span>
+                                                </span>
+                                            </li>
+                                            <li class="mdc-list-item">
+                                                <i aria-hidden="true"
+                                                   class="mdc-list-item__graphic fas fa-check"></i>
+                                                <span class="mdc-list-item__text">Ilhós
+                                                    <span class="mdc-list-item__secondary-text">Furação com acabamento metálico para fixação com corda ou braçadeiras.</span>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <h3 class="mdc-list-group__subheader mdc-typography--headline">Exemplos:</h3>
+                                    </div>
+                                    <div class="mdc-layout-grid__inner ed-gallery ed-destaque--adesivos--gallery"
+                                         itemscope
+                                         itemtype="http://schema.org/ImageGallery">
+                                        
+                                        <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-gallery--card"
+                                             itemprop="associatedMedia" 
+                                             itemscope 
+                                             itemtype="http://schema.org/ImageObject">
+                                            <a class="mdc-card__media mdc-card__media--square ed-destaque--lonas--gallery--card__4" 
+                                               data-size="3000x2000"
+                                               href="./images/galeria/lonas/big/remow_ed-lona--gal--festmimo__big.jpg"
+                                               itemprop="contentUrl">
+                                                <img alt="Image description"
+                                                     itemprop="thumbnail"
+                                                     src="./images/galeria/lonas/big/remow_ed-lona--gal--festmimo__big.jpg"/>
+                                                <div class="mdc-card__media-content">
+                                                    <div class="ed-gallery--card__title mdc-typography--subheading2">
+                                                        Poster de cinema
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <figcaption itemprop="caption description">
+                                                Poster de cinema do boizinho
+                                            </figcaption>
+                                        </figure>
+                                        
+                                    </div>
+                                </div>
+                                <button class="mdc-button mdc-button--raised mdc-typography--button">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Comprar agora - direto pelo site
+                                </button>
+                                <span class="ed-pagseguro">
+                                    <img src="//static.pagseguro.com.br/ps-integration-assets/banners/pagamento/todos_animado_550_50.gif" alt="Logotipos de meios de pagamento do PagSeguro" title="Este site aceita pagamentos com as principais bandeiras e bancos, saldo em conta PagSeguro e boleto." width="550" height="50">
+                                </span>
+                            </div>
+                            <div class="mdc-card ed-destaque--lonas__back ed-hide">
+                                <div class="ed-card--content__text">
+                                    <h3 class="mdc-typography--headline"><i>Back-light</i></h3>
+                                    <p class="mdc-typography--body2">Impressão Digital em alta resolução em lona vinílica semi-brilho 440g, com acabamento de canos de plásticos ou madeira e cordinha, material de alto impacto visual para pontos de vendas e divulgação.</p>
+                                    <div class="mdc-list-group">
+                                        <h3 class="mdc-list-group__subheader mdc-typography--headline">Tipos</h3>
+                                        <ul class="mdc-list">
+                                            <li class="mdc-list-item">
+                                                <i aria-hidden="true"
+                                                   class="mdc-list-item__graphic fas fa-thumbtack"></i>
+                                                Brilho
+                                            </li>
+                                            <li class="mdc-list-item">
+                                                <i aria-hidden="true"
+                                                   class="mdc-list-item__graphic fas fa-thumbtack"></i>
+                                                Fosco
+                                            </li>
+                                        </ul>
+                                        <h3 class="mdc-list-group__subheader mdc-typography--headline">Acabamentos</h3>
+                                        <ul class="mdc-list">
+                                            <li class="mdc-list-item">
+                                                <i aria-hidden="true"
+                                                   class="mdc-list-item__graphic fas fa-check"></i>
+                                                <span class="mdc-list-item__text"><i>Banner</i>
+                                                    <span class="mdc-list-item__secondary-text">Cabos de madeira ou tubo de PVC inserido nas bainhas laterais ou superior e inferior.</span>
+                                                </span>
+                                            </li>
+                                            <li class="mdc-list-item">
+                                                <i aria-hidden="true"
+                                                   class="mdc-list-item__graphic fas fa-check"></i>
+                                                <span class="mdc-list-item__text">Ilhós
+                                                    <span class="mdc-list-item__secondary-text">Furação com acabamento metálico para fixação com corda ou braçadeiras.</span>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <h3 class="mdc-list-group__subheader mdc-typography--headline">Exemplos:</h3>
+                                    </div>
+                                    <div class="mdc-layout-grid__inner ed-gallery ed-destaque--lonas--gallery"
+                                         itemscope
+                                         itemtype="http://schema.org/ImageGallery">
+                                        
+                                        <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-gallery--card"
+                                             itemprop="associatedMedia" 
+                                             itemscope 
+                                             itemtype="http://schema.org/ImageObject">
+                                            <a class="mdc-card__media mdc-card__media--square ed-destaque--lonas--gallery--card__5" 
+                                               data-size="3000x2000"
+                                               href="./images/galeria/lonas/big/remow_ed-lona--gal--drogaetica__big.jpg"
+                                               itemprop="contentUrl">
+                                                <img alt="Image description"
+                                                     itemprop="thumbnail"
+                                                     src="./images/galeria/lonas/big/remow_ed-lona--gal--drogaetica__big.jpg"/>
+                                                <div class="mdc-card__media-content">
+                                                    <div class="ed-gallery--card__title mdc-typography--subheading2">
+                                                        Poster de cinema
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <figcaption itemprop="caption description">
+                                                Poster de cinema do boizinho
+                                            </figcaption>
+                                        </figure>
+                                        
+                                    </div>
+                                </div>
+                                <button class="mdc-button mdc-button--raised mdc-typography--button">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Comprar agora - direto pelo site
+                                </button>
+                                <span class="ed-pagseguro">
+                                    <img src="//static.pagseguro.com.br/ps-integration-assets/banners/pagamento/todos_animado_550_50.gif" alt="Logotipos de meios de pagamento do PagSeguro" title="Este site aceita pagamentos com as principais bandeiras e bancos, saldo em conta PagSeguro e boleto." width="550" height="50">
+                                </span>
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
+            <!-- ADESIVO -->
+            <div class="section ed-destaque--adesivos"
+                 data-anchor="Adesivos">
+                <section class="mdc-layout-grid">
+                    <div class="mdc-layout-grid__inner">
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-1-desktop"></div>
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-5-desktop">
+                            <h2 class="mdc-typography--display1 mdc-theme--text-primary-on-dark ed-destaque__title">Opções em Adesivo</h2>
+                            <h3 class="mdc-typography--subheading2 mdc-theme--text-secondary-on-dark ed-destaque__subtitle">Clique na opção desejada para mais informações</h3>
+                            <div class="mdc-card ed-destaque--card__right">
+                                <div class="mdc-card__actions mdc-card__actions--full-bleed">
+                                    <a class="mdc-button mdc-card__action mdc-card__action--button"
+                                       id="adesivos-banners-more"
+                                       href="#">
+                                        <h2 class="mdc-typography--headline"><i>Banners</i> e faixas</h2>
+                                        <i aria-hidden="true"
+                                           class="fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                                <div class="mdc-card__actions mdc-card__actions--full-bleed">
+                                    <a class="mdc-button mdc-card__action mdc-card__action--button"
+                                       id="adesivos-front-more"
+                                       href="#">
+                                        <h2 class="mdc-typography--headline"><i>Front-light</i></h2>
+                                        <i aria-hidden="true"
+                                           class="fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                                <div class="mdc-card__actions mdc-card__actions--full-bleed">
+                                    <a class="mdc-button mdc-card__action mdc-card__action--button"
+                                       id="adesivos-back-more"
+                                       href="#">
+                                        <h2 class="mdc-typography--headline"><i>Back-light</i></h2>
+                                        <i aria-hidden="true"
+                                           class="fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <br>
+                            <button class="mdc-button mdc-button--raised mdc-typography--button ed-destaque--button">
+                                <i class="fas fa-shopping-cart"></i>
+                                COMPRAR
+                            </button>
+                        </div>
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-5-desktop">
+                            <div class="mdc-card ed-destaque--adesivos__banners ed-hide">
+                                <div class="ed-card--content__text">
+                                    <h3 class="mdc-typography--headline">Banners e faixas</h3>
+                                    <p class="mdc-typography--body2">Impressão Digital em alta resolução em lona vinílica semi-brilho 440g, com acabamento de canos de plásticos ou madeira e cordinha, material de alto impacto visual para pontos de vendas e divulgação.</p>
+                                    <div class="mdc-list-group">
+                                        <h3 class="mdc-list-group__subheader mdc-typography--headline">Tipos</h3>
+                                        <ul class="mdc-list">
+                                            <li class="mdc-list-item">
+                                                <i aria-hidden="true"
+                                                   class="mdc-list-item__graphic fas fa-thumbtack"></i>
+                                                Brilho
+                                            </li>
+                                            <li class="mdc-list-item">
+                                                <i aria-hidden="true"
+                                                   class="mdc-list-item__graphic fas fa-thumbtack"></i>
+                                                Fosco
+                                            </li>
+                                        </ul>
+                                        <h3 class="mdc-list-group__subheader mdc-typography--headline">Acabamentos</h3>
+                                        <ul class="mdc-list">
+                                            <li class="mdc-list-item">
+                                                <i aria-hidden="true"
+                                                   class="mdc-list-item__graphic fas fa-check"></i>
+                                                <span class="mdc-list-item__text"><i>Banner</i>
+                                                    <span class="mdc-list-item__secondary-text">Cabos de madeira ou tubo de PVC inserido nas bainhas laterais ou superior e inferior.</span>
+                                                </span>
+                                            </li>
+                                            <li class="mdc-list-item">
+                                                <i aria-hidden="true"
+                                                   class="mdc-list-item__graphic fas fa-check"></i>
+                                                <span class="mdc-list-item__text">Ilhós
+                                                    <span class="mdc-list-item__secondary-text">Furação com acabamento metálico para fixação com corda ou braçadeiras.</span>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <h3 class="mdc-list-group__subheader mdc-typography--headline">Exemplos:</h3>
+                                    </div>
+                                    <div class="mdc-layout-grid__inner ed-gallery ed-destaque--adesivos--gallery"
+                                         itemscope
+                                         itemtype="http://schema.org/ImageGallery">
+                                        
+                                        <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-gallery--card"
+                                             itemprop="associatedMedia" 
+                                             itemscope 
+                                             itemtype="http://schema.org/ImageObject">
+                                            <a class="mdc-card__media mdc-card__media--square ed-destaque--adesivos--gallery--card__1" 
+                                               data-size="3000x2000"
+                                               href="./images/galeria/adesivos/big/remow_ed-lona--gal--znorte__big.jpg"
+                                               itemprop="contentUrl">
+                                                <img alt="Image description"
+                                                     itemprop="thumbnail"
+                                                     src="./images/galeria/adesivos/big/remow_ed-lona--gal--znorte__big.jpg"/>
+                                                <div class="mdc-card__media-content">
+                                                    <div class="ed-gallery--card__title mdc-typography--subheading2">
+                                                        Poster de cinema
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <figcaption itemprop="caption description">
+                                                Poster de cinema do boizinho
+                                            </figcaption>
+                                        </figure>
+                                        
+                                        <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-gallery--card"
+                                             itemprop="associatedMedia" 
+                                             itemscope 
+                                             itemtype="http://schema.org/ImageObject">
+                                            <a class="mdc-card__media mdc-card__media--square ed-destaque--adesivos--gallery--card__2" 
+                                               data-size="3000x2000"
+                                               href="./images/galeria/adesivos/big/remow_ed-lona--gal--nycc__big.jpg"
+                                               itemprop="contentUrl">
+                                                <img alt="Image description"
+                                                     itemprop="thumbnail"
+                                                     src="./images/galeria/adesivos/big/remow_ed-lona--gal--nycc__big.jpg"/>
+                                                <div class="mdc-card__media-content">
+                                                    <div class="ed-gallery--card__title mdc-typography--subheading2">
+                                                        Poster de cinema
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <figcaption itemprop="caption description">
+                                                Poster de cinema do boizinho
+                                            </figcaption>
+                                        </figure>
+                                        
+                                        <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-gallery--card"
+                                             itemprop="associatedMedia" 
+                                             itemscope 
+                                             itemtype="http://schema.org/ImageObject">
+                                            <a class="mdc-card__media mdc-card__media--square ed-destaque--adesivos--gallery--card__3" 
+                                               data-size="3000x2000"
+                                               href="./images/galeria/adesivos/big/remow_ed-lona--gal--uci__big.jpg"
+                                               itemprop="contentUrl">
+                                                <img alt="Image description"
+                                                     itemprop="thumbnail"
+                                                     src="./images/galeria/adesivos/big/remow_ed-lona--gal--uci__big.jpg"/>
+                                                <div class="mdc-card__media-content">
+                                                    <div class="ed-gallery--card__title mdc-typography--subheading2">
+                                                        Poster de cinema
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <figcaption itemprop="caption description">
+                                                Poster de cinema do boizinho
+                                            </figcaption>
+                                        </figure>
+                                        
+                                    </div>
+                                </div>
+                                <button class="mdc-button mdc-button--raised mdc-typography--button">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Comprar agora direto pelo site
+                                </button>
+                            </div>
+                            <div class="mdc-card ed-destaque--adesivos__front ed-hide">
+                                <div class="ed-card--content__text">
+                                    <h3 class="mdc-typography--headline"><i>Front-light</i></h3>
+                                    <p class="mdc-typography--body2">Impressão Digital em alta resolução em lona vinílica semi-brilho 440g, com acabamento de canos de plásticos ou madeira e cordinha, material de alto impacto visual para pontos de vendas e divulgação.</p>
+                                    <div class="mdc-list-group">
+                                        <h3 class="mdc-list-group__subheader mdc-typography--headline">Tipos</h3>
+                                        <ul class="mdc-list">
+                                            <li class="mdc-list-item">
+                                                <i aria-hidden="true"
+                                                   class="mdc-list-item__graphic fas fa-thumbtack"></i>
+                                                Brilho
+                                            </li>
+                                            <li class="mdc-list-item">
+                                                <i aria-hidden="true"
+                                                   class="mdc-list-item__graphic fas fa-thumbtack"></i>
+                                                Fosco
+                                            </li>
+                                        </ul>
+                                        <h3 class="mdc-list-group__subheader mdc-typography--headline">Acabamentos</h3>
+                                        <ul class="mdc-list">
+                                            <li class="mdc-list-item">
+                                                <i aria-hidden="true"
+                                                   class="mdc-list-item__graphic fas fa-check"></i>
+                                                <span class="mdc-list-item__text"><i>Banner</i>
+                                                    <span class="mdc-list-item__secondary-text">Cabos de madeira ou tubo de PVC inserido nas bainhas laterais ou superior e inferior.</span>
+                                                </span>
+                                            </li>
+                                            <li class="mdc-list-item">
+                                                <i aria-hidden="true"
+                                                   class="mdc-list-item__graphic fas fa-check"></i>
+                                                <span class="mdc-list-item__text">Ilhós
+                                                    <span class="mdc-list-item__secondary-text">Furação com acabamento metálico para fixação com corda ou braçadeiras.</span>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <h3 class="mdc-list-group__subheader mdc-typography--headline">Exemplos:</h3>
+                                    </div>
+                                    <div class="mdc-layout-grid__inner ed-gallery ed-destaque--adesivos--gallery"
+                                         itemscope
+                                         itemtype="http://schema.org/ImageGallery">
+                                        
+                                        <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-gallery--card"
+                                             itemprop="associatedMedia" 
+                                             itemscope 
+                                             itemtype="http://schema.org/ImageObject">
+                                            <a class="mdc-card__media mdc-card__media--square ed-destaque--adesivos--gallery--card__1" 
+                                               data-size="3000x2000"
+                                               href="./images/remo_w-ed--fizemos--ferdinando__img.jpg"
+                                               itemprop="contentUrl">
+                                                <img alt="Image description"
+                                                     itemprop="thumbnail"
+                                                     src="./images/remo_w-ed--fizemos--ferdinando__img.jpg"/>
+                                                <div class="mdc-card__media-content">
+                                                    <div class="ed-gallery--card__title mdc-typography--subheading2">
+                                                        Poster de cinema
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <figcaption itemprop="caption description">
+                                                Poster de cinema do boizinho
+                                            </figcaption>
+                                        </figure>
+                                        
+                                        <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-gallery--card"
+                                             itemprop="associatedMedia" 
+                                             itemscope 
+                                             itemtype="http://schema.org/ImageObject">
+                                            <a class="mdc-card__media mdc-card__media--square ed-destaque--adesivos--gallery--card__2" 
+                                               data-size="3000x2000"
+                                               href="./images/remo_w-ed--fizemos--ferdinando__img.jpg"
+                                               itemprop="contentUrl">
+                                                <img alt="Image description"
+                                                     itemprop="thumbnail"
+                                                     src="./images/remo_w-ed--fizemos--ferdinando__img.jpg"/>
+                                                <div class="mdc-card__media-content">
+                                                    <div class="ed-gallery--card__title mdc-typography--subheading2">
+                                                        Poster de cinema
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <figcaption itemprop="caption description">
+                                                Poster de cinema do boizinho
+                                            </figcaption>
+                                        </figure>
+                                        
+                                        <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-gallery--card"
+                                             itemprop="associatedMedia" 
+                                             itemscope 
+                                             itemtype="http://schema.org/ImageObject">
+                                            <a class="mdc-card__media mdc-card__media--square ed-destaque--adesivos--gallery--card__2" 
+                                               data-size="3000x2000"
+                                               href="./images/remo_w-ed--fizemos--ferdinando__img.jpg"
+                                               itemprop="contentUrl">
+                                                <img alt="Image description"
+                                                     itemprop="thumbnail"
+                                                     src="./images/remo_w-ed--fizemos--ferdinando__img.jpg"/>
+                                                <div class="mdc-card__media-content">
+                                                    <div class="ed-gallery--card__title mdc-typography--subheading2">
+                                                        Poster de cinema
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <figcaption itemprop="caption description">
+                                                Poster de cinema do boizinho
+                                            </figcaption>
+                                        </figure>
+                                        
+                                    </div>
+                                </div>
+                                <button class="mdc-button mdc-button--raised mdc-typography--button">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Comprar agora direto pelo site
+                                </button>
+                            </div>
+                            <div class="mdc-card ed-destaque--adesivos__back ed-hide">
+                                <div class="ed-card--content__text">
+                                    <h3 class="mdc-typography--headline"><i>Back-light</i></h3>
+                                    <p class="mdc-typography--body2">Impressão Digital em alta resolução em lona vinílica semi-brilho 440g, com acabamento de canos de plásticos ou madeira e cordinha, material de alto impacto visual para pontos de vendas e divulgação.</p>
+                                    <div class="mdc-list-group">
+                                        <h3 class="mdc-list-group__subheader mdc-typography--headline">Tipos</h3>
+                                        <ul class="mdc-list">
+                                            <li class="mdc-list-item">
+                                                <i aria-hidden="true"
+                                                   class="mdc-list-item__graphic fas fa-thumbtack"></i>
+                                                Brilho
+                                            </li>
+                                            <li class="mdc-list-item">
+                                                <i aria-hidden="true"
+                                                   class="mdc-list-item__graphic fas fa-thumbtack"></i>
+                                                Fosco
+                                            </li>
+                                        </ul>
+                                        <h3 class="mdc-list-group__subheader mdc-typography--headline">Acabamentos</h3>
+                                        <ul class="mdc-list">
+                                            <li class="mdc-list-item">
+                                                <i aria-hidden="true"
+                                                   class="mdc-list-item__graphic fas fa-check"></i>
+                                                <span class="mdc-list-item__text"><i>Banner</i>
+                                                    <span class="mdc-list-item__secondary-text">Cabos de madeira ou tubo de PVC inserido nas bainhas laterais ou superior e inferior.</span>
+                                                </span>
+                                            </li>
+                                            <li class="mdc-list-item">
+                                                <i aria-hidden="true"
+                                                   class="mdc-list-item__graphic fas fa-check"></i>
+                                                <span class="mdc-list-item__text">Ilhós
+                                                    <span class="mdc-list-item__secondary-text">Furação com acabamento metálico para fixação com corda ou braçadeiras.</span>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <h3 class="mdc-list-group__subheader mdc-typography--headline">Exemplos:</h3>
+                                    </div>
+                                    <div class="mdc-layout-grid__inner ed-gallery ed-destaque--adesivos--gallery"
+                                         itemscope
+                                         itemtype="http://schema.org/ImageGallery">
+                                        
+                                        <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-gallery--card"
+                                             itemprop="associatedMedia" 
+                                             itemscope 
+                                             itemtype="http://schema.org/ImageObject">
+                                            <a class="mdc-card__media mdc-card__media--square ed-destaque--adesivos--gallery--card__1" 
+                                               data-size="3000x2000"
+                                               href="./images/remo_w-ed--fizemos--ferdinando__img.jpg"
+                                               itemprop="contentUrl">
+                                                <img alt="Image description"
+                                                     itemprop="thumbnail"
+                                                     src="./images/remo_w-ed--fizemos--ferdinando__img.jpg"/>
+                                                <div class="mdc-card__media-content">
+                                                    <div class="ed-gallery--card__title mdc-typography--subheading2">
+                                                        Poster de cinema
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <figcaption itemprop="caption description">
+                                                Poster de cinema do boizinho
+                                            </figcaption>
+                                        </figure>
+                                        
+                                        <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-gallery--card"
+                                             itemprop="associatedMedia" 
+                                             itemscope 
+                                             itemtype="http://schema.org/ImageObject">
+                                            <a class="mdc-card__media mdc-card__media--square ed-destaque--adesivos--gallery--card__2" 
+                                               data-size="3000x2000"
+                                               href="./images/remo_w-ed--fizemos--ferdinando__img.jpg"
+                                               itemprop="contentUrl">
+                                                <img alt="Image description"
+                                                     itemprop="thumbnail"
+                                                     src="./images/remo_w-ed--fizemos--ferdinando__img.jpg"/>
+                                                <div class="mdc-card__media-content">
+                                                    <div class="ed-gallery--card__title mdc-typography--subheading2">
+                                                        Poster de cinema
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <figcaption itemprop="caption description">
+                                                Poster de cinema do boizinho
+                                            </figcaption>
+                                        </figure>
+                                        
+                                        <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-gallery--card"
+                                             itemprop="associatedMedia" 
+                                             itemscope 
+                                             itemtype="http://schema.org/ImageObject">
+                                            <a class="mdc-card__media mdc-card__media--square ed-destaque--adesivos--gallery--card__2" 
+                                               data-size="3000x2000"
+                                               href="./images/remo_w-ed--fizemos--ferdinando__img.jpg"
+                                               itemprop="contentUrl">
+                                                <img alt="Image description"
+                                                     itemprop="thumbnail"
+                                                     src="./images/remo_w-ed--fizemos--ferdinando__img.jpg"/>
+                                                <div class="mdc-card__media-content">
+                                                    <div class="ed-gallery--card__title mdc-typography--subheading2">
+                                                        Poster de cinema
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <figcaption itemprop="caption description">
+                                                Poster de cinema do boizinho
+                                            </figcaption>
+                                        </figure>
+                                        
+                                    </div>
+                                </div>
+                                <button class="mdc-button mdc-button--raised mdc-typography--button">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    Comprar agora direto pelo site
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
         </div>
+        
+        <!-- FORMULÁRIO DE PEDIDO -->
+        <section class="mdc-layout-grid ed-pedido"
+                 id="FormulariodePedido">
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1-desktop"></div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-10-desktop">
+                    <form class="mdc-layout-grid__inner mdc-typography">
+                        <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop">
+                            <h2 class="mdc-typography--display3">Fomulário de Pedido</h2>
+                            <h3 class="mdc-typography--title mdc-theme--text-secondary-on-light">Banner de lona <!-- substituir por um campo preenchido por código referente ao botão que o usuário clicar para abrir o pedido--></h3>
+                        </span>
+                        <h4 class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop mdc-typography--headline mdc-theme--primary">1. Informações pessoais</h4>
+                        <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop">
+                            <div class="mdc-text-field mdc-text-field--fullwidth">
+                                <input aria-controls="fullname-helper-text"
+                                       class="mdc-typography mdc-text-field__input"
+                                       id="my-text-field"
+                                       required
+                                       type="text">
+                                <label class="mdc-text-field__label"
+                                       for="my-text-field">
+                                    Nome Completo
+                                </label>
+                                <div class="mdc-line-ripple"></div>
+                            </div>
+                            <p aria-hidden="true"
+                               class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+                               id="fullname-helper-text">
+                                Campo de preenchimento obrigatório
+                            </p>
+                        </span>
+                        <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop">
+                            <div class="mdc-text-field mdc-text-field--fullwidth">
+                                <input class="mdc-typography mdc-text-field__input"
+                                       id="my-text-field"
+                                       required
+                                       type="text">
+                                <label class="mdc-text-field__label"
+                                       for="my-text-field">
+                                    E-mail
+                                </label>
+                                <div class="mdc-line-ripple"></div>
+                            </div>
+                            <p aria-hidden="true"
+                               class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+                               id="fullname-helper-text">
+                                Utilize um endereço de e-mail válido
+                            </p>
+                        </span>
+                        <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop">
+                            <h4 class="mdc-typography--headline mdc-theme--primary">2. Informações do serviço</h4>
+                            <p class="mdc-typography--caption mdc-theme--text-secondary-on-light">Preencha, em cada uma das abas, as informações necessárias para cada tipo de serviço desejado, só então siga para o passo seguinte.</p>
+                        </span>
+                        <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop">
+                            <section id="dynamic-demo-toolbar">
+                                <nav class="mdc-tab-bar"
+                                     id="pedido-tab-bar"
+                                     role="tablist">
+                                    <a aria-controls="panel-1"
+                                       class="mdc-typography--button mdc-tab mdc-tab--active" 
+                                       href="#panel-1"
+                                       role="tab">Lona</a>
+                                    <a aria-controls="panel-2"
+                                       class="mdc-typography--button mdc-tab" 
+                                       href="#panel-2"
+                                       role="tab">Adesivo</a>
+                                    <a aria-controls="panel-3"
+                                       class="mdc-typography--button mdc-tab" 
+                                       href="#panel-3"
+                                       role="tab">Placa</a>
+                                    <a aria-controls="panel-4"
+                                       class="mdc-typography--button mdc-tab" 
+                                       href="#panel-4"
+                                       role="tab">Tecido</a>
+                                    <a aria-controls="panel-5"
+                                       class="mdc-typography--button mdc-tab" 
+                                       href="#panel-5"
+                                       role="tab">Papel</a>
+                                    <span class="mdc-tab-bar__indicator"></span>
+                                </nav>
+                            </section>
+                            <section class="mdc-typography mdc-layout-grid__inner">
+                                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop ed-pedido--panels">
+                                    <div aria-hidden="false"
+                                       class="mdc-layout-grid__inner ed-pedido--panels__panel active"
+                                       id="panel-1"
+                                       role="tabpanel">
+                                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop">
+                                            <div class="mdc-text-field mdc-text-field--fullwidth mdc-text-field--upgraded">
+                                                <input aria-controls="ed-ped-numartes-helper-text"
+                                                       class="mdc-typography mdc-text-field__input"
+                                                       id="ed-ped-numartes"
+                                                       required
+                                                       type="text"
+                                                       value="">
+                                                <label class="mdc-text-field__label"
+                                                       for="ed-ped-numartes">
+                                                    Número de artes (1 até &infin;)
+                                                </label>
+                                                <div class="mdc-line-ripple"></div>
+                                            </div>
+                                            <p aria-hidden="true"
+                                               class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+                                               id="ed-ped-numartes-helper-text">
+                                                Campo de preenchimento obrigatório
+                                            </p>
+                                        </div>
+                                        <h5 class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop mdc-typography--title mdc-theme--primary">Arte 1</h5>
+                                        <div class="mdc-select" role="listbox">
+                                            <div class="mdc-select__surface" tabindex="0">
+                                                <div class="mdc-select__label">Tipo de lona</div>
+                                                <div class="mdc-select__selected-text"></div>
+                                                <div class="mdc-select__bottom-line"></div>
+                                            </div>
+                                            <div class="mdc-menu mdc-select__menu">
+                                                <ul class="mdc-list mdc-menu__items">
+                                                    <li class="mdc-list-item" role="option" tabindex="0">
+                                                        Brilho
+                                                    </li>
+                                                    <li class="mdc-list-item" role="option" tabindex="0">
+                                                        Fosca
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="mdc-select" role="listbox">
+                                            <div class="mdc-select__surface" tabindex="0">
+                                                <div class="mdc-select__label">Selecione o acabamento</div>
+                                                <div class="mdc-select__selected-text"></div>
+                                                <div class="mdc-select__bottom-line"></div>
+                                            </div>
+                                            <div class="mdc-menu mdc-select__menu">
+                                                <ul class="mdc-list mdc-menu__items">
+                                                    <li class="mdc-list-item" role="option" tabindex="0">
+                                                        Ilhós
+                                                    </li>
+                                                    <li class="mdc-list-item" role="option" tabindex="0">
+                                                        Banner
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p aria-hidden="true"
+                                       class="ed-pedido--panels__panel"
+                                       id="panel-2"
+                                       role="tabpanel">Item Two</p>
+                                    <p aria-hidden="true"
+                                       class="ed-pedido--panels__panel"
+                                       id="panel-3"
+                                       role="tabpanel">Item Three</p>
+                                    <p aria-hidden="true"
+                                       class="ed-pedido--panels__panel"
+                                       id="panel-4"
+                                       role="tabpanel">Tecido</p>
+                                    <p aria-hidden="true"
+                                       class="ed-pedido--panels__panel"
+                                       id="panel-5"
+                                       role="tabpanel">Papel</p>
+                                </div>
+                            </section>
+                        </span>
+                              
+                    </form>
+                </div>
+                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1-desktop"></div>
+            </div>
+        </section>
         
         <!-- PHOTOSWIPE -->
         <!-- Root element of PhotoSwipe. Must have class pswp. -->
