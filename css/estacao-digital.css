@@ -1,7 +1,50 @@
 /* ESTAÇÃO DIGITAL */
 
 @media screen and (min-width: 768px){ .ed-hide__desktop{ display: none !important } }
-@media screen and (max-width: 768px){ .ed-hide__mobile{ display: none !important } }
+
+@media screen and (max-width: 768px){
+    
+    .ed-hide__mobile{ display: none !important }
+    
+    .ed-mobile {text-align: center; overflow: hidden}
+    
+    .ed-mobile--video__wrapper{
+        position: fixed;
+        height: 100vh; min-width: 100%; width: auto;
+        z-index: -100;
+    }
+    
+    .ed-mobile--video__wrapper video {
+        max-height: 100vh !important
+    }
+
+    .ed-mobile__video{
+        transform: translateX(-50%) translateY(-50%);
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+        background: url(remo_w-ed--temp__bg__poster.jpg) no-repeat;
+        background-size: cover;
+        transition: 1s opacity;
+        opacity: 0.3;
+        z-index: -100;
+    }
+
+    .ed-mobile img{
+        max-width: 65%;
+        transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+        margin-top: 5%;;
+        opacity: 0
+    }
+
+    .ed-mobile a{
+        text-decoration: none;
+        color: inherit
+    }
+
+    .ed-mobile hr{margin: 8% 20%}
+}
 
 .ed-hide{display: none}
 .ed-unhide{transition-duration: .5s; opacity: 1 !important}
@@ -61,15 +104,6 @@
 .ed-home--panels__panel.active#Fizemos{
     background-color: rgba(255,255,255,1);
 }
-
-.ed-quemsomos hr,
-.ed-servicos hr{
-    width: 10%;
-    margin-left: 0;
-    border-style: solid;
-    border-width: 2px;
-}
-
 
 .ed-home__mouse{
     display: block;

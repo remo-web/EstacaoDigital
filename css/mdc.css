@@ -68,9 +68,6 @@
     justify-content: flex-end;
 }
 
-.mdc-card h3{margin: 0}
-.mdc-card h4{margin: 0}
-
 .mdc-card > .mdc-button.mdc-button--raised{margin: 16px}
 .mdc-elevation--z0,
 .mdc-elevation--z1,
