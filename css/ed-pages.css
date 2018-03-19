@@ -100,7 +100,8 @@
 
 /* FIZEMOS */
 
-.mdc-layout-grid__inner.ed-fizemos{height: auto}
+.mdc-layout-grid__inner.ed-fizemos,
+.mdc-layout-grid__inner.ed-fizemos--gallery{height: auto}
 
 .ed-fizemos--gallery--card__1 {background-image: url(../images/galeria/adesivo/thumb/remow_ed-adesivo--gal--botafogo__thumb.jpg); background-size: cover}
 .ed-fizemos--gallery--card__2 {background-image: url(../images/galeria/adesivo/thumb/remow_ed-adesivo--gal--comlurb__thumb.jpg); background-size: cover}
@@ -214,17 +215,6 @@
 }
 
 .ed-destaque--tecido h5{margin: 0}
-
-/* FOOTER */
-
-.ed-footer{background-color: white}
-.ed-footer--logo{margin: 0 48px}
-.ed-footer .mdc-fab{background-color: rgba(0,0,0,0.56)}
-.ed-footer--map{width: 100%; height: 100%}
-.ed-footer--copyright{text-align: center}
-.ed-footer--copyright a{opacity: 0.38}
-footer.mdc-layout-grid__inner{height: auto}
-.ed-gallery .ed-footer img{display: inline}
 
 /* FORMULÁRIO DE PEDIDO */
 
