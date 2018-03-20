@@ -67,7 +67,7 @@
 }
 
 .ed-header .mdc-toolbar__section{height: auto; padding: 0}
-.ed-header button{background-color: transparent}
+.ed-header a{background-color: transparent}
 .ed-header--toolbar__title {transition-duration: .5s; opacity: 0; position: absolute; font-weight: 200}
 .ed-header--toolbar__social {transition-duration: .5s; opacity: 0; position: absolute; right: 0}
 
@@ -144,3 +144,18 @@
 
 .ed-pagseguro{text-align: center;}
 .ed-pagseguro img{width: auto; max-width: calc(100% - 32px); height: auto}
+
+
+
+/* FOOTER */
+
+.ed-footer__wrapper{height: initial}
+.ed-footer{background-color: white}
+.ed-footer--logo{margin: 0 48px}
+.ed-footer .mdc-fab{background-color: rgba(0,0,0,0.56)}
+.ed-footer--map{width: 100%; height: 100%}
+.ed-footer--copyright{text-align: center}
+.ed-footer--copyright a{opacity: 0.38}
+footer.mdc-layout-grid__inner{height: auto}
+.ed-gallery .ed-footer img{display: inline}
+
