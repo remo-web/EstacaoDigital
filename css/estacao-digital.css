@@ -96,7 +96,8 @@
 .ed-home--panels__panel.active{
     display: block;
     max-height: -webkit-fill-available;
-    overflow: overlay
+    overflow: overlay;
+    height: 100%
 }
 
 .ed-home--panels__panel.active#QuemSomos,
