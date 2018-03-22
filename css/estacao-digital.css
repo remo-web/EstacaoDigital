@@ -103,6 +103,8 @@
 .ed-home--panels__panel.active#Servicos,
 .ed-home--panels__panel.active#Fizemos{
     background-color: rgba(255,255,255,1);
+    overflow: auto;
+    height: 100vh
 }
 
 .ed-home__mouse{
