@@ -4,6 +4,6 @@ $(document).ready(function() {
         scrollOverflow: true,
         keyboardScrolling: false,
         normalScrollElements:'.fp-kill',
-        responsiveHeight: 768,
+        responsiveWidth: 840,
     });
 });
