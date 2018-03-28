@@ -78,6 +78,11 @@ $(function() {
         $(this).toggleClass("mdc-elevation--z8");
     });
     
+    //drawer
+    let drawer = new mdc.drawer.MDCTemporaryDrawer(document.querySelector('.mdc-drawer--temporary'));
+    document.querySelector('.ed-drawer__icon').addEventListener('click', () => drawer.open = true);
+    mdc.drawer.MDCTemporaryDrawer.attachTo(document.querySelector('.mdc-drawer--temporary'));
+    
 });
 
 $(function () {

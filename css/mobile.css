@@ -1,0 +1,36 @@
+@media (max-width: 479px) {
+    /* HOME */
+    .mdc-typography--display4{font-size: 4rem; line-height: 4rem}
+    .ed-home__button--menu{height: 4rem}
+    .ed-home img{margin: 0 3rem}
+}
+
+.ed-mobile-header{background-color: transparent; box-shadow: none;}
+.ed-drawer--header__calango{max-height: 50%; width: auto}
+
+.ed-home__phone{
+    display: block;
+    width: 22px;
+    height: 38px;
+    border-radius: 3px;
+    border-width: 4px 2px;
+    border-style: solid;
+    border-color: #fff;
+    position: absolute;
+    bottom: 34px;
+    left: 50%;
+    z-index: 99999;
+}
+
+.ed-home__phone span{
+    animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+    display: block;
+    margin: 20px auto;
+    width: 3px;
+    height: 6px;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid transparent;
+}

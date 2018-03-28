@@ -4,7 +4,7 @@ $(document).ready(function() {
         scrollOverflow: true,
         keyboardScrolling: false,
         normalScrollElements:'.fp-kill',
-        responsiveWidth: 840,
+//        responsiveWidth: 840,
         animateAnchor: false,
     });
 });
