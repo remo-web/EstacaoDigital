@@ -1,17 +1,32 @@
+window.onload = function() {
+    if (location.hash === "#QuemSomos") {
+        document.getElementById('ed-quemsomos').click();
+    }
+    if (location.hash === "#Servicos") {
+        document.getElementById('ed-servicos').click();
+    }
+    if (location.hash === "#Fizemos") {
+        document.getElementById('ed-fizemos').click();
+    }
+    if (location.hash === "#Contato") {
+        document.getElementById('ed-contato').click();
+    }
+};
+
 $(window).on('hashchange', function() {
     if (window.location.hash.indexOf('') == 1) {
         document.getElementById('ed-gohome').click();
     }
     if (window.location.hash.indexOf('QuemSomos') == 1) {
-        document.getElementById('ed-footer-quemsomos').click();
+        document.getElementById('ed-quemsomos').click();
     }
     if (window.location.hash.indexOf('Servicos') == 1) {
-        document.getElementById('ed-footer-servicos').click();
+        document.getElementById('ed-servicos').click();
     }
     if (window.location.hash.indexOf('Fizemos') == 1) {
-        document.getElementById('ed-footer-fizemos').click();
+        document.getElementById('ed-fizemos').click();
     }
     if (window.location.hash.indexOf('Contato') == 1) {
-        document.getElementById('ed-footer-contato').click();
+        document.getElementById('ed-contato').click();
     }
 });
