@@ -6,7 +6,16 @@
 }
 
 .ed-mobile-header{background-color: transparent; box-shadow: none;}
-.ed-drawer--header__calango{max-height: 50%; width: auto}
+.ed-drawer--header__calango{
+    max-height: 50%;
+    width: auto;
+/*
+    transform: scaleX(-1);
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+*/
+}
 
 .ed-home__phone{
     display: block;

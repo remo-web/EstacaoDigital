@@ -23,6 +23,20 @@ $('#ed-footer-contato').click(function(e){
     $.fn.fullpage.silentMoveTo('home');
 });
 
+//DRAWER
+$('#ed-drawer-quemsomos').click(function(e){
+    $.fn.fullpage.silentMoveTo('home');
+});
+$('#ed-drawer-servicos').click(function(e){
+    $.fn.fullpage.silentMoveTo('home');
+});
+$('#ed-drawer-fizemos').click(function(e){
+    $.fn.fullpage.silentMoveTo('home');
+});
+$('#ed-drawer-contato').click(function(e){
+    $.fn.fullpage.silentMoveTo('home');
+});
+
 //OUTROS FOOTER
 $('.ed-footer--toslide__lonas').click(function(e){
     e.preventDefault();
