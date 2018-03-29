@@ -15,7 +15,10 @@ window.onload = function() {
 
 $(window).on('hashchange', function() {
     if (window.location.hash.indexOf('') == 1) {
-        document.getElementById('ed-gohome').click();
+        document.getElementById('ed-home-tab').click();
+    }
+    if (window.location.hash.indexOf('home') == 1) {
+        document.getElementById('ed-home-tab').click();
     }
     if (window.location.hash.indexOf('QuemSomos') == 1) {
         document.getElementById('ed-quemsomos').click();

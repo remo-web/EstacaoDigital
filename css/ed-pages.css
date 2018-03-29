@@ -64,7 +64,6 @@
 
 #Servicos .ed-home--panels__panel--header{background-image: url(../images/quemsomos/remow_ed-quemsomos--fig__2.jpg); background-blend-mode: multiply;}
 .ed-servicos--haeder__bg{position: absolute; opacity: 1; z-index: 1}
-.ed-servicos .ed-home--panels__panel--header .mdc-button{margin: 6px}
 .ed-servicos p.mdc-typography--display1{line-height: 1.5}
 
 .ed-servicos--card__impressao{background-image: url(../images/servicos/remow_ed-servicos--impressao.jpg);}
@@ -108,7 +107,7 @@
 .ed-contato h2, .ed-contato h4, .ed-contato h5{margin-bottom: 0}
 .ed-contato h3{margin-top: 0}
 
-.ed-contato .mdc-layout-grid__inner{height: auto}
+
 .ed-contato .mdc-card{margin-bottom: 16px}
 
 .ed-contato--map{

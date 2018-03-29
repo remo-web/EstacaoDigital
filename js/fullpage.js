@@ -4,7 +4,6 @@ $(document).ready(function() {
         scrollOverflow: true,
         keyboardScrolling: false,
         normalScrollElements:'.fp-kill',
-//        responsiveWidth: 840,
         animateAnchor: false,
     });
 });
@@ -20,6 +19,9 @@ $('#ed-footer-fizemos').click(function(e){
     $.fn.fullpage.silentMoveTo('home');
 });
 $('#ed-footer-contato').click(function(e){
+    $.fn.fullpage.silentMoveTo('home');
+});
+$('#ed-footer-email').click(function(e){
     $.fn.fullpage.silentMoveTo('home');
 });
 

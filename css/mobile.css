@@ -3,6 +3,7 @@
     .mdc-typography--display4{font-size: 4rem; line-height: 4rem}
     .ed-home__button--menu{height: 4rem}
     .ed-home img{margin: 0 3rem}
+    .ed-home--panels__panel--content{padding: 0}
 }
 
 .ed-mobile-header{background-color: transparent; box-shadow: none;}
