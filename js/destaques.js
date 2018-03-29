@@ -1,3 +1,7 @@
+$('.ed-destaque--detalhe__close').click(function() {
+    $(this).parent().toggleClass('ed-hide');
+});
+
 //LONAS
 $(function() {
     $('#lonas-banners-more').click(function() {

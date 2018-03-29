@@ -117,7 +117,7 @@
 }
 .ed-contato .mdc-fab {background: var(--mdc-theme-primary)}
 
-/* DESTAQUE */
+/* DESTAQUES */
 
 .ed-destaques--menu{
     position: fixed; left: 24px;
@@ -135,10 +135,26 @@
 .ed-destaques--menu button{display: block}
 .ed-destaques--menu__item{display: -webkit-box}
 
+.ed-destaque--lonas,
+.ed-destaque--adesivos,
+.ed-destaque--placas,
+.ed-destaque--tecido{
+    background-size: cover;
+    background-position: center;
+}
+
+.ed-destaque--detalhes{
+    position: initial;
+    top: initial; left: initial;
+    max-height: 100vh; max-width: auto;
+    overflow: scroll;
+}
+
 .ed-destaque__title {margin: 0}
 .ed-destaque__subtitle {margin-top: 0} 
 .ed-destaque--card__right{background-color: rgba(255,255,255,0.85)}
 .ed-destaque__preco {text-transform: initial}
+.ed-destaque--detalhe__close{display: none}
 
 /* LONAS */
 
@@ -146,8 +162,6 @@
     background-image: url(../images/remow_ed-lona--bg.jpg);
     background-color: #00adee;
     background-blend-mode: hard-light;
-    background-size: cover;
-    background-position: center;
 }
 .ed-destaque--lonas--gallery--card__1 {background-image: url(../images/galeria/lonas/thumb/remow_ed-lona--gal--znorte__thumb.jpg); background-size: cover}
 .ed-destaque--lonas--gallery--card__2 {background-image: url(../images/galeria/lonas/thumb/remow_ed-lona--gal--festmimo__thumb.jpg); background-size: cover}
@@ -162,8 +176,6 @@
     background-image: url(../images/remow_ed-adesivo--bg.jpg);
     background-color: #fff100;
     background-blend-mode: multiply;
-    background-size: cover;
-    background-position: center
 }
 
 /* PLACAS */
@@ -172,8 +184,6 @@
     background-image: url(../images/remow_ed-placa--bg.jpg);
     background-color: #eb008b;
     background-blend-mode: multiply;
-    background-size: cover;
-    background-position: center
 }
 
 /* TECIDO */
@@ -182,8 +192,6 @@
     background-image: url(../images/remow_ed-tecido--bg.jpg);
     background-color: darkgray;
     background-blend-mode: luminosity;
-    background-size: cover;
-    background-position: center
 }
 
 .ed-destaque--tecido h5{margin: 0}
