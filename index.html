@@ -120,8 +120,10 @@
               rel="stylesheet">
         <link href="css/ed-pages.css"
               rel="stylesheet">
+        <link href="css/mobile.css"
+              rel="stylesheet">
         
-        <!--Start of Tawk.to Script-->
+        <!--Start of Tawk.to Script
         <script type="text/javascript">
         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
         (function(){
@@ -139,66 +141,6 @@
     
     <body class="ed-main ed-mobile--body">
         
-        <!-- MOBILE TEMPORÁRIO -->
-        <div class="ed-mobile ed-hide__desktop fp-kill">
-            <div class="ed-mobile--video__wrapper">
-                <video autoplay
-                       id="ed-main__bg"
-                       loop
-                       muted>
-                    <source src="./images/remow_ed-home--bg__mobile.mp4"
-                            type="video/mp4">
-                    <source src="./images/remow_ed-home--bg__mobile.webm"
-                            type="video/webm">
-                </video>
-            </div>
-            <div class="mdc-layout-grid">
-                <div class="mdc-layout-grid__inner">
-                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-4-phone">
-                        <img src="./images/remo_ed-logo--calango__transp.png">
-                        <h1 class="mdc-typography--display2 mdc-theme--text-primary-on-dark">A nova fase chegou!</h1>
-                        <hr class="mdc-list-divider">
-                        <p class="mdc-typography--title mdc-theme--text-secondary-on-dark">Nosso novo site já está pronto para <strong>notebooks</strong> e <strong>computadores</strong>.</p>
-                        <hr class="mdc-list-divider">
-                        <p class="mdc-typography--body1 mdc-theme--text-secondary-on-dark">Contamos com a sua compreensão enquanto o tornamos responsivo para <strong>tablets</strong> e <strong>smartphones</strong>.</p>
-                        <p class="mdc-typography--body1 mdc-theme--text-secondary-on-dark">Para falar com a gente, <strong>clique</strong> em um dos contatos abaixo ou corra para ver o novo site em um computador!</p>
-                        <hr class="mdc-list-divider">
-                        <a class="mdc-button mdc-button--raised mdc-typography--button"
-                           href="mailto:embarque@estacaodigitalrio.com.br"
-                           target="_top">
-                            embarque@estacaodigitalrio.com.br
-                        </a>
-                        <br>&nbsp;<br>
-                        <a class="mdc-button mdc-button--raised mdc-typography--button"
-                           href="https://api.whatsapp.com/send?phone=5521971374152&text=Ol%C3%A1!%20Encontrei%20este%20contato%20no%20site%20da%20Esta%C3%A7%C3%A3o%20Digital%20e%20gostaria%20de%20trocar%20uma%20ideia%20sobre%20os%20seus%20servi%C3%A7os."
-                           target="_blank">
-                            <i class="fab fa-whatsapp"></i>
-                            <small>21</small> 9 9636 7232
-                        </a>
-                        <br>&nbsp;<br>
-                        <a class="mdc-button mdc-button--raised mdc-typography--button"
-                           href="https://www.facebook.com/estacaodigitalrio/"
-                           target="_blank">
-                            <i class="fab fa-facebook-square"></i>
-                            /estacaodigitalrio
-                        </a>
-                        <br>&nbsp;<br>
-                        <a class="mdc-typography--button mdc-button mdc-button--raised"
-                           href="javascript:void(Tawk_API.toggle())">
-                            <i>chat</i> ao vivo
-                        </a>
-                    </div>
-                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-phone ed-footer--copyright">
-                        <h5 class="mdc-typography--caption mdc-theme--text-disabled-on-dark">
-                            Estação Digital Rio<br>&copy; Todos os direitos reservados 2018<br>
-                            Uma obra-prima <a href="http://remo.marketing" target="_blank">remo.marketing</a>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- MOBILE TEMPORÁRIO -->
-        
         <!-- Mark Zuckerberg esquisitão -->
         <div id="fb-root"></div>
         <script>
@@ -210,11 +152,7 @@
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
         </script>
-        
-        <!-- ATENÇÃO!!! -->
-        <span class="ed-hide__mobile">
-        <!-- ATENÇÃO!!! -->
-            
+
         <div class="ed-main__bg">
             <video autoplay
                    loop
@@ -227,7 +165,7 @@
         </div>
         
         <!-- Menu Destaques -->
-        <div class="ed-destaques--menu ed-hide">
+        <div class="ed-destaques--menu ed-hide ed-hide__mobile">
             <span>
                 <a class="mdc-fab mdc-fab--mini mdc-theme--primary-bg"
                    id="ed-gohome"
@@ -290,13 +228,125 @@
                 </div>
             </span>
         </div>
+        
+        <!-- DRAWER -->
+        <header class="mdc-toolbar mdc-toolbar--fixed ed-mobile-header ed-hide__desktop">
+            <div class="mdc-toolbar__row">
+                <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                    <a class="mdc-toolbar__menu-icon ed-drawer__icon"
+                       href="#">
+                        <i class="fas fa-bars fa-lg"></i>
+                    </a>
+                </section>
+            </div>
+        </header>
+        <aside class="mdc-drawer mdc-drawer--temporary mdc-typography ed-hide__desktop">
+            <nav class="mdc-drawer__drawer">
+                <header class="mdc-drawer__header">
+                    <div class="mdc-drawer__header-content">
+                        <img class="ed-drawer--header__calango"
+                             src="images/remo_ed-logo--calango__transp.png">
+                    </div>
+                </header>
+                <nav class="mdc-drawer__content mdc-list-group mdc-typography"
+                     id="">
+                    <ul class="mdc-drawer__content mdc-list">
+                        <a class="mdc-list-item mdc-typography--title ed-drawer--item"
+                           href="#home">
+                            <i aria-hidden="true"
+                               class="mdc-list-item__graphic fas fa-home"></i>
+                            Ínicio
+                        </a>
+                    </ul>
+                    <hr role="separator" class="mdc-list-divider">
+                    <h3 class="mdc-list-group__subheader mdc-typography--subheading1">
+                        DESTAQUES
+                    </h3>
+                    <ul class="mdc-drawer__content mdc-list">
+                        <a class="mdc-list-item mdc-typography--title ed-drawer--item"
+                           href="#Lonas">
+                            <i aria-hidden="true"
+                               class="mdc-list-item__graphic fas fa-circle ed-magenta"></i>
+                            Lonas
+                        </a>
+                        <a class="mdc-list-item mdc-typography--title ed-drawer--item"
+                           href="#Adesivos">
+                            <i aria-hidden="true"
+                               class="mdc-list-item__graphic fas fa-circle ed-cyan"></i>
+                            Adesivos
+                        </a>
+                        <a class="mdc-list-item mdc-typography--title ed-drawer--item"
+                           href="#Placas">
+                            <i aria-hidden="true"
+                               class="mdc-list-item__graphic fas fa-circle ed-yellow"></i>
+                            Placas
+                        </a>
+                        <a class="mdc-list-item mdc-typography--title ed-drawer--item"
+                           href="#Tecido">
+                            <i aria-hidden="true"
+                               class="mdc-list-item__graphic fas fa-circle ed-black"></i>
+                            Tecido
+                        </a>
+                    </ul>
+                    <hr role="separator" class="mdc-list-divider">
+                    <h3 class="mdc-list-group__subheader mdc-typography--subheading1">
+                        INSTITUCIONAL
+                    </h3>
+                    <ul class="mdc-drawer__content mdc-list">
+                        <a class="mdc-list-item mdc-typography--title ed-drawer--item"
+                           id="ed-drawer-quemsomos"
+                           href="#QuemSomos">
+                            Quem Somos
+                        </a>
+                        <a class="mdc-list-item mdc-typography--title ed-drawer--item"
+                           id="ed-drawer-servicos"
+                           href="#Servicos">
+                            Serviços
+                        </a>
+                        <a class="mdc-list-item mdc-typography--title ed-drawer--item"
+                           id="ed-drawer-fizemos"
+                           href="#Fizemos">
+                            Fizemos
+                        </a>
+                        <a class="mdc-list-item mdc-typography--title ed-drawer--item"
+                           id="ed-drawer-contato"
+                           href="#Contato">
+                            Contato
+                        </a>
+                    </ul>
+                    <hr role="separator" class="mdc-list-divider">
+                    <h3 class="mdc-list-group__subheader mdc-typography--subheading1">
+                        FALE EM TEMPO REAL
+                    </h3>
+                    <ul class="mdc-drawer__content mdc-list">
+                        <li class="mdc-list-item">
+                            <a class="mdc-fab mdc-fab--mini material-icons"
+                               href="https://api.whatsapp.com/send?phone=5521996367232&text=Obrigado%20pelo%20interesse%20nos%20servi%C3%A7os%20da%20Esta%C3%A7%C3%A3o%20Digital!%20Em%20que%20podemos%20ajudar%20no%20momento%3F%20"
+                               target="_blank">
+                                <span class="mdc-fab__icon">
+                                    <i class="fab fa-whatsapp fa-lg"></i>
+                                </span>
+                            </a>
+                            &nbsp;&nbsp;
+                            <a class="mdc-fab mdc-fab--mini material-icons"
+                               href="javascript:void(Tawk_API.toggle())">
+                                <span class="mdc-fab__icon">
+                                    <i class="fas fa-comments fa-lg"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="mdc-list-item"></li>
+                    </ul>
+                </nav>
+            </nav>
+        </aside>
 
         <div id="fullpage">
             <section class="section ed-home"
                      data-anchor="home"
                      id="index">
                 <!-- HEADER -->
-                <header class="mdc-toolbar mdc-toolbar--waterfall ed-header fp-kill">
+                <header class="mdc-toolbar mdc-toolbar--waterfall ed-header fp-kill ed-hide__mobile">
                     <div class="mdc-toolbar__row">
                         <section class="mdc-toolbar__section mdc-toolbar__section--shrink-to-fit ed-header--toolbar__title">
                             <span class="mdc-toolbar__title">
@@ -403,11 +453,11 @@
                         <div class="ed-home__phone ed-hide__desktop"><span class="ed-hide__desktop animated fadeOutUp infinite"></span></div>
                         <div class="mdc-layout-grid__inner ed-home__bg--overlay">
                             <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
-                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-3">
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-4-phone">
                                 <img src="images/remo_w-ed-home__logo.svg">
                             </div>
-                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop"></div>
-                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-3">
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-2-desktop ed-hide__mobile"></div>
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-4-phone">
                                 <a class="mdc-button ed-home__button--menu ed-cyan"
                                    href="#Lonas"
                                    role="button">
@@ -445,7 +495,7 @@
                             <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop ed-home--panels__panel--header">
                                 <div class="mdc-layout-grid__inner">
                                     <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop"></span>
-                                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--align-middle ed-home--panels__panel--header__title">
+                                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-phone ed-home--panels__panel--header__title">
                                         <h1 class="mdc-typography--display2 mdc-theme--text-primary-on-primary">A Estação Digital</h1>
                                         <p class="mdc-typography--subtitle mdc-theme--text-secondary-on-primary">Conheça um pouco da nossa história, estrutura, experiência e dia-a-dia.</p>
                                         <button class="mdc-fab mdc-fab--mini"
@@ -455,6 +505,7 @@
                                             </span>
                                         </button>
                                     </div>
+                                    <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop"></span>
                                 </div>
                             </div>
                         </div>
@@ -794,7 +845,7 @@
 -->
                                 <div class="mdc-layout-grid__inner">
                                     <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop"></span>
-                                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--align-middle ed-home--panels__panel--header__title">
+                                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-phone ed-home--panels__panel--header__title">
                                         <h1 class="mdc-typography--display2 mdc-theme--text-primary-on-primary">Como fazemos</h1>
                                         <p class="mdc-typography--subtitle mdc-theme--text-secondary-on-primary">Veja os tipos de serviços que estamos aptos a oferecer e entenda como seremos utéis para a sua empresa.</p>
                                         <a class="mdc-typography--button mdc-button mdc-theme--secondary-bg mdc-theme--text-primary-on-dark"
@@ -804,6 +855,7 @@
                                         <a class="mdc-typography--button mdc-button mdc-theme--secondary-bg mdc-theme--text-primary-on-dark"
                                            id="servicos-btn-instalacao">Instalação</a>
                                     </div>
+                                    <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop"></span>
                                 </div>
                             </div>
                         </div>
@@ -1063,7 +1115,7 @@
                             <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop ed-home--panels__panel--header">
                                 <div class="mdc-layout-grid__inner">
                                     <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop"></span>
-                                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--align-middle ed-home--panels__panel--header__title">
+                                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-phone ed-home--panels__panel--header__title">
                                         <h1 class="mdc-typography--display2 mdc-theme--text-primary-on-primary">Conheça nosso portifólio!</h1>
                                         <p class="mdc-typography--subtitle mdc-theme--text-secondary-on-primary">Uma pequena amostra de nossos projetos e diversos tipos serviços de impressão, envelopamento, Instalação e recorte de contorno que já realizamos ao longo dos anos.</p>
                                         <button class="mdc-fab mdc-fab--mini"
@@ -1073,6 +1125,7 @@
                                             </span>
                                         </button>
                                     </div>
+                                    <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop"></span>
                                 </div>
                             </div>
                         </div>
@@ -1648,14 +1701,14 @@
                              class="ed-home--panels__panel mdc-layout-grid fp-kill ed-contato"
                              id="Contato"
                              role="tabpanel">
-                        <div class="mdc-layout-grid__inner" style="margin-top: 88px">
-                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1-desktop"></div>
-                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-10-desktop">
+                        <div class="mdc-layout-grid__inner">
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1-desktop ed-hide__mobile"></div>
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-bottom mdc-layout-grid__cell--span-10-desktop mdc-layout-grid__cell--span-4-phone">
                                 <h2 class="mdc-typography--display3 mdc-theme--text-primary-on-dark">Comunique-se</h2>
                             </div>
                             <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1-desktop"></div>
                             <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1-desktop"></div>
-                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5">
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5-desktop mdc-layout-grid__cell--span-4-phone">
                                 <h3 class="mdc-typography--headline mdc-theme--text-secondary-on-dark">Envie uma mensagem</h3>
                                 <form action="contato/contato.php"
                                       class="mdc-card"
@@ -1748,10 +1801,15 @@
                                             value="ed_contato">Enviar</button>
                                 </form>
                             </div>
-                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop">
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop mdc-layout-grid__cell--span-4-phone">
                                 <h3 class="mdc-typography--headline mdc-theme--text-secondary-on-dark">Venha nos visitar</h3>
                                 <div class="mdc-card">
-                                    <p class="ed-card--content__text mdc-typography--body2">Estrada da Água Grande, 97<br><span class="mdc-typography--body1">Irajá - Rio de Janeiro / RJ</span></p>
+                                    <span class="ed-card--content__text">
+                                        <p class="mdc-typography--body2">Estrada da Água Grande, 97<br>
+                                            <span class="mdc-typography--body1 mdc-theme--text-secondary-on-light">Irajá - Rio de Janeiro / RJ</span><br>
+                                            <span class="mdc-typography--caption mdc-theme--text-hint-on-light"><i class="fas fa-map-signs"></i>&nbsp;&nbsp;&nbsp;Próximo ao Shopping Via Brasil</span>
+                                        </p>
+                                    </span>
                                     <div class="mdc-card__actions mdc-card__actions--full-bleed">
                                         <a class="mdc-typography--button mdc-button mdc-card__action mdc-card__action--button"
                                            href="https://goo.gl/maps/oUGMYuMnHWM2"
@@ -1762,24 +1820,23 @@
                                     </div>
                                 </div>
                                 <h3 class="mdc-typography--headline mdc-theme--text-secondary-on-dark">Fale em tempo real</h3>
-                                <div class="mdc-card">
-                                    <h3 class="ed-card--content__text mdc-typography--display1 mdc-theme--text-primary-on-light"><small class="mdc-theme--text-secondary-on-light">21</small> 9 9636 7232</h3>
-                                    <div class="mdc-card__actions">
-                                        <div class="mdc-card__action-buttons">
-                                            <a class="mdc-typography--button mdc-button mdc-card__action mdc-card__action--button"
-                                               href="https://api.whatsapp.com/send?phone=5521996367232&text=Obrigado%20pelo%20interesse%20nos%20servi%C3%A7os%20da%20Esta%C3%A7%C3%A3o%20Digital!%20Em%20que%20podemos%20ajudar%20no%20momento%3F%20"
-                                               target="_blank">
-                                                <i class="fab fa-whatsapp"></i>
-                                                WhatsApp
-                                            </a>
-                                            <a class="mdc-typography--button mdc-button mdc-card__action mdc-card__action--button"
-                                               href="javascript:void(Tawk_API.toggle())">
-                                                <i class="fas fa-comments"></i>
-                                                <i>chat</i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <a class="mdc-typography--button mdc-button mdc-button--raised"
+                                   href="tel:+5521996367232">
+                                    <i class="fas fa-phone"></i>
+                                    21 9 9636 7232
+                                </a>
+                                <a class="mdc-typography--button mdc-button mdc-button--raised"
+                                   href="https://api.whatsapp.com/send?phone=5521996367232&text=Obrigado%20pelo%20interesse%20nos%20servi%C3%A7os%20da%20Esta%C3%A7%C3%A3o%20Digital!%20Em%20que%20podemos%20ajudar%20no%20momento%3F%20"
+                                   target="_blank">
+                                    <i class="fab fa-whatsapp"></i>
+                                    WhatsApp
+                                </a>
+                                <a class="mdc-typography--button mdc-button mdc-button--raised"
+                                   href="javascript:void(Tawk_API.toggle())">
+                                    <i class="fas fa-comments"></i>
+                                    <i>chat</i>
+                                </a>
+                                <br>&nbsp;
                                 <h3 class="mdc-typography--headline mdc-theme--text-secondary-on-dark">Siga a Estação Digital</h3>
                                 <div class="fb-page"
                                      data-adapt-container-width="true"
@@ -1793,13 +1850,20 @@
                                     </blockquote>
                                 </div>
                             </div>
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop"></div>
                             <div class="ed-contato--map"
                                  id="ed-map">
                             </div>
+                            <!-- footer -->
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-bottom mdc-layout-grid__cell--span-12-desktop ed-footer--copyright">
+                                <h5 class="mdc-typography--caption mdc-theme--text-disabled-on-dark">
+                                    Estação Digital Rio &copy; Todos os direitos reservados 2018
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    Uma obra-prima <a href="http://remo.marketing" target="_blank">remo.marketing</a>
+                                </h5>
+                                <br>&nbsp;
+                            </div>
                         </div>
-                        <footer>
-                            
-                        </footer>
                     </section>
                 </div>
             </section>
@@ -1810,7 +1874,7 @@
                 <section class="mdc-layout-grid">
                     <div class="mdc-layout-grid__inner">
                         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-1-desktop"></div>
-                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-5-desktop">
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-5-desktop mdc-layout-grid__cell--span-4-phone">
                             <h2 class="mdc-typography--display1 mdc-theme--text-primary-on-dark ed-destaque__title">Opções em Lona</h2>
                             <h3 class="mdc-typography--subheading1 mdc-theme--text-secondary-on-dark ed-destaque__subtitle">Clique na opção desejada para mais informações</h3>
                             <div class="mdc-card ed-destaque--card__right">
@@ -1863,9 +1927,12 @@
                                 [em breve] COMPRAR
                             </button>
                         </div>
-                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-5-desktop">
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-5-desktop mdc-layout-grid__cell--span-4-phone ed-destaque--detalhes">
                             <div class="mdc-card ed-destaque--lonas__banners ed-hide">
-                                <div class="ed-card--content__text">
+                                <div class="mdc-theme--text-secondary-on-light ed-destaque--detalhe__close">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                                <div class="ed-card--content__text fp-kill">
                                     <h3 class="mdc-typography--headline"><I>BANNERS</I> E FAIXAS <i>FRONT-LIGHT</i></h3>
                                     <p class="mdc-typography--body1 mdc-theme--text-secondary-on-light">Impressão digital de alta resolução em lona vinílica 440g/m², material de <b>alto impacto visual</b> para pontos de vendas, promoções, eventos, shows, festas, feiras e diversas outras alternativas de sinalização.</p>
                                     <div class="mdc-list-group">
@@ -1990,7 +2057,10 @@
                                 </span>
                             </div>
                             <div class="mdc-card ed-destaque--lonas__back ed-hide">
-                                <div class="ed-card--content__text">
+                                <div class="mdc-theme--text-secondary-on-light ed-destaque--detalhe__close">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                                <div class="ed-card--content__text fp-kill">
                                     <h3 class="mdc-typography--headline"><I>BACK-LIGHT</I></h3>
                                     <p class="mdc-typography--body1 mdc-theme--text-secondary-on-light">Impressão digital de alta resolução em lona vinílica translúcida, material de <b>alto impacto visual</b> para pontos de vendas, promoções, eventos, shows, festas, feiras e diversas outras alternativas de sinalização.</p>
                                     <div class="mdc-list-group">
@@ -2110,7 +2180,10 @@
                                 </span>
                             </div>
                             <div class="mdc-card ed-destaque--lonas__sanet ed-hide">
-                                <div class="ed-card--content__text">
+                                <div class="mdc-theme--text-secondary-on-light ed-destaque--detalhe__close">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                                <div class="ed-card--content__text fp-kill">
                                     <h3 class="mdc-typography--headline"><i>SANET</i> ORTOFÔNICA</h3>
                                     <p class="mdc-typography--body1 mdc-theme--text-secondary-on-light">Impressão digital de alta resolução em <b>lona perfurada</b> tipo <i>mesh</i>, recomendada para: locais que sofrem com incidência de ventos, <i>não rasga</i> nem gera sobrecarga nos suportes; letreiros <b>sobre janelas</b>, evita a interrupção da circulação de ar; e cobertura ou decoração de <b>caixas de som</b>, agregando um visual diferenciado sem prejuízo da qualidade sonora.</p>
                                     <div class="mdc-list-group">
@@ -2189,6 +2262,7 @@
                                 </span>
                             </div>
                         </div>
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-1-desktop"></div>
                     </div>
                 </section>
             </div>
@@ -2198,7 +2272,7 @@
                 <section class="mdc-layout-grid">
                     <div class="mdc-layout-grid__inner">
                         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-1-desktop"></div>
-                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-5-desktop">
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-5-desktop mdc-layout-grid__cell--span-4-phone">
                             <h2 class="mdc-typography--display1 mdc-theme--text-primary-on-dark ed-destaque__title">Opções em Adesivos</h2>
                             <h3 class="mdc-typography--subheading1 mdc-theme--text-secondary-on-dark ed-destaque__subtitle">Clique na opção desejada para mais informações</h3>
                             <div class="mdc-card ed-destaque--card__right">
@@ -2265,9 +2339,12 @@
                                 [em breve] COMPRAR
                             </button>
                         </div>
-                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-5-desktop">
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-5-desktop mdc-layout-grid__cell--span-4-phone ed-destaque--detalhes">
                             <div class="mdc-card ed-destaque--adesivos__simples ed-hide">
-                                <div class="ed-card--content__text">
+                                <div class="mdc-theme--text-secondary-on-light ed-destaque--detalhe__close">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                                <div class="ed-card--content__text fp-kill">
                                     <h3 class="mdc-typography--headline">ADESIVO DE VINIL SIMPLES</h3>
                                     <p class="mdc-typography--body1 mdc-theme--text-secondary-on-light">Impressão digital de alta resolução em adesivo de vinil 440g/m², material de <b>alto impacto visual</b> para pontos de vendas, promoções, eventos, shows, festas, feiras e diversas outras alternativas de sinalização.</p>
                                     <div class="mdc-list-group">
@@ -2398,7 +2475,10 @@
                                 </span>
                             </div>
                             <div class="mdc-card ed-destaque--adesivos__blackout ed-hide">
-                                <div class="ed-card--content__text">
+                                <div class="mdc-theme--text-secondary-on-light ed-destaque--detalhe__close">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                                <div class="ed-card--content__text fp-kill">
                                     <h3 class="mdc-typography--headline"><I>BLACKOUT</I></h3>
                                     <p class="mdc-typography--body1 mdc-theme--text-secondary-on-light">Impressão digital de alta resolução em adesivo vinílico completamente opaco, material de <b>alto impacto visual</b> para cobertura e decoração de janelas, que impede a passagem de qualquer luz com a possibilidade de exibir uma bela arte gráfica do lado sem adesivo.</p>
                                     <div class="mdc-list-group">
@@ -2485,7 +2565,10 @@
                                 </span>
                             </div>
                             <div class="mdc-card ed-destaque--adesivos__perfurado ed-hide">
-                                <div class="ed-card--content__text">
+                                <div class="mdc-theme--text-secondary-on-light ed-destaque--detalhe__close">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                                <div class="ed-card--content__text fp-kill">
                                     <h3 class="mdc-typography--headline">ADESIVO DE VINIL PERFURADO</h3>
                                     <p class="mdc-typography--body1 mdc-theme--text-secondary-on-light">Impressão digital de alta resolução em <b>adesivo de vinil perfurado</b>, recomendada para cobertura de janelas, vitrines e parabrisas. Bloqueia parcialmente a passagem de luz e não prejudica significativamente a visão "de dentro para fora".</p>
                                     <div class="mdc-list-group">
@@ -2553,7 +2636,10 @@
                                 </span>
                             </div>
                             <div class="mdc-card ed-destaque--adesivos__removivel ed-hide">
-                                <div class="ed-card--content__text">
+                                <div class="mdc-theme--text-secondary-on-light ed-destaque--detalhe__close">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                                <div class="ed-card--content__text fp-kill">
                                     <h3 class="mdc-typography--headline">ADESIVO DE VINIL REMOVÍVEL</h3>
                                     <p class="mdc-typography--body1 mdc-theme--text-secondary-on-light">Impressão digital de alta resolução em <b>adesivo de vinil removível</b>, ideal para decoração de frotas ou ações promocionais com data para acabar. Resistente até que necessite ser retirado, evita que resíduos de cola acabem consumindo tempo e esforço para trazer a superfície adesivada ao seu visual original</p>
                                     <div class="mdc-list-group">
@@ -2640,6 +2726,7 @@
                                 </span>
                             </div>
                         </div>
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-1-desktop"></div>
                     </div>
                 </section>
             </div>
@@ -2649,7 +2736,7 @@
                 <section class="mdc-layout-grid">
                     <div class="mdc-layout-grid__inner">
                         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-1-desktop"></div>
-                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-5-desktop">
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-5-desktop mdc-layout-grid__cell--span-4-phone">
                             <h2 class="mdc-typography--display1 mdc-theme--text-primary-on-dark ed-destaque__title">Opções em Placas</h2>
                             <h3 class="mdc-typography--subheading1 mdc-theme--text-secondary-on-dark ed-destaque__subtitle">Clique na opção desejada para mais informações</h3>
                             <div class="mdc-card ed-destaque--card__right">
@@ -2688,9 +2775,12 @@
                                 [em breve] COMPRAR
                             </button>
                         </div>
-                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-5-desktop">
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-5-desktop mdc-layout-grid__cell--span-4-phone ed-destaque--detalhes">
                             <div class="mdc-card ed-destaque--placa__ps ed-hide">
-                                <div class="ed-card--content__text">
+                                <div class="mdc-theme--text-secondary-on-light ed-destaque--detalhe__close">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                                <div class="ed-card--content__text fp-kill">
                                     <h3 class="mdc-typography--headline">PLACA DE POLIESTIRENO (PS)</h3>
                                     <p class="mdc-typography--body1 mdc-theme--text-secondary-on-light">Impressão digital com secagem UV de alta resolução em placas de PS, material de <b>alto impacto visual</b>, leve e resistente, indicado para confecçao de cardápios, posters e diversas alternativas de sinalização.</p>
                                     <p class="mdc-typography--body1 mdc-theme--text-secondary-on-light">Geralmente confundido com placas de PVC, o poliestireno é, na verdade, um material muito mais adequado a este tipo de serviço.</p>
@@ -2808,7 +2898,10 @@
                                 </span>
                             </div>
                             <div class="mdc-card ed-destaque--placa__totem ed-hide">
-                                <div class="ed-card--content__text">
+                                <div class="mdc-theme--text-secondary-on-light ed-destaque--detalhe__close">
+                                    <i class="fas fa-times"></i>
+                                </div>
+                                <div class="ed-card--content__text fp-kill">
                                     <h3 class="mdc-typography--headline">TOTEM</h3>
                                     <p class="mdc-typography--body1 mdc-theme--text-secondary-on-light">Impressão digital com secagem UV de alta resolução em placas de PS, material de <b>alto impacto visual</b>, leve e resistente, montado com surpote de chão para utilização como totem promocional, de sinalização ou como preferir.</p>
                                     <p class="mdc-typography--body1 mdc-theme--text-secondary-on-light">Geralmente confundido com placas de PVC, o poliestireno é, na verdade, um material muito mais adequado a este tipo de serviço.</p>
@@ -2870,6 +2963,7 @@
                                 </span>
                             </div>
                         </div>
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-1-desktop"></div>
                     </div>
                 </section>
             </div>
@@ -3135,6 +3229,7 @@
                                 </li>
                                 <li class="mdc-list-item">
                                     <a class="mdc-button mdc-typography--button"
+                                       id="ed-footer-email"
                                        href="#Contato">
                                         <i class="far fa-envelope"></i>
                                         e-mail
@@ -3469,11 +3564,7 @@
             </div>
 
         </div>
-    
-        <!-- ATENÇÃO!!! -->
-        </span>
-        <!-- ATENÇÃO!!! -->
-            
+        
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <!-- JS | CUSTOM -->

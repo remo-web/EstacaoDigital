@@ -48,6 +48,9 @@
     font-weight: 600
 }
 
+.mdc-card__action .mdc-button{margin: 0px}
+.mdc-button{margin: 6px}
+
 .mdc-toolbar__title{padding: 0}
 .mdc-toolbar__title p{margin: 0}
 

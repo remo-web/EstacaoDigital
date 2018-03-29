@@ -29,33 +29,6 @@
     opacity: 0;
 }
 
-.ed-home__phone{
-    display: block;
-    width: 22px;
-    height: 38px;
-    border-radius: 3px;
-    border-width: 4px 2px;
-    border-style: solid;
-    border-color: #fff;
-    position: absolute;
-    bottom: 34px;
-    left: 12.5%;
-    z-index: 99999;
-}
-
-.ed-home__phone span{
-    animation-duration: 1s;
-        -webkit-animation-duration: 1s;
-        -moz-animation-duration: 1s;
-    display: block;
-    margin: 20px auto;
-    width: 3px;
-    height: 6px;
-    border-radius: 4px;
-    background: #fff;
-    border: 1px solid transparent;
-}
-
 .ed-home--panels__panel--header{
     background-position: center;
     background-size: cover;
@@ -91,7 +64,6 @@
 
 #Servicos .ed-home--panels__panel--header{background-image: url(../images/quemsomos/remow_ed-quemsomos--fig__2.jpg); background-blend-mode: multiply;}
 .ed-servicos--haeder__bg{position: absolute; opacity: 1; z-index: 1}
-.ed-servicos .ed-home--panels__panel--header .mdc-button{margin: 6px}
 .ed-servicos p.mdc-typography--display1{line-height: 1.5}
 
 .ed-servicos--card__impressao{background-image: url(../images/servicos/remow_ed-servicos--impressao.jpg);}
@@ -135,7 +107,7 @@
 .ed-contato h2, .ed-contato h4, .ed-contato h5{margin-bottom: 0}
 .ed-contato h3{margin-top: 0}
 
-.ed-contato .mdc-layout-grid__inner{height: auto}
+
 .ed-contato .mdc-card{margin-bottom: 16px}
 
 .ed-contato--map{
@@ -145,7 +117,7 @@
 }
 .ed-contato .mdc-fab {background: var(--mdc-theme-primary)}
 
-/* DESTAQUE */
+/* DESTAQUES */
 
 .ed-destaques--menu{
     position: fixed; left: 24px;
@@ -163,10 +135,26 @@
 .ed-destaques--menu button{display: block}
 .ed-destaques--menu__item{display: -webkit-box}
 
+.ed-destaque--lonas,
+.ed-destaque--adesivos,
+.ed-destaque--placas,
+.ed-destaque--tecido{
+    background-size: cover;
+    background-position: center;
+}
+
+.ed-destaque--detalhes{
+    position: initial;
+    top: initial; left: initial;
+    max-height: 100vh; max-width: auto;
+    overflow: scroll;
+}
+
 .ed-destaque__title {margin: 0}
 .ed-destaque__subtitle {margin-top: 0} 
 .ed-destaque--card__right{background-color: rgba(255,255,255,0.85)}
 .ed-destaque__preco {text-transform: initial}
+.ed-destaque--detalhe__close{display: none}
 
 /* LONAS */
 
@@ -174,8 +162,6 @@
     background-image: url(../images/remow_ed-lona--bg.jpg);
     background-color: #00adee;
     background-blend-mode: hard-light;
-    background-size: cover;
-    background-position: center;
 }
 .ed-destaque--lonas--gallery--card__1 {background-image: url(../images/galeria/lonas/thumb/remow_ed-lona--gal--znorte__thumb.jpg); background-size: cover}
 .ed-destaque--lonas--gallery--card__2 {background-image: url(../images/galeria/lonas/thumb/remow_ed-lona--gal--festmimo__thumb.jpg); background-size: cover}
@@ -190,8 +176,6 @@
     background-image: url(../images/remow_ed-adesivo--bg.jpg);
     background-color: #fff100;
     background-blend-mode: multiply;
-    background-size: cover;
-    background-position: center
 }
 
 /* PLACAS */
@@ -200,8 +184,6 @@
     background-image: url(../images/remow_ed-placa--bg.jpg);
     background-color: #eb008b;
     background-blend-mode: multiply;
-    background-size: cover;
-    background-position: center
 }
 
 /* TECIDO */
@@ -210,8 +192,6 @@
     background-image: url(../images/remow_ed-tecido--bg.jpg);
     background-color: darkgray;
     background-blend-mode: luminosity;
-    background-size: cover;
-    background-position: center
 }
 
 .ed-destaque--tecido h5{margin: 0}

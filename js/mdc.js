@@ -78,6 +78,15 @@ $(function() {
         $(this).toggleClass("mdc-elevation--z8");
     });
     
+    //drawer
+    let drawer = new mdc.drawer.MDCTemporaryDrawer(document.querySelector('.mdc-drawer--temporary'));
+    document.querySelector('.ed-drawer__icon').addEventListener('click', () => drawer.open = true);
+    var drawerClose = document.querySelectorAll('.ed-drawer--item');
+    for (var i = 0, dC; dC = drawerClose[i]; i++) {
+        dC.addEventListener('click', () => drawer.open = false);
+    }
+    mdc.drawer.MDCTemporaryDrawer.attachTo(document.querySelector('.mdc-drawer--temporary'));
+    
 });
 
 $(function () {

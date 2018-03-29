@@ -83,7 +83,7 @@
 .ed-header--tab .mdc-tab.mdc-tab--active, .ed-header--tab .mdc-tab:hover {color: rgba(255,255,255,0.7)}
 .ed-main{background-color: #333333;}
 
-#ed-main__bg{
+.ed-main__bg{
     position: fixed;
     z-index: -1;
     width: 100%; height: 100%;
