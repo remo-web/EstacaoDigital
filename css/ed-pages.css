@@ -173,16 +173,16 @@
 /* ADESIVOS */
 
 .ed-destaque--adesivos{
-    background-image: url(../images/remow_ed-adesivo--bg.jpg);
-    background-color: #fff100;
+    background-image: url(../images/remow_ed-placa--bg.jpg);
+    background-color: #eb008b;
     background-blend-mode: multiply;
 }
 
 /* PLACAS */
 
 .ed-destaque--placas{
-    background-image: url(../images/remow_ed-placa--bg.jpg);
-    background-color: #eb008b;
+    background-image: url(../images/remow_ed-adesivo--bg.jpg);
+    background-color: #fff100;
     background-blend-mode: multiply;
 }
 

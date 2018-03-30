@@ -8,7 +8,7 @@
     .ed-destaque--detalhes{
         position: absolute;
         top: 56px; left: 1%; bottom: 1%;
-        max-height: calc(99% - 56px); max-width: 98%;
+        max-height: calc(99vh - 56px); max-width: 98vh;
         overflow: scroll;
     }
     .ed-destaque--detalhe__close{display: block; position: absolute; top: 5px; right: 10px;}
