@@ -147,7 +147,7 @@
     position: initial;
     top: initial; left: initial;
     max-height: 100vh; max-width: auto;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .ed-destaque__title {margin: 0}
