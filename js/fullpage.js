@@ -1,14 +1,14 @@
 $(document).ready(function() {
-    if ( $(window).width() < 1366 || window.Touch) { 
+    if ( $(window).width() < 1280 || window.Touch) { 
         var edSensitivity = 1; 
-        var edFixed = '.ed-destaque--detalhes';
+        var edFixed = '.ed-destaque--detalhes__mobile';
     } else {
         var edSensitivity = 100; 
-        var edFixed = '';
+        var edFixed = 0;
     }
     
     $('.ed-destaque--button__more').click(function(e){
-        if ($(window).width() < 1366) {
+        if ($(window).width() < 1280) {
             $.fn.fullpage.setAllowScrolling(false);
         }
     });
