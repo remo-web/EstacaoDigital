@@ -1,12 +1,31 @@
 $(document).ready(function() {
-	$('#fullpage').fullpage({
+    if ( $(window).width() < 1366 || window.Touch) { 
+        var edSensitivity = 1; 
+        var edFixed = '.ed-destaque--detalhes';
+    } else {
+        var edSensitivity = 100; 
+        var edFixed = '';
+    }
+    
+    $('.ed-destaque--button__more').click(function(e){
+        if ($(window).width() < 1366) {
+            $.fn.fullpage.setAllowScrolling(false);
+        }
+    });
+	
+    $('#fullpage').fullpage({
         anchors: ['home', 'Lonas', 'Adesivos', 'Placas', 'Tecido', 'TheEnd'],
         scrollOverflow: true,
         keyboardScrolling: false,
         normalScrollElements:'.fp-kill',
         animateAnchor: false,
+        touchSensitivity: edSensitivity,
+        fixedElements: edFixed,
     });
 });
+
+//DESTAQUES - MOBILE
+
 
 //MAIN FOOTER
 $('#ed-footer-quemsomos').click(function(e){

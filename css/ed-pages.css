@@ -146,7 +146,7 @@
 .ed-destaque--detalhes{
     position: initial;
     top: initial; left: initial;
-    max-height: 100vh; max-width: auto;
+    max-height: 95vh; width: auto;
     overflow: auto;
 }
 

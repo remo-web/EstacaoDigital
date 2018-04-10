@@ -67,12 +67,6 @@ $(function() {
 //        }
     });
     
-    //select
-    var sels = document.querySelectorAll('.mdc-select');
-    for (var i = 0, sel; sel = sels[i]; i++) {
-        mdc.select.MDCSelect.attachTo(sel);
-    }
-    
     //elevation on hover
     $('.mdc-card').hover(function(){
         $(this).toggleClass("mdc-elevation--z8");
