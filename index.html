@@ -123,7 +123,7 @@
         <link href="css/mobile.css"
               rel="stylesheet">
         
-        <!--Start of Tawk.to Script -->
+        <!--Start of Tawk.to Script
         <script type="text/javascript">
         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
         (function(){
@@ -3360,7 +3360,7 @@
         </div>
         
         <!-- FORMULÁRIO DE PEDIDO -->
-        <section class="mdc-layout-grid fp-kill ed-pedido ed-hide"
+        <section class="mdc-layout-grid fp-kill ed-pedido"
                  id="FormulariodePedido">
             <form class="mdc-layout-grid__inner mdc-typography">
                 <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop">
@@ -3434,7 +3434,7 @@
                            class="mdc-typography--button mdc-tab" 
                            href="#pedido-papel"
                            role="tab">Papel</a>
-                        <span class="mdc-tab-bar__indicator"></span>
+                        <span class="mdc-tab-bar__indicator ed-pedido--tab-bar__indicator"></span>
                     </nav>
                 </section>
                 <section class="mdc-typography mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop ed-pedido--panels">
@@ -3442,65 +3442,33 @@
                          class="mdc-layout-grid__inner ed-pedido--panels__panel active"
                          id="pedido-lona"
                          role="tabpanel">
-                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop">
-                            <div class="mdc-text-field mdc-text-field--fullwidth mdc-text-field--upgraded">
-                                <input aria-controls="ed-ped-numartes-helper-text"
-                                       class="mdc-typography mdc-text-field__input"
-                                       id="ed-ped-numartes"
-                                       required
-                                       type="number"
-                                       value="">
-                                <label class="mdc-floating-label"
-                                       for="ed-ped-numartes">
-                                    Quantidade de artes
-                                </label>
-                                <div class="mdc-line-ripple"></div>
-                            </div>
-                            <p aria-hidden="true"
-                               class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
-                               id="ed-ped-numartes-helper-text">
-                                 Preenchimento obrigatório de 1 até &infin;
-                            </p>
+                        <h5 class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop mdc-typography--title mdc-theme--primary">Lona 1</h5>
+                        <div class="mdc-select mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop mdc-typography">
+                            <select class="mdc-select__native-control mdc-typography">
+                                <option disabled
+                                        value=""
+                                        selected>
+                                </option>
+                                <option value="brilho">Brilho</option>
+                                <option value="fosca">Fosca</option>
+                            </select>
+                            <div class="mdc-select__label">Tipo de lona</div>
+                            <div class="mdc-select__bottom-line"></div>
                         </div>
-                        <p class="mdc-layout-grid__cell mdc-layout-grid__cell--span-10-desktop mdc-typography--body1 mdc-theme--text-primary-on-light"><br><br>Digite o número de artes diferentes que deseja enviar a serem executadas no tipo de serviço selecionado a cima.</p>
-                        <h5 class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop mdc-typography--title mdc-theme--primary">Arte Lona 1</h5>
-                        <div class="mdc-select mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop"
-                             role="listbox">
-                            <div class="mdc-select__surface" tabindex="0">
-                                <div class="mdc-select__label">Tipo de lona</div>
-                                <div class="mdc-select__selected-text"></div>
-                                <div class="mdc-select__bottom-line"></div>
-                            </div>
-                            <div class="mdc-menu mdc-select__menu">
-                                <ul class="mdc-list mdc-menu__items">
-                                    <li class="mdc-list-item" role="option" tabindex="0">
-                                        Brilho
-                                    </li>
-                                    <li class="mdc-list-item" role="option" tabindex="0">
-                                        Fosca
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="mdc-select mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop mdc-typography">
+                            <select class="mdc-select__native-control mdc-typography">
+                                <option disabled
+                                        value=""
+                                        selected>
+                                </option>
+                                <option value="brilho">Ilhós</option>
+                                <option value="fosca">Banner</option>
+                                <option value="fosca">Sem acabamento</option>
+                            </select>
+                            <div class="mdc-select__label">Acabamento</div>
+                            <div class="mdc-select__bottom-line"></div>
                         </div>
-                        <div class="mdc-select mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop"
-                             role="listbox">
-                            <div class="mdc-select__surface" tabindex="0">
-                                <div class="mdc-select__label">Acabamento</div>
-                                <div class="mdc-select__selected-text"></div>
-                                <div class="mdc-select__bottom-line"></div>
-                            </div>
-                            <div class="mdc-menu mdc-select__menu">
-                                <ul class="mdc-list mdc-menu__items">
-                                    <li class="mdc-list-item" role="option" tabindex="0">
-                                        Ilhós
-                                    </li>
-                                    <li class="mdc-list-item" role="option" tabindex="0">
-                                        Banner
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop">
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
                             <div class="mdc-text-field mdc-text-field--fullwidth">
                                 <input aria-controls="lona-largura-helper-text"
                                        class="mdc-typography mdc-text-field__input"
@@ -3518,8 +3486,8 @@
                                id="lona-largura-helper-text">
                                 Campo de preenchimento obrigatório
                             </p>
-                        </span>
-                        <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop">
+                        </div>
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
                             <div class="mdc-text-field mdc-text-field--fullwidth">
                                 <input aria-controls="lona-altura-helper-text"
                                        class="mdc-typography mdc-text-field__input"
@@ -3537,14 +3505,40 @@
                                id="lona-altura-helper-text">
                                 Campo de preenchimento obrigatório
                             </p>
-                        </span>
-                        <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop ed-pedido--lona--button__anexo"
+                        </div>
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
+                            <div class="mdc-text-field mdc-text-field--fullwidth">
+                                <input aria-controls="lona-altura-helper-text"
+                                       class="mdc-typography mdc-text-field__input"
+                                       id="lona-quantidade"
+                                       required
+                                       type="number">
+                                <label class="mdc-floating-label"
+                                       for="lona-altura">
+                                    quantidade
+                                </label>
+                                <div class="mdc-line-ripple"></div>
+                            </div>
+                            <p aria-hidden="true"
+                               class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+                               id="lona-altura-helper-text">
+                                Campo de preenchimento obrigatório
+                            </p>
+                        </div>
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop ed-pedido--lona--button__anexo"
                               id="pedido-lona-anexo1">
                             <button class="mdc-button mdc-typography--button mdc-button--raised">
                                 <i class="fas fa-paperclip"></i>
                                 Anexar arte (.TIFF, .PDF, ou .JPG)
                             </button>
-                        </span>
+                        </div>
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop ed-pedido--lona--button__anexo"
+                              id="pedido-lona-anexo1">
+                            <button class="mdc-button mdc-typography--button">
+                                <i class="fas fa-plus"></i>
+                                outras artes
+                            </button>
+                        </div>
                     </div>
                     <p aria-hidden="true"
                        class="ed-pedido--panels__panel"

@@ -5,10 +5,6 @@ $(function() {
         mdc.ripple.MDCRipple.attachTo(btn);
     }
     
-    //dropdown
-    let menu = new mdc.menu.MDCMenu(document.querySelector('.mdc-menu'));
-    document.querySelector('.mdc-menu-anchor').addEventListener('click', () => menu.open = !menu.open);
-    
     //tabs
     var dynamicTabBar = window.dynamicTabBar = new mdc.tabs.MDCTabBar(document.querySelector('.dynamic-tab-bar'));
     var panels = document.querySelector('.ed-home--panels');
@@ -80,6 +76,12 @@ $(function() {
         dC.addEventListener('click', () => drawer.open = false);
     }
     mdc.drawer.MDCTemporaryDrawer.attachTo(document.querySelector('.mdc-drawer--temporary'));
+    
+    //select
+    var sels = document.querySelectorAll('.mdc-select');
+    for (var i = 0, sel; sel = sels[i]; i++) {
+        new mdc.select.MDCSelect.attachTo(sel);
+    }
     
 });
 
