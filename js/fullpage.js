@@ -1,10 +1,16 @@
 $(document).ready(function() {
-    if ( $(window).width() < 1280 || window.Touch) { 
+    if ( $(window).width() < 1280 || window.Touch ) { 
         var edSensitivity = 1; 
         var edFixed = '.ed-destaque--detalhes__mobile';
     } else {
         var edSensitivity = 100; 
         var edFixed = 0;
+    }
+    if ( $(window).width() < 1280 ) { 
+        var detalhes = document.querySelectorAll('.ed-destaque--detalhes');
+        for (var i = 0, detalhe; detalhe = detalhes[i]; i++) {
+            $(detalhes).addClass('ed-destaque--detalhes__mobile');
+        };
     }
     
     $('.ed-destaque--button__more').click(function(e){
