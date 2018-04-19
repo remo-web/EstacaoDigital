@@ -220,6 +220,7 @@
 .ed-pedido--panels__panel{display: none;}
 .ed-pedido--panels__panel.active{display: grid}
 .ed-pedido--panels button {width: 100%}
+button.ed-pedido--panels__title--remove{display: inline-flex; width: auto;}
 .ed-pedido--lona--button__anexo{padding-top: 20px}
 .ed-pedido--preco{
     width: 100%;
