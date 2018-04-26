@@ -3,49 +3,60 @@
 :root {
     --mdc-theme-primary: #2e3191;
     --mdc-theme-secondary: #917E2E;
+    --mdc-theme-background: #FFFFFF;
+    --mdc-theme-on-primary: #FFFFFF;
+    --mdc-theme-on-secondary: #FFFFFF;
+    
 }
 
 .mdc-typography,
-.mdc-typography--display4,
-.mdc-typography--display3,
-.mdc-typography--display2,
-.mdc-typography--display1,
-.mdc-typography--headline,
-.mdc-typography--title,
+.mdc-typography--headline6,
+.mdc-typography--headline5,
+.mdc-typography--headline4,
+.mdc-typography--headline3,
+.mdc-typography--headline2,
+.mdc-typography--headline1,
 .mdc-typography--button{
     font-family: 'Titillium Web', sans-serif !important;
 }
 
-.mdc-typography--subheading2,
-.mdc-typography--subheading1,
+.mdc-typography--subtitle2,
+.mdc-typography--subtitle1,
 .mdc-typography--body2,
 .mdc-typography--body1,
+.mdc-typography--overline,
 .mdc-typography--caption{
     font-family: 'Titillium Web', sans-serif !important;
 }
 
-.mdc-typography--display4,
-.mdc-typography--display3,
-.mdc-typography--display2,
-.mdc-typography--display1{
+.mdc-typography--headline4,
+.mdc-typography--headline3,
+.mdc-typography--headline2,
+.mdc-typography--headline1{
     font-weight: 200
 }
 
-.mdc-typography--headline,
-.mdc-typography--title,
+.mdc-typography--headline6,
+.mdc-typography--headline5,
 .mdc-typography--button{
     font-weight: 400
 }
 
-.mdc-typography--subheading1,
+.mdc-typography--subtitle1,
 .mdc-typography--body1,
+.mdc-typography--overline,
 .mdc-typography--caption{
     font-weight: 400
 }
 
-.mdc-typography--subheading2,
+.mdc-typography--subtitle2,
 .mdc-typography--body2{
     font-weight: 600
+}
+
+.mdc-card .mdc-typography--subtitle2,
+.mdc-card .mdc-typography--subtitle1{
+    margin-top: -20px
 }
 
 .mdc-card__action .mdc-button{margin: 0px}
@@ -82,3 +93,5 @@
 .mdc-elevation--z6,
 .mdc-elevation--z7,
 .mdc-elevation--z8{transition: .4s}
+
+.mdc-fab .mdc-fab__icon{font-size: initial; height: auto; width: auto}

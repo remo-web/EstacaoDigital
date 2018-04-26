@@ -18,6 +18,7 @@
     animation-duration: .5s;
     -webkit-animation-duration: .5s;
     -moz-animation-duration: .5s;
+    font-size: 7rem;
 }
 
 .ed-home__button--menu--hover{
@@ -51,8 +52,6 @@
 #QuemSomos .ed-home--panels__panel--header{background-image: url(../images/quemsomos/remow_ed-quemsomos--fig__2.jpg); background-blend-mode: multiply;}
 
 .ed-quemsomos--estrutura .mdc-card{width: 100%; margin-bottom: 24px}
-.ed-quemsomos--estrutura--card h3{margin-bottom: 0}
-.ed-quemsomos--estrutura--card h4{margin-top: 0}
 .ed-quemsomos--estrutura--card__versa{background-image: url(../images/quemsomos/remow_ed-quemsomos--estrutura__RolandVersaUV.jpg);}    
 .ed-quemsomos--estrutura--card__xc540{background-image: url(../images/quemsomos/remow_ed-quemsomos--estrutura__RolandXC540.jpg);}
 .ed-quemsomos--estrutura--card__targaxt{background-image: url(../images/quemsomos/remow_ed-quemsomos--estrutura__TargaXT.jpg);}
@@ -64,7 +63,7 @@
 
 #Servicos .ed-home--panels__panel--header{background-image: url(../images/quemsomos/remow_ed-quemsomos--fig__2.jpg); background-blend-mode: multiply;}
 .ed-servicos--haeder__bg{position: absolute; opacity: 1; z-index: 1}
-.ed-servicos p.mdc-typography--display1{line-height: 1.5}
+.ed-servicos p.mdc-typography--headline1{line-height: 1.5}
 
 .ed-servicos--card__impressao{background-image: url(../images/servicos/remow_ed-servicos--impressao.jpg);}
 .ed-servicos--card__recorte{background-image: url(../images/servicos/remow_ed-servicos--recorte.jpg);}
