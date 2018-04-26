@@ -66,6 +66,7 @@
 .mdc-toolbar__title p{margin: 0}
 
 .mdc-tab-bar__indicator{background-color: var(--mdc-theme-text-secondary-on-dark)}
+.ed-pedido--tab-bar__indicator{background-color: var(--mdc-theme-text-secondary-on-light);}
 
 .mdc-card{background-color: var(--mdc-theme-background); transition: .4s}
 .mdc-card__media{background-size: cover; background-position: center}
