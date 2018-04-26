@@ -1815,7 +1815,7 @@
                                       method="post"
                                       name="ed-contato">
                                     <div class="ed-card--content__text">
-                                        <div class="mdc-text-field mdc-text-field--fullwidth">
+                                        <div class="mdc-text-field mdc-text-field--upgraded">
                                             <input aria-controls="ed-contato-nome--helper"
                                                    class="mdc-typography mdc-text-field__input"
                                                    id="ed-contato-nome"
@@ -1833,7 +1833,7 @@
                                            id="ed-contato-nome--helper">
                                             Campo de preenchimento obrigatório
                                         </p>
-                                        <div class="mdc-text-field mdc-text-field--fullwidth">
+                                        <div class="mdc-text-field mdc-text-field--upgraded">
                                             <input aria-controls="ed-contato-email--helper"
                                                    class="mdc-typography mdc-text-field__input"
                                                    id="ed-contato-email"
@@ -1852,7 +1852,7 @@
                                            id="ed-contato-email--helper">
                                             Insira um endereço de e-mail válido
                                         </p>
-                                        <div class="mdc-text-field mdc-text-field--fullwidth">
+                                        <div class="mdc-text-field mdc-text-field--upgraded">
                                             <input aria-controls="ed-contato-assunto--helper"
                                                    class="mdc-typography mdc-text-field__input"
                                                    id="ed-contato-assunto"
@@ -1870,7 +1870,7 @@
                                            id="ed-contato-assunto--helper">
                                             Campo de preenchimento obrigatório
                                         </p>
-                                        <div class="mdc-text-field mdc-text-field--textarea mdc-text-field--fullwidth">
+                                        <div class="mdc-text-field mdc-text-field--textarea mdc-text-field--upgraded">
                                             <textarea aria-controls="ed-contato-mensagem--helper"
                                                       class="mdc-typography mdc-text-field__input"
                                                       cols="40"
@@ -3378,16 +3378,22 @@
         </div>
         
         <!-- FORMULÁRIO DE PEDIDO -->
-        <section class="mdc-layout-grid fp-kill ed-pedido ed-hide"
+        <section class="mdc-layout-grid fp-kill ed-pedido"
                  id="FormulariodePedido">
-            <form class="mdc-layout-grid__inner mdc-typography">
+            <form action="pedido/form/pedido.php"
+                  class="mdc-layout-grid__inner mdc-typography"
+                  id="ed_pedido"
+                  method="post"
+                  name="ed-pedido">                
                 <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop">
                     <h2 class="mdc-typography--headline3">Formulário de Pedido</h2>
                     <h3 class="mdc-typography--headline6 mdc-theme--text-secondary-on-light">Banner de lona <!-- substituir por um campo preenchido por código referente ao botão que o usuário clicar para abrir o pedido--></h3>
                 </span>
+                <!-- Informações Pessoais -->
                 <h4 class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop mdc-typography--headline6 mdc-theme--primary">1. Informações pessoais</h4>
-                <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop">
-                    <div class="mdc-text-field mdc-text-field--fullwidth">
+                <!-- Informações Pessoais | Nome -->
+                <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5-desktop">
+                    <div class="mdc-text-field mdc-text-field--upgraded">
                         <input aria-controls="fullname-helper-text"
                                class="mdc-typography mdc-text-field__input"
                                id="my-text-field"
@@ -3400,17 +3406,18 @@
                         <div class="mdc-line-ripple"></div>
                     </div>
                     <p aria-hidden="true"
-                       class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+                       class="mdc-typography mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
                        id="fullname-helper-text">
                         Campo de preenchimento obrigatório
                     </p>
                 </span>
-                <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop">
-                    <div class="mdc-text-field mdc-text-field--fullwidth">
+                <!-- Informações Pessoais | E-mail -->
+                <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop">
+                    <div class="mdc-text-field mdc-text-field--upgraded">
                         <input class="mdc-typography mdc-text-field__input"
                                id="my-text-field"
                                required
-                               type="text">
+                               type="email">
                         <label class="mdc-typography mdc-floating-label"
                                for="my-text-field">
                             E-mail
@@ -3418,15 +3425,148 @@
                         <div class="mdc-line-ripple"></div>
                     </div>
                     <p aria-hidden="true"
-                       class="mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+                       class="mdc-typography mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
                        id="fullname-helper-text">
                         Utilize um endereço de e-mail válido
                     </p>
                 </span>
+                <!-- Informações Pessoais | Telefone -->
+                <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
+                    <div class="mdc-text-field mdc-text-field--upgraded">
+                        <input class="mdc-typography mdc-text-field__input"
+                               id="my-text-field"
+                               type="number">
+                        <label class="mdc-typography mdc-floating-label"
+                               for="my-text-field">
+                            Telefone
+                        </label>
+                        <div class="mdc-line-ripple"></div>
+                    </div>
+                </span>
+                <!-- Entrega -->
+                <h4 class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop mdc-typography--headline6 mdc-theme--primary">2. Endereço de entrega</h4>
+                <!-- Entrega | Rua -->
+                <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop">
+                    <div class="mdc-text-field mdc-text-field--upgraded">
+                        <input aria-controls="fullname-helper-text"
+                               class="mdc-typography mdc-text-field__input"
+                               id="my-text-field"
+                               required
+                               type="text">
+                        <label class="mdc-typography mdc-floating-label"
+                               for="my-text-field">
+                            Estado
+                        </label>
+                        <div class="mdc-line-ripple"></div>
+                    </div>
+                    <p aria-hidden="true"
+                       class="mdc-typography mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+                       id="fullname-helper-text">
+                        Campo de preenchimento obrigatório
+                    </p>
+                </span>
+                <!-- Entrega | Rua -->
+                <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop">
+                    <div class="mdc-text-field mdc-text-field--upgraded">
+                        <input aria-controls="fullname-helper-text"
+                               class="mdc-typography mdc-text-field__input"
+                               id="my-text-field"
+                               required
+                               type="text">
+                        <label class="mdc-typography mdc-floating-label"
+                               for="my-text-field">
+                            Cidade
+                        </label>
+                        <div class="mdc-line-ripple"></div>
+                    </div>
+                    <p aria-hidden="true"
+                       class="mdc-typography mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+                       id="fullname-helper-text">
+                        Campo de preenchimento obrigatório
+                    </p>
+                </span>
+                <!-- Entrega | Bairro -->
+                <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
+                    <div class="mdc-text-field mdc-text-field--upgraded">
+                        <input class="mdc-typography mdc-text-field__input"
+                               id="my-text-field"
+                               required
+                               type="text">
+                        <label class="mdc-typography mdc-floating-label"
+                               for="my-text-field">
+                            Bairro
+                        </label>
+                        <div class="mdc-line-ripple"></div>
+                    </div>
+                    <p aria-hidden="true"
+                       class="mdc-typography mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+                       id="fullname-helper-text">
+                        Utilize um endereço de e-mail válido
+                    </p>
+                </span>
+                <!-- Entrega | Rua -->
+                <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5-desktop">
+                    <div class="mdc-text-field mdc-text-field--upgraded">
+                        <input aria-controls="fullname-helper-text"
+                               class="mdc-typography mdc-text-field__input"
+                               id="my-text-field"
+                               required
+                               type="text">
+                        <label class="mdc-typography mdc-floating-label"
+                               for="my-text-field">
+                            Rua
+                        </label>
+                        <div class="mdc-line-ripple"></div>
+                    </div>
+                    <p aria-hidden="true"
+                       class="mdc-typography mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+                       id="fullname-helper-text">
+                        Campo de preenchimento obrigatório
+                    </p>
+                </span>
+                <!-- Entrega | Número -->
+                <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop">
+                    <div class="mdc-text-field mdc-text-field--upgraded">
+                        <input class="mdc-typography mdc-text-field__input"
+                               id="my-text-field"
+                               required
+                               type="text">
+                        <label class="mdc-typography mdc-floating-label"
+                               for="my-text-field">
+                            Número
+                        </label>
+                        <div class="mdc-line-ripple"></div>
+                    </div>
+                    <p aria-hidden="true"
+                       class="mdc-typography mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+                       id="fullname-helper-text">
+                        Campo de preenchimento obrigatório
+                    </p>
+                </span>
+                <!-- Entrega | Complemento -->
+                <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop">
+                    <div class="mdc-text-field mdc-text-field--upgraded">
+                        <input class="mdc-typography mdc-text-field__input"
+                               id="my-text-field"
+                               required
+                               type="text">
+                        <label class="mdc-typography mdc-floating-label"
+                               for="my-text-field">
+                            Complemento
+                        </label>
+                        <div class="mdc-line-ripple"></div>
+                    </div>
+                    <p aria-hidden="true"
+                       class="mdc-typography mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
+                       id="fullname-helper-text">
+                        Utilize um endereço de e-mail válido
+                    </p>
+                </span>
+                <!-- Informações do Pedido -->
                 <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop">
-                    <h4 class="mdc-typography--headline6 mdc-theme--primary">2. Informações do serviço</h4>
-                    <p class="mdc-typography--caption mdc-theme--text-secondary-on-light">Preencha, em cada uma das abas, as informações necessárias para cada tipo de serviço desejado, só então siga para o passo seguinte.</p>
-                    <p class="mdc-typography--caption mdc-theme--text-secondary-on-light">Somente quadros com todos todos os campos preenchidos corretamente serão considerados para composição de orçamento e pedido.</p>
+                    <h4 class="mdc-typography--headline6 mdc-theme--primary">3. Informações do serviço</h4>
+                    <p class="mdc-typography--body1 mdc-theme--text-secondary-on-light">Preencha, em cada uma das abas, as informações necessárias para cada tipo de serviço desejado, só então siga para o passo seguinte.</p>
+                    <p class="mdc-typography--body2 mdc-theme--text-secondary-on-light"><strong>ATENÇÃO</strong>&nbsp;&nbsp;Somente quadros com todos todos os campos preenchidos corretamente serão considerados para composição de orçamento e pedido.</p>
                 </span>
                 <section class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop dynamic-tab-bar2"
                          id="dynamic-tab-bar2">
@@ -3464,10 +3604,11 @@
                          role="tabpanel">
                         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop mdc-card animated fadeInUp" id="pedido_lona1">
                             <div class="mdc-layout-grid__inner ed-card--content__text">
-                                <h5 class="mdc-layout-grid__cell mdc-layout-grid__cell--align-bottom mdc-layout-grid__cell--span-12-desktop mdc-typography--title mdc-theme--primary"
+                                <h5 class="mdc-layout-grid__cell mdc-layout-grid__cell--align-bottom mdc-layout-grid__cell--span-12-desktop mdc-typography--headline6 mdc-theme--primary"
                                     id="lona1">
                                     Lona 1
                                 </h5>
+                                <!-- Lona | tipo -->
                                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop mdc-select mdc-typography">
                                     <select class="mdc-select__native-control mdc-typography"
                                             id="lona_tipo1"
@@ -3476,14 +3617,15 @@
                                                 value=""
                                                 selected>
                                         </option>
+                                        <option value="fosca"><i>Back-light</i></option>
                                         <option value="brilho">Brilho / <i>Front-Light</i></option>
                                         <option value="fosca">Fosca</option>
                                         <option value="fosca"><i>Sanet</i></option>
-                                        <option value="fosca"><i>Back-light</i></option>
                                     </select>
-                                    <div class="mdc-select__label">Tipo de lona</div>
-                                    <div class="mdc-select__bottom-line"></div>
+                                    <label class="mdc-floating-label mdc-typography">Tipo de lona</label>
+                                    <div class="mdc-line-ripple"></div>
                                 </div>
+                                <!-- Lona | acabamento -->
                                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop mdc-select mdc-typography">
                                     <select class="mdc-select__native-control mdc-typography"
                                             id="lona_acabamento1"
@@ -3492,24 +3634,24 @@
                                                 value=""
                                                 selected>
                                         </option>
-                                        <option value="brilho">Ilhós</option>
                                         <option value="fosca">Banner</option>
+                                        <option value="brilho">Ilhós</option>
                                         <option value="fosca">Sem acabamento</option>
                                     </select>
-                                    <div class="mdc-select__label">Acabamento</div>
-                                    <div class="mdc-select__bottom-line"></div>
+                                    <label class="mdc-floating-label mdc-typography">Acabamento</label>
+                                    <div class="mdc-line-ripple"></div>
                                 </div>
-                                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
-                                    <div class="mdc-text-field mdc-text-field--fullwidth">
+                                <!-- Lona | largura -->
+                                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop">
+                                    <div class="mdc-text-field">
                                         <input aria-controls="lona-largura-helper-text"
                                                class="mdc-typography mdc-text-field__input ed-pedido--lona__largura"
                                                id="lona_largura1"
                                                name="lona_largura1"
-                                               onchange="updatePreco();"
                                                required
                                                type="number">
                                         <label class="mdc-floating-label"
-                                               for="lona-largura">
+                                               for="lona_largura">
                                             largura (cm)
                                         </label>
                                         <div class="mdc-line-ripple"></div>
@@ -3520,13 +3662,13 @@
                                         Campo de preenchimento obrigatório
                                     </p>
                                 </div>
-                                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
-                                    <div class="mdc-text-field mdc-text-field--fullwidth">
+                                <!-- Lona | altura -->
+                                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop">
+                                    <div class="mdc-text-field mdc-text-field--upgraded">
                                         <input aria-controls="lona-altura-helper-text"
                                                class="mdc-typography mdc-text-field__input ed-pedido--lona__altura"
                                                id="lona_altura1"
                                                name="lona_altura1"
-                                               onchange="updatePreco();"
                                                required
                                                type="number">
                                         <label class="mdc-floating-label"
@@ -3541,8 +3683,9 @@
                                         Campo de preenchimento obrigatório
                                     </p>
                                 </div>
-                                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop">
-                                    <div class="mdc-text-field mdc-text-field--fullwidth">
+                                <!-- Lona | quantidade -->
+                                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop">
+                                    <div class="mdc-text-field mdc-text-field--upgraded">
                                         <input aria-controls="lona-altura-helper-text"
                                                class="mdc-typography mdc-text-field__input"
                                                id="lona_quantidade1"
@@ -3561,7 +3704,9 @@
                                         Campo de preenchimento obrigatório
                                     </p>
                                 </div>
-                                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop ed-pedido--lona--button__anexo"
+                                <!-- Lona | anexo -->
+                                <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop"
+                                     disabled
                                      id="lona_anexo1"
                                      name="lona_anexo1">
                                     <button class="mdc-button mdc-typography--button mdc-button--raised">
@@ -3571,6 +3716,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Lona + -->
                         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop">
                             <button class="mdc-button mdc-typography--button"
                                     id="mais_lonas">
@@ -3617,7 +3763,7 @@
                             <div class="mdc-select__bottom-line"></div>
                         </div>
                         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
-                            <div class="mdc-text-field mdc-text-field--fullwidth">
+                            <div class="mdc-text-field mdc-text-field--upgraded">
                                 <input aria-controls="lona-largura-helper-text"
                                        class="mdc-typography mdc-text-field__input"
                                        id="lona_largura1"
@@ -3636,7 +3782,7 @@
                             </p>
                         </div>
                         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
-                            <div class="mdc-text-field mdc-text-field--fullwidth">
+                            <div class="mdc-text-field mdc-text-field--upgraded">
                                 <input aria-controls="lona-altura-helper-text"
                                        class="mdc-typography mdc-text-field__input"
                                        id="lona_altura1"
@@ -3655,7 +3801,7 @@
                             </p>
                         </div>
                         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop">
-                            <div class="mdc-text-field mdc-text-field--fullwidth">
+                            <div class="mdc-text-field mdc-text-field--upgraded">
                                 <input aria-controls="lona-altura-helper-text"
                                        class="mdc-typography mdc-text-field__input"
                                        id="lona_quantidade1"
@@ -3705,7 +3851,8 @@
                        id="pedido-papel"
                        role="tabpanel">Papel</p>
                 </section>
-                <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop ed-pedido--preco mdc-elevation--z5">
+                <!--
+                <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop ed-pedido--preco mdc-elevation--z5 ed-hide">
                     <section class="mdc-layout-grid__inner">
                         <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-10-desktop">
                             <p class="mdc-typography--subtitle1 mdc-theme--text-secondary-on-light">Até o momento vai custar...<br> 
@@ -3723,6 +3870,7 @@
                         </div>
                     </section>
                 </span>
+                -->
             </form>
         </section>
         
@@ -3813,7 +3961,8 @@
             <!-- JS | CUSTOM | Pedido -->
             <script src="pedido/js/mdc-pedido.js"></script>
             <script src="pedido/js/clone.js"></script>
-            <script src="pedido/js/aritmetica.js"></script>
+            <script src="pedido/form/pedido.js"></script>
+<!--            <script src="pedido/js/aritmetica.js"></script>-->
         <!-- JS | MDC -->
         <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
         <script type="text/javascript">window.mdc.autoInit();</script>

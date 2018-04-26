@@ -59,6 +59,9 @@
     margin-top: -20px
 }
 
+.mdc-text-field{width: 100%}
+.mdc-select{margin-top: 12px}
+
 .mdc-card__action .mdc-button{margin: 0px}
 .mdc-button{margin: 6px}
 

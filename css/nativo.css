@@ -19,3 +19,7 @@ video{
     transition: 1s opacity;
     opacity: 0.4
 }
+
+strong {
+    color: darkred
+}
