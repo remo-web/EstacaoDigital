@@ -1,58 +1,51 @@
-$("#ed_contato").submit(function(event){
-    var nome = document.forms["ed-contato"]["ed-contato-nome"].value;
-    var contato_nome = document.getElementById("ed-contato-nome");
-    var email = document.forms["ed-contato"]["ed-contato-email"].value;
-    var contato_email = document.getElementById("ed-contato-email");
-    var assunto = document.forms["ed-contato"]["ed-contato-assunto"].value;
-    var contato_ass = document.getElementById("ed-contato-assunto");
-    var mensagem = document.forms["ed-contato"]["ed-contato-mensagem"].value;
-    var contato_msg = document.getElementById("ed-contato-mensagem");
+//Validação
+$("#ed_pedido").submit(function(event){
+    var nome = document.forms["ed-pedido"]["edNome"].value;
+    var pedido_nome = document.getElementById("edNome");
+    var email = document.forms["ed-pedido"]["edEmail"].value;
+    var pedido_email = document.getElementById("edEmail");
+    
     var att = document.createAttribute("required");
     if (nome == "") {
-        contato_nome.setAttributeNode(att);
+        pedido_nome.setAttributeNode(att);
         return false;
         // handle the invalid form...
         contatoError();
     }
     if (email == "") {
-        contato_email.setAttributeNode(att);
+        pedido_email.setAttributeNode(att);
         return false;
         // handle the invalid form...
         contatoError();
     }
-    if (assunto == "") {
-        contato_ass.setAttributeNode(att);
-        return false;
-        // handle the invalid form...
-        contatoError();
-    } 
-    if (mensagem == "") {
-        contato_msg.setAttributeNode(att);
-        return false;
-        // handle the invalid form...
-        contatoError();
-    } 
     if (event.isDefaultPrevented()) {
         // handle the invalid form...
         contatoError();
     } else {
         // everything looks good!
         event.preventDefault();
-        submitContato();
+        submitPedido();
     }
 });
 
-function submitContato(){
+//Envio
+function submitPedido(){
     // Initiate Variables With Form Content
-    var nome = $("#ed-contato-nome").val();
-    var email = $("#ed-contato-email").val();
-    var assunto = $("#ed-contato-assunto").val();
-    var mensagem = $("#ed-contato-mensagem").val();
+    var nome = $("#edNome").val();
+    var email = $("#edEmail").val();
+    var telefone = $("#edTelefone").val();
+    
+    var estado = $("#edEstado").val();
+    var cidade = $("#edCidade").val();
+    var bairro = $("#edBairro").val();
+    var rua = $("#edRua").val();
+    var numero = $("#edNumero").val();
+    var complemento = $("#edComplemento").val();
  
     $.ajax({
         type: "POST",
         url: "contato/contato.php",
-        data: "ed-contato-nome=" + nome + "&ed-contato-email=" + email + "&ed-contato-assunto=" + assunto + "&ed-contato-mensagem=" + mensagem,
+        data: "edNome=" + nome + "&edEmail=" + email + "&edTelefone=" + telefone + "&edEstado=" + estado + "&edCidade=" + cidade + "&edBairro=" + bairro + "&edRua=" + rua + "&edNumero=" + numero + "&edComplemento=" + complemento,
         success : function(text){
             if (text == "success"){
                 contatoSuccess();
@@ -65,7 +58,7 @@ function submitContato(){
 
 function contatoSuccess(){
     $( "#ed-contato-enviado" ).removeClass( "ed-hide" );
-    $( '#ed-contato-nome, #ed-contato-email, #ed-contato-assunto, #ed-contato-mensagem' ).val('');
+    $( '#edNome, #edEmail, #edTelefone, #edEstado', '#edCidade', '#edBairro', '#edRua', '#edNumero', '#edComplemento' ).val('');
 }
 
 function contatoError(){

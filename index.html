@@ -3380,6 +3380,27 @@
         <!-- FORMULÁRIO DE PEDIDO -->
         <section class="mdc-layout-grid fp-kill ed-pedido"
                  id="FormulariodePedido">
+                    <aside id="my-mdc-dialog"
+  class="mdc-dialog"
+  role="alertdialog"
+  aria-labelledby="my-mdc-dialog-label"
+  aria-describedby="my-mdc-dialog-description">
+  <div class="mdc-dialog__surface">
+    <header class="mdc-dialog__header">
+      <h2 id="my-mdc-dialog-label" class="mdc-dialog__header__title">
+        Use Google's location service?
+      </h2>
+    </header>
+    <section id="my-mdc-dialog-description" class="mdc-dialog__body">
+      Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
+    </section>
+    <footer class="mdc-dialog__footer">
+      <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel">Decline</button>
+      <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept">Accept</button>
+    </footer>
+  </div>
+  <div class="mdc-dialog__backdrop"></div>
+</aside>
             <form action="pedido/form/pedido.php"
                   class="mdc-layout-grid__inner mdc-typography"
                   id="ed_pedido"
@@ -3387,46 +3408,46 @@
                   name="ed-pedido">                
                 <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop">
                     <h2 class="mdc-typography--headline3">Formulário de Pedido</h2>
-                    <h3 class="mdc-typography--headline6 mdc-theme--text-secondary-on-light">Banner de lona <!-- substituir por um campo preenchido por código referente ao botão que o usuário clicar para abrir o pedido--></h3>
                 </span>
                 <!-- Informações Pessoais -->
                 <h4 class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop mdc-typography--headline6 mdc-theme--primary">1. Informações pessoais</h4>
                 <!-- Informações Pessoais | Nome -->
                 <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5-desktop">
                     <div class="mdc-text-field mdc-text-field--upgraded">
-                        <input aria-controls="fullname-helper-text"
+                        <input aria-controls="edNome-helper"
                                class="mdc-typography mdc-text-field__input"
-                               id="my-text-field"
+                               id="edNome"
                                required
                                type="text">
                         <label class="mdc-typography mdc-floating-label"
-                               for="my-text-field">
+                               for="edNome">
                             Nome Completo
                         </label>
                         <div class="mdc-line-ripple"></div>
                     </div>
                     <p aria-hidden="true"
                        class="mdc-typography mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
-                       id="fullname-helper-text">
+                       id="edNome-helper">
                         Campo de preenchimento obrigatório
                     </p>
                 </span>
                 <!-- Informações Pessoais | E-mail -->
                 <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop">
                     <div class="mdc-text-field mdc-text-field--upgraded">
-                        <input class="mdc-typography mdc-text-field__input"
-                               id="my-text-field"
+                        <input aria-controls="edEmail-helper"
+                               class="mdc-typography mdc-text-field__input"
+                               id="edEmail"
                                required
                                type="email">
                         <label class="mdc-typography mdc-floating-label"
-                               for="my-text-field">
+                               for="edEmail">
                             E-mail
                         </label>
                         <div class="mdc-line-ripple"></div>
                     </div>
                     <p aria-hidden="true"
                        class="mdc-typography mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
-                       id="fullname-helper-text">
+                       id="edEmail-helper">
                         Utilize um endereço de e-mail válido
                     </p>
                 </span>
@@ -3434,10 +3455,10 @@
                 <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
                     <div class="mdc-text-field mdc-text-field--upgraded">
                         <input class="mdc-typography mdc-text-field__input"
-                               id="my-text-field"
+                               id="edTelefone"
                                type="number">
                         <label class="mdc-typography mdc-floating-label"
-                               for="my-text-field">
+                               for="edTelefone">
                             Telefone
                         </label>
                         <div class="mdc-line-ripple"></div>
@@ -3445,52 +3466,37 @@
                 </span>
                 <!-- Entrega -->
                 <h4 class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop mdc-typography--headline6 mdc-theme--primary">2. Endereço de entrega</h4>
-                <!-- Entrega | Rua -->
+                <!-- Entrega | Estado -->
                 <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop">
                     <div class="mdc-text-field mdc-text-field--upgraded">
-                        <input aria-controls="fullname-helper-text"
-                               class="mdc-typography mdc-text-field__input"
-                               id="my-text-field"
-                               required
+                        <input class="mdc-typography mdc-text-field__input"
+                               id="edEstado"
                                type="text">
                         <label class="mdc-typography mdc-floating-label"
-                               for="my-text-field">
+                               for="edEstado">
                             Estado
                         </label>
                         <div class="mdc-line-ripple"></div>
                     </div>
-                    <p aria-hidden="true"
-                       class="mdc-typography mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
-                       id="fullname-helper-text">
-                        Campo de preenchimento obrigatório
-                    </p>
                 </span>
-                <!-- Entrega | Rua -->
+                <!-- Entrega | Cidade -->
                 <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop">
                     <div class="mdc-text-field mdc-text-field--upgraded">
-                        <input aria-controls="fullname-helper-text"
-                               class="mdc-typography mdc-text-field__input"
-                               id="my-text-field"
-                               required
+                        <input class="mdc-typography mdc-text-field__input"
+                               id="edCidade"
                                type="text">
                         <label class="mdc-typography mdc-floating-label"
-                               for="my-text-field">
+                               for="edCidade">
                             Cidade
                         </label>
                         <div class="mdc-line-ripple"></div>
                     </div>
-                    <p aria-hidden="true"
-                       class="mdc-typography mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
-                       id="fullname-helper-text">
-                        Campo de preenchimento obrigatório
-                    </p>
                 </span>
                 <!-- Entrega | Bairro -->
                 <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3-desktop">
                     <div class="mdc-text-field mdc-text-field--upgraded">
                         <input class="mdc-typography mdc-text-field__input"
                                id="my-text-field"
-                               required
                                type="text">
                         <label class="mdc-typography mdc-floating-label"
                                for="my-text-field">
@@ -3498,69 +3504,45 @@
                         </label>
                         <div class="mdc-line-ripple"></div>
                     </div>
-                    <p aria-hidden="true"
-                       class="mdc-typography mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
-                       id="fullname-helper-text">
-                        Utilize um endereço de e-mail válido
-                    </p>
                 </span>
                 <!-- Entrega | Rua -->
                 <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-5-desktop">
                     <div class="mdc-text-field mdc-text-field--upgraded">
-                        <input aria-controls="fullname-helper-text"
-                               class="mdc-typography mdc-text-field__input"
-                               id="my-text-field"
-                               required
+                        <input class="mdc-typography mdc-text-field__input"
+                               id="edRua"
                                type="text">
                         <label class="mdc-typography mdc-floating-label"
-                               for="my-text-field">
+                               for="edRua">
                             Rua
                         </label>
                         <div class="mdc-line-ripple"></div>
                     </div>
-                    <p aria-hidden="true"
-                       class="mdc-typography mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
-                       id="fullname-helper-text">
-                        Campo de preenchimento obrigatório
-                    </p>
                 </span>
                 <!-- Entrega | Número -->
                 <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop">
                     <div class="mdc-text-field mdc-text-field--upgraded">
                         <input class="mdc-typography mdc-text-field__input"
-                               id="my-text-field"
-                               required
+                               id="edNumero"
                                type="text">
                         <label class="mdc-typography mdc-floating-label"
-                               for="my-text-field">
+                               for="edNumero">
                             Número
                         </label>
                         <div class="mdc-line-ripple"></div>
                     </div>
-                    <p aria-hidden="true"
-                       class="mdc-typography mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
-                       id="fullname-helper-text">
-                        Campo de preenchimento obrigatório
-                    </p>
                 </span>
                 <!-- Entrega | Complemento -->
                 <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop">
                     <div class="mdc-text-field mdc-text-field--upgraded">
                         <input class="mdc-typography mdc-text-field__input"
-                               id="my-text-field"
-                               required
+                               id="edComplemento"
                                type="text">
                         <label class="mdc-typography mdc-floating-label"
-                               for="my-text-field">
+                               for="edComplemento">
                             Complemento
                         </label>
                         <div class="mdc-line-ripple"></div>
                     </div>
-                    <p aria-hidden="true"
-                       class="mdc-typography mdc-text-field-helper-text mdc-text-field-helper-text--validation-msg"
-                       id="fullname-helper-text">
-                        Utilize um endereço de e-mail válido
-                    </p>
                 </span>
                 <!-- Informações do Pedido -->
                 <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop">
@@ -3851,6 +3833,7 @@
                        id="pedido-papel"
                        role="tabpanel">Papel</p>
                 </section>
+                
                 <!--
                 <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop ed-pedido--preco mdc-elevation--z5 ed-hide">
                     <section class="mdc-layout-grid__inner">
