@@ -11,6 +11,9 @@ window.onload = function() {
     if (location.hash === "#Contato") {
         document.getElementById('ed-contato').click();
     }
+    if (location.hash === "/simples") {
+        document.getElementById('adesivos-simples-more').click();
+    }
 };
 
 $(window).on('hashchange', function() {
