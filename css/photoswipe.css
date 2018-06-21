@@ -1,5 +1,7 @@
 /* PhotoSwipe */
 
+.pswp * > a{color: white;}
+
 .ed-gallery__format{display: inline-flex}
 .ed-gallery figcaption{display: none}
 .ed-gallery img{display: none}
