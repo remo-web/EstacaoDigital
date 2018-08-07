@@ -1,5 +1,5 @@
 function edTab() {
-    if (window.location.href.indexOf("estacaodigitalrio") > -1) {
+    if (window.location.href("estacaodigitalrio.com.br") > -1) {
         document.getElementById('ed-tab-home').classList.add('mdc-tab--active');
         document.getElementById('ed-indicator-home').classList.remove('ed-hide');
     }
