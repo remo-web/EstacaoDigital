@@ -6,6 +6,7 @@
     --mdc-theme-background: #FFFFFF;
     --mdc-theme-on-primary: #FFFFFF;
     --mdc-theme-on-secondary: #FFFFFF;
+    --mdc-theme-on-surface: #FFFFFF;
     
 }
 
@@ -64,6 +65,9 @@
 
 .mdc-toolbar__title{padding: 0}
 .mdc-toolbar__title p{margin: 0}
+.mdc-tab-bar{margin: 0 20%}
+.mdc-tab--active, .mdc-tab--active .mdc-tab__icon, .mdc-tab--active .mdc-tab__text-label{color: var(--mdc-theme-on-surface, #FFFFFF);}
+.mdc-tab-indicator>.mdc-tab-indicator__content--underline{background-color: var(--mdc-theme-on-surface, #FFFFFF);}
 
 .mdc-tab-bar__indicator{background-color: var(--mdc-theme-text-secondary-on-dark)}
 .ed-pedido--tab-bar__indicator{background-color: var(--mdc-theme-text-secondary-on-light);}

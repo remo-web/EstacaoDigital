@@ -1,30 +1,9 @@
-$(function() {
+function edMDC() {
     //ripple
     var btns = document.querySelectorAll('.mdc-button');
     for (var i = 0, btn; btn = btns[i]; i++) {
         mdc.ripple.MDCRipple.attachTo(btn);
     }
-    
-    //tabs
-    var dynamicTabBar = window.dynamicTabBar = new mdc.tabs.MDCTabBar(document.querySelector('.dynamic-tab-bar'));
-    var panels = document.querySelector('.ed-home--panels');
-
-    dynamicTabBar.preventDefaultOnClick = true;
-    function updatePanel(index) {
-        var activePanel = panels.querySelector('.ed-home--panels__panel.active');
-        if (activePanel) {
-            activePanel.classList.remove('active');
-        }
-        var newActivePanel = panels.querySelector('.ed-home--panels__panel:nth-child(' + (index + 1) + ')');
-        if (newActivePanel) {
-            newActivePanel.classList.add('active');
-        }
-    }
-    dynamicTabBar.listen('MDCTabBar:change', function (t) {
-        var dynamicTabBar = t.detail;
-        var nthChildIndex = dynamicTabBar.activeTabIndex;
-        updatePanel(nthChildIndex);
-    });
     
     //flexible toolbar
     var toolbar = mdc.toolbar.MDCToolbar.attachTo(document.querySelector('.mdc-toolbar'));
@@ -35,9 +14,9 @@ $(function() {
     });
     
     //textfield
-    var tfs = document.querySelectorAll('.mdc-text-field');
-    for (var i = 0, tf; tf = tfs[i]; i++) {
-        mdc.textField.MDCTextField.attachTo(tf);
+    var textFields = document.querySelectorAll('.mdc-text-field')
+    for (var i = 0, textField; textField = textFields[i]; i++) {
+        mdc.textField.MDCTextField.attachTo(textField);
     }
     
     //checkbox e provavelmente formfield
@@ -77,4 +56,4 @@ $(function() {
     }
     mdc.drawer.MDCTemporaryDrawer.attachTo(document.querySelector('.mdc-drawer--temporary'));
     
-});
+};

@@ -5,6 +5,8 @@ html, body, #fullpage, .mdc-layout-grid, .mdc-layout-grid__inner{height: 100%}
 
 /* NATIVO */
 
+a{text-decoration: none}
+
 body {margin: 0}
 
 video{

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+    
+    <head w3-include-html="../html/head-inst.html"></head>
+    
+    <body class="ed-main ed-mobile--body">
+        
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2M5M22"
+                    height="0"
+                    width="0"
+                    style="display:none;visibility:hidden">
+            </iframe>
+        </noscript>
+        
+        <!-- Mark Zuckerberg esquisitão -->
+        <div id="fb-root"></div>
+        <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.12&appId=390104574733551&autoLogAppEvents=1';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        
+        <!-- DRAWER -->
+        <header class="mdc-toolbar mdc-toolbar--fixed ed-mobile-header ed-hide__desktop"
+                w3-include-html="../html/drawer-button.html">
+        </header>
+        <aside class="mdc-drawer mdc-drawer--temporary mdc-typography ed-hide__desktop"
+               w3-include-html="../html/drawer-inst.html">
+        </aside>
+
+        <div id="fullpage">
+            <section class="section ed-home"
+                     data-anchor="home"
+                     id="index">
+                <!-- HEADER -->
+                <header class="mdc-toolbar mdc-toolbar--waterfall ed-header fp-kill ed-hide__mobile"
+                        w3-include-html="../html/tabbar-inst.html">
+                </header>
+                <div class="ed-home--panels">
+                    <!-- SERVIÇOS -->
+                    <section aria-hidden="true"
+                             class="ed-home--panels__panel active mdc-layout-grid fp-kill ed-servicos"
+                             id="Servicos"
+                             role="tabpanel">
+                        <div class="mdc-layout-grid__inner">
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop ed-home--panels__panel--header">
+<!--
+                                <video class="ed-servicos--haeder__bg" autoplay muted loop>
+                                    <source src="./images/MAH04990.MP4" type="video/mp4">
+                                </video>
+-->
+                                <div class="mdc-layout-grid__inner">
+                                    <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop"></span>
+                                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-phone ed-home--panels__panel--header__title">
+                                        <h1 class="mdc-typography--headline2 mdc-theme--on-primary">Como fazemos</h1>
+                                        <p class="mdc-typography--subtitle1 mdc-theme--text-secondary-on-dark">Veja os tipos de serviços que estamos aptos a oferecer e entenda como seremos utéis para a sua empresa.</p>
+                                        <a class="mdc-typography--button mdc-button mdc-theme--secondary-bg mdc-theme--text-secondary-on-dark"
+                                           id="servicos-btn-impressao">Impressão</a>
+                                        <a class="mdc-typography--button mdc-button mdc-theme--secondary-bg mdc-theme--text-secondary-on-dark"
+                                           id="servicos-btn-recorte">Recorte de contorno</a>
+                                        <a class="mdc-typography--button mdc-button mdc-theme--secondary-bg mdc-theme--text-secondary-on-dark"
+                                           id="servicos-btn-instalacao">Instalação</a>
+                                    </div>
+                                    <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdc-layout-grid__inner">
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop"></div>
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-8-desktop ed-home--panels__panel--content">
+                                <h2 class="mdc-typography--headline3">Oferecemos serviços em grandes formatos, altíssima definição e acabamento de preciso, em 24 horas.</h2>
+                                <h3 class="mdc-typography--body2 mdc-theme--text-secondary-on-light">Além da qualidade, nosso compromisso com prazo é seríssimo, por maior que seja o pedido, é raro o caso em que nosso cliente fique mais de um dia útil sem seu pedido em mãos.</h3>
+                                <p class="mdc-typography--body2 mdc-theme--text-secondary-on-light">Para tipos de serviço gráficos não listados em nosso site, escolha um dos canais a baixo e fale com nossos consultores:</p>
+                                <a class="mdc-typography--button mdc-button mdc-button--raised"
+                                   href="#Contato">
+                                    <i class="mdc-button__icon far fa-envelope"></i>
+                                    e-mail
+                                </a>
+                                <a class="mdc-typography--button mdc-button mdc-button--raised"
+                                   href="https://api.whatsapp.com/send?phone=5521996367232&text=Obrigado%20pelo%20interesse%20nos%20servi%C3%A7os%20da%20Esta%C3%A7%C3%A3o%20Digital!%20Em%20que%20podemos%20ajudar%20no%20momento%3F%20"
+                                   target="_blank">
+                                    <i class="mdc-button__icon fab fa-whatsapp"></i>
+                                    WhatsApp
+                                </a>
+                                <a class="mdc-typography--button mdc-button mdc-button--raised"
+                                   href="tel:+5521996367232">
+                                    <i class="mdc-button__icon fas fa-phone"></i>
+                                    21 9 9636 7232
+                                </a>
+                                <a class="mdc-typography--button mdc-button mdc-button--raised"
+                                   href="javascript:void(Tawk_API.toggle())">
+                                    <i>chat</i>&nbsp;ao vivo
+                                </a>
+                                <h2 class="mdc-typography--headline3 mdc-theme--primary">
+                                    Nossos Serviços
+                                </h2>
+                                <div class="mdc-layout-grid__inner">
+                                    <!-- Impressão -->
+                                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop"
+                                         id="servicos-card-impressao">
+                                        <div class="mdc-card mdc-card--stroked">
+                                            <div class="mdc-card__media mdc-card__media--16-9 ed-servicos--card__impressao">
+                                                <div class="mdc-card__media-content">
+                                                    <div class="ed-card__media-title">Impressão em lona de grande formato (3,20m)</div>
+                                                </div>
+                                            </div>
+                                            <div class="ed-card--content__text">
+                                                <h3 class="mdc-typography--headline6">Impressão Digital</h3>
+                                                <h4 class="mdc-typography--subtitle1 mdc-theme--text-hint-on-background"><i>Banners</i>, faixas, placas de PS, decoração, eventos, piso, sinalização... Sem quantidade mínima, prazos curtíssimos, grandes formatos em alta definição. </h4>
+                                                <p class="mdc-typography--body2 mdc-theme--text-secondary-on-light">Nosso carro chefe, base dos nossos serviços e principal especialidade aqui na <b>Estação Digital</b>.</p>
+                                                <p class="mdc-typography--body2 mdc-theme--text-secondary-on-light">Para saber mais sobre as nossas altertanivas de serviços de impressão, clique no tipo de material a seguir mais adequado para a sua demanda.</p>
+                                                <a class="mdc-typography--button mdc-button"
+                                                   href="#Lonas">lonas</a>
+                                                <a class="mdc-typography--button mdc-button"
+                                                   href="#Adesivos">adesivos</a>
+                                                <a class="mdc-typography--button mdc-button"
+                                                   href="#Placas">placas</a>
+                                                <a class="mdc-typography--button mdc-button"
+                                                   href="#Tecido">tecido</a>
+                                                <p class="mdc-typography--body2 mdc-theme--text-secondary-on-light">Para conhecer um pouco melhor nossa estrutura e ter uma prévia da nossa capacidade produtiva de impressão: </p>
+                                                <a class="mdc-typography--button mdc-button"
+                                                   href="#QuemSomos">Clique aqui e Visite a aba&nbsp;<b>quem somos</b></a>
+                                                <p class="mdc-typography--body2 mdc-theme--text-secondary-on-light">Pode-se ver que oferecemos diversos tipos de substratos e estamos aberto para que os clientes tragam materiais diferenciados e especiais para nossa produção. Em caso de dúvidas ou necessidade de mais informações, converse com um de nossos consultores:</p>
+                                                <a class="mdc-typography--button mdc-button mdc-button--raised"
+                                                   href="#Contato">
+                                                    <i class="mdc-button__icon far fa-envelope"></i>
+                                                    e-mail
+                                                </a>
+                                                <a class="mdc-typography--button mdc-button mdc-button--raised"
+                                                   href="https://api.whatsapp.com/send?phone=5521996367232&text=Obrigado%20pelo%20interesse%20nos%20servi%C3%A7os%20da%20Esta%C3%A7%C3%A3o%20Digital!%20Em%20que%20podemos%20ajudar%20no%20momento%3F%20"
+                                                   target="_blank">
+                                                    <i class="mdc-button__icon fab fa-whatsapp"></i>
+                                                    WhatsApp
+                                                </a>
+                                                <a class="mdc-typography--button mdc-button mdc-button--raised"
+                                                   href="tel:+5521996367232">
+                                                    <i class="mdc-button__icon fas fa-phone"></i>
+                                                    21 9 9636 7232
+                                                </a>
+                                                <a class="mdc-typography--button mdc-button mdc-button--raised"
+                                                   href="javascript:void(Tawk_API.toggle())">
+                                                    <i>chat</i>&nbsp;ao vivo
+                                                </a>
+                                            </div>
+                                            <div class="mdc-card__actions mdc-card__actions--full-bleed">
+                                                <a class="mdc-typography--button mdc-button mdc-card__action mdc-card__action--button"
+                                                   disabled
+                                                   href="#">
+                                                    [em breve] Fazer orçamento online
+                                                    <i aria-hidden="true"
+                                                       class="fas fa-shopping-cart"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Recorte de contorno -->
+                                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop"
+                                         id="servicos-card-recorte">
+                                        <div class="mdc-card mdc-card--stroked">
+                                            <div class="mdc-card__media mdc-card__media--16-9 ed-servicos--card__recorte">
+                                                <div class="mdc-card__media-content">
+                                                    <div class="ed-card__media-title">Adesivo recortado em processo de impressão</div>
+                                                </div>
+                                            </div>
+                                            <div class="ed-card--content__text">
+                                                <h3 class="mdc-typography--headline6">Recorte de contorno</h3>
+                                                <h4 class="mdc-typography--subtitle1 mdc-theme--text-hint-on-background"><i>Mock-up</i> de rótulos, decoração automotiva, sinalização, personalização de brindes...</h4>
+                                                <p class="mdc-typography--body2 mdc-theme--text-secondary-on-background">O recorte de contorno é realizado em conjunto com a impressão, com equipamento de funções integradas e acerto computadorizado.</p>
+                                                <p class="mdc-typography--body2 mdc-theme--text-secondary-on-background">Indicado para adesivos transparentes ou brancos e papel, o recorte de contorno segue o formato da sua arte de acordo com imagem vetorizada da faca.</p>
+                                                <p class="mdc-typography--body2 mdc-theme--text-secondary-on-background">Por ser eletrônico, o corte é inteiramente personalizado e independe de quantidades mínimas ou prazos longos para a produção de facas e cilindros.</p>
+                                            </div>
+                                            <div class="mdc-card__actions mdc-card__actions--full-bleed">
+                                                <a class="mdc-typography--button mdc-button mdc-card__action mdc-card__action--button"
+                                                   disabled
+                                                   href="#">
+                                                    [em breve] Comprar com recorte de contorno
+                                                    <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Instalação -->
+                                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6-desktop"
+                                         id="servicos-card-instalacao">
+                                        <div class="mdc-card mdc-card--stroked">
+                                            <div class="mdc-card__media mdc-card__media--16-9 ed-servicos--card__instalacao">
+                                                <div class="mdc-card__media-content">
+                                                    <div class="ed-card__media-title">Freezer envelopado</div>
+                                                </div>
+                                            </div>
+                                            <div class="ed-card--content__text">
+                                                <h3 class="mdc-typography--headline6">Instalação</h3>
+                                                <h4 class="mdc-typography--subtitle1 mdc-theme--text-hint-on-background">Envelopamento de veículos, eletrodomésticos e paredes, montagem de <i>banners</i>, <i>back-lights</i>, painéis, <i>backdrops</i>...</h4>
+                                                <h5 class="mdc-typography--headline6">Envelopamento</h5>
+                                                <p class="mdc-typography--body2 mdc-theme--text-secondary-on-background">Processo de adesivação em que um profissional realiza a cobertura integral ou parcial de uma determinada superfície. Muito comum na personalização de veículos e para recuperação ou preservação da pintura.</p>
+                                                <p class="mdc-typography--body2 mdc-theme--text-secondary-on-background">Técnica também utilizada para diversas finalidades na decoração de ambientes e estabelecimentos comerciais, útil para renovação de paredes, divisórias, portas e eletrodomésticos.</p>
+                                                <h5 class="mdc-typography--headline6">Montagem</h5>
+                                                <p class="mdc-typography--body2 mdc-theme--text-secondary-on-background">Além dos <i>banners</i> e faixas, que já são entregues montados de acordo com a necessidade do cliente, também oferecemos serviços de montagem no local, como no caso de letreiros <i>back-light</i> ou <i>front-light</i>, lonas ortofônicas e outros casos mais espefíficos em que um profissional experiente seja necessário.</p>
+                                            </div>
+                                            <div class="mdc-card__actions mdc-card__actions--full-bleed">
+                                                <a class="mdc-typography--button mdc-button mdc-card__action mdc-card__action--button"
+                                                   disabled
+                                                   href="#">
+                                                    [em breve] Comprar com serviço de instalação
+                                                    <i class="material-icons fas fa-shopping-cart" aria-hidden="true"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2-desktop"></div>
+                            <!-- footer -->
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop"
+                                 w3-include-html="../html/footer-inst.html">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+        
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- JS | MDC -->
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <script type="text/javascript">window.mdc.autoInit();</script>
+        <!-- JS | CUSTOM -->
+        <script src="../js/fullpage.js"></script>
+        <script src="../js/mdc.js"></script>
+        <script src="../js/tab.js"></script>
+        <script src="../js/hover.js"></script>
+        <script src="../js/left-nav.js"></script>
+        <script src="../js/header.js"></script>
+        <script src="../js/destaques.js"></script>
+        <script src="../js/maps.js"></script>
+        <script src="../js/scroll.js"></script>
+        <script src="../js/pedido-front.js"></script>
+        <script src="../plugins/PhotoSwipe/ed-photoswipe.js"></script>
+            <!-- JS | CUSTOM | Contato -->
+            <script src="../contato/contato.js"></script>
+            <!-- JS | CUSTOM | Pedido -->
+            <script src="../pedido/js/mdc-pedido.js"></script>
+            <script src="../pedido/js/clone.js"></script>
+            <script src="../pedido/js/aritmetica.js"></script>
+        <!-- JS PLUGINS | fullPage.js -->
+        <script src="../plugins/fullPage/scrolloverflow.min.js"
+                type="text/javascript"></script>
+        <script src="../plugins/fullPage/jquery.fullpage.min.js"
+                type="text/javascript"></script>
+        <!-- JS PLUGINS | PhotoSwipe -->
+        <script src="../plugins/PhotoSwipe/photoswipe.min.js"></script>
+        <script src="../plugins/PhotoSwipe/photoswipe-ui-default.min.js"></script>
+        <!-- APIs | Google Maps -->
+        <script async
+                defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBO9QcdbuvqPeUeQ_gILDvMHW-YI8OnPWo&callback=initMap"></script>
+        <!-- JS PLUGINS | Include -->
+        <script src="../js/include.js"></script>
+        <script>includeHTML();</script>
+    </body>
+</html>

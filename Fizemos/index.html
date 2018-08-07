@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+    
+    <head w3-include-html="../html/head-inst.html"></head>
+    
+    <body class="ed-main ed-mobile--body">
+        
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2M5M22"
+                    height="0"
+                    width="0"
+                    style="display:none;visibility:hidden">
+            </iframe>
+        </noscript>
+        
+        <!-- Mark Zuckerberg esquisitão -->
+        <div id="fb-root"></div>
+        <script>
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.12&appId=390104574733551&autoLogAppEvents=1';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+        
+        <!-- DRAWER -->
+        <header class="mdc-toolbar mdc-toolbar--fixed ed-mobile-header ed-hide__desktop"
+                w3-include-html="../html/drawer-button.html">
+        </header>
+        <aside class="mdc-drawer mdc-drawer--temporary mdc-typography ed-hide__desktop"
+               w3-include-html="../html/drawer-inst.html">
+        </aside>
+
+        <div id="fullpage">
+            <section class="section ed-home"
+                     data-anchor="home"
+                     id="index">
+                <!-- HEADER -->
+                <header class="mdc-toolbar mdc-toolbar--waterfall ed-header fp-kill ed-hide__mobile"
+                        w3-include-html="../html/tabbar-inst.html">
+                </header>
+                <div class="ed-home--panels">
+                    <!-- FIZEMOS -->
+                    <section aria-hidden="true"
+                             class="ed-home--panels__panel mdc-layout-grid active fp-kill ed-fizemos"
+                             id="Fizemos"
+                             role="tabpanel">
+                        <div class="mdc-layout-grid__inner">                            
+                            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop ed-home--panels__panel--header">
+                                <div class="mdc-layout-grid__inner">
+                                    <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop"></span>
+                                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-phone ed-home--panels__panel--header__title">
+                                        <h1 class="mdc-typography--headline2 mdc-theme--on-primary">Conheça nosso portifólio!</h1>
+                                        <p class="mdc-typography--subtitle1 mdc-theme--text-secondary-on-dark">Uma pequena amostra de nossos projetos e diversos tipos serviços de impressão, envelopamento, Instalação e recorte de contorno que já realizamos ao longo dos anos.</p>
+                                        <button class="mdc-fab mdc-fab--mini"
+                                                id="fizemos-scroll">
+                                            <span class="mdc-fab__icon">
+                                                <i class="fas fa-angle-down fa-2x"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <span class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdc-layout-grid__inner ed-gallery ed-fizemos--gallery"
+                             id="fizemos-portifolio"
+                             itemscope
+                             itemtype="http://schema.org/ImageGallery">
+                            
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__40"
+                                   data-size="3000x2000"
+                                   href="../images/galeria/placa/big/remow_ed-placa--gal--boteco__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Impressão UV digital sobre placa de PS com 1mm de espessura para cardápio do Boteco da Maria."
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/placa/big/remow_ed-placa--gal--boteco__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                             Cardápio em PS 1mm
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Impressão UV digital sobre placa de PS com 1mm de espessura para cardápio do Boteco da Maria.
+                                </figcaption>
+                            </figure>
+                            
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__39"
+                                   data-size="3000x2000"
+                                   href="../images/galeria/lonas/big/remow_ed-lona--gal--mel__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Lona impressa em alta definição e grande formato para empena de prédio / front-light da Revista Mel."
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/lonas/big/remow_ed-lona--gal--mel__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                             Empena de prédio em lona
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">Lona impressa em alta definição e grande formato para empena de prédio / front-light da 
+                                    <a href="http://revistamel.net/"
+                                       target="_blank">
+                                        Revista Mel
+                                    </a>.
+                                </figcaption>
+                            </figure>
+                            
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__38"
+                                   data-size="3000x2000"
+                                   href="../images/galeria/adesivo/big/remow_ed-adesivo--gal--geladinho__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Impressão em vinil adesivo de grande formato em alta definição para envelopamento da frota de caminhões do Geladinho Gel Fruta."
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/adesivo/big/remow_ed-adesivo--gal--geladinho__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                             Envelopamento de frota
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Impressão em vinil adesivo de grande formato em alta definição para envelopamento da frota de caminhões do Geladinho Gel Fruta.
+                                </figcaption>
+                            </figure>
+                            
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__37"
+                                   data-size="3000x2000"
+                                   href="../images/galeria/lonas/big/remow_ed-lona--gal--real__big.png"
+                                   itemprop="contentUrl">
+                                    <img alt="Impressão de alta definição em lona 440g/m² medindo 18 metros de largura por 3 metros de altura para a Concessionária Volkswagen Real Veículos."
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/lonas/big/remow_ed-lona--gal--real__big.png"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                             Lona para a Real Veículos
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Impressão de alta definição em lona 440g/m² medindo 18 metros de largura por 3 metros de altura para a&nbsp;
+                                    <a href="http://www.realveiculos.com.br/"
+                                       target="_blank">
+                                        Concessionária Volkswagen Real Veículos
+                                    </a>.
+                                </figcaption>
+                            </figure>
+                            
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__36"
+                                   data-size="3000x2000"
+                                   href="../images/galeria/adesivo/big/remow_ed-adesivo--gal--nasa__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Impressão digital com identidade da NASA sobre vinil adesivo com recorte de contorno personalizado."
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/adesivo/big/remow_ed-adesivo--gal--nasa__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                             Adesivo de vinil da NASA
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Impressão digital com identidade da&nbsp;
+                                    <a href="https://www.nasa.gov/"
+                                       target="_blank">
+                                        NASA
+                                    </a>
+                                    &nbsp;sobre vinil adesivo com recorte de contorno personalizado.
+                                </figcaption>
+                            </figure>
+                            
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__35"
+                                   data-size="3000x2000"
+                                   href="../images/galeria/adesivo/big/remow_ed-adesivo--gal--gsf__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Impressão e instalação de adesivo de vinil para decoração do estande da GSF na 2ª Feira do Síndico."
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/adesivo/big/remow_ed-adesivo--gal--gsf__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                             Decoração de <i>stand</i>
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Impressão e instalação de adesivo de vinil para decoração do estande da&nbsp;
+                                    <a href="https://gsf.eco.br"
+                                       target="_blank">
+                                        GSF
+                                    </a>
+                                    &nbsp;na&nbsp;
+                                    <a href="http://feiradosindico.com.br/" target="_blank">
+                                        2ª Feira do Síndico
+                                    </a>.
+                                </figcaption>
+                            </figure>
+                            
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__34"
+                                   data-size="3000x2000"
+                                   href="../images/galeria/adesivo/big/remow_ed-adesivo--gal--brewhood2__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Impressão de alta definição em vinil adesivo para envelopamento e decoração de frota da BrewHood."
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/adesivo/big/remow_ed-adesivo--gal--brewhood2__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                             Envelopamento de frota BrewHood
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Impressão de alta definição em vinil adesivo para envelopamento e decoração de frota da&nbsp;
+                                    <a href="https://www.brewhoodshop.com.br/"
+                                       target="_blank">
+                                        BrewHood
+                                    </a>.
+                                </figcaption>
+                            </figure>
+                            
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__33"
+                                   data-size="3000x2000"
+                                   href="../images/galeria/adesivo/big/remow_ed-adesivo--gal--criare2__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Impressão em adesivo perfurado para decoração de vitrine da loja Criare, não bloqueia a visão de dentro para fora ao mesmo tempo que transmite a mensagem com qualidade para quem passa."
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/adesivo/big/remow_ed-adesivo--gal--criare2__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                             Decoração de vitrine com adesivo perfurado
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Impressão em adesivo perfurado para decoração de vitrine da loja&nbsp;
+                                    <a href="http://www.criare.com/public/" 
+                                       target="_blank">
+                                        Criare
+                                    </a>
+                                    , não bloqueia a visão de dentro para fora ao mesmo tempo que transmite a mensagem com qualidade para quem passa.
+                                </figcaption>
+                            </figure>
+                            
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__32"
+                                   data-size="3000x2000"
+                                   href="../images/galeria/lonas/big/remow_ed-lona--gal--imperio__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Impressão em lona sanet/ortofônica para decoração do barracão da escola de samba Império Serrano."
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/lonas/big/remow_ed-lona--gal--imperio__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                             Lona <i>sanet</i> para a Império Serrano
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Impressão em lona <i>sanet</i>/ortofônica para decoração do barracão da escola de samba&nbsp;
+                                    <a href="https://www.facebook.com/ImperioSerranoOficial/"
+                                       target="_blank">
+                                        Império Serrano
+                                    </a>.
+                                </figcaption>
+                            </figure>
+                            
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__31"
+                                   data-size="3000x2000"
+                                   href="../images/galeria/adesivo/big/remow_ed-adesivo--gal--brewhood__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Vinil adesivo impresso para envelopamento do caminhão da cerveja Brewhood"
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/adesivo/big/remow_ed-adesivo--gal--brewhood__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                             Caminhão envelopado Brewhood
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Vinil adesivo impresso para envelopamento do caminhão da cerveja Brewhood
+                                </figcaption>
+                            </figure>
+                            
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__30"
+                                   data-size="3000x2000"
+                                   href="../images/galeria/placa/big/remow_ed-placa--gal--ong__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="PS impresso em UV com dobra para placa de reconhecimento da ONG Recode"
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/placa/big/remow_ed-placa--gal--ong__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                             Placa de PS da ONG Recode
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    PS impresso em UV com dobra para placa de reconhecimento da ONG Recode
+                                </figcaption>
+                            </figure>
+                            
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__29"
+                                   data-size="3000x2000"
+                                   href="../images/galeria/adesivo/big/remow_ed-adesivo--gal--brechofashion__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Adesivo em vinil impresso e instalado com nome e identificação da loja Brechó Fashion Carioca."
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/adesivo/big/remow_ed-adesivo--gal--brechofashion__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                             Letreiro do Brechó Fashion Carioca
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Adesivo em vinil impresso e instalado com nome e identificação da loja Brechó Fashion Carioca.
+                                </figcaption>
+                            </figure>
+                            
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__28"
+                                   data-size="3000x2000"
+                                   href="../images/galeria/tecido/big/remow_ed-tecido--gal--frozen__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Tecido impresso com a Elza para decoração de festa com tema de Frozen."
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/tecido/big/remow_ed-tecido--gal--frozen__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Toalhas de mesa Frozen
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Tecido impresso com a Elza para decoração de festa com tema de Frozen.
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__27"
+                                   data-size="3000x2000"
+                                   href="../images/galeria/adesivo/big/remow_ed-adesivo--gal--newotica__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt='Adesivo de vinil impresso para decoração de vitrine em ação promocional "New Promo" da rede New Ótica.'
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/adesivo/big/remow_ed-adesivo--gal--newotica__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Vitrine New Ótica
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Adesivo de vinil impresso para decoração de vitrine em ação promocional "New Promo" da rede New Ótica.
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__26"
+                                   data-size="3000x2000"
+                                   href="../images/galeria/adesivo/big/remow_ed-adesivo--gal--leader__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Produção e instalação da decoração de vitrine da loja Leader do shopping Via Brasil."
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/adesivo/big/remow_ed-adesivo--gal--leader__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Vitrine da Leader
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Produção e instalação da decoração de vitrine da loja Leader do shopping Via Brasil.
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__25"
+                                   data-size="3000x2000"
+                                   href="../images/galeria/lonas/big/remow_ed-lona--gal--sofrutas__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Produção e instalação de letreiro em lona para supermercado Só Frutas."
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/lonas/big/remow_ed-lona--gal--sofrutas__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Letreiro em lona
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Produção e instalação de letreiro em lona para supermercado Só Frutas.
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__24"
+                                   data-size="3000x2000"
+                                   href="../images/galeria/lonas/big/remow_ed-lona--gal--datalogic__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Decoração de estande da Data Logic para evento com lona fosca."
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/lonas/big/remow_ed-lona--gal--datalogic__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Lona fosca para evento
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Decoração de estande da DataLogic para evento com lona fosca.
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__23"
+                                   data-size="3000x2000"
+                                   href="../images/galeria/adesivo/big/remow_ed-adesivo--gal--pintadinha__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Cobertura de vitrines com impressão em vinil da Galinha Pintadinha no Shopiping Via Brasil."
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/adesivo/big/remow_ed-adesivo--gal--pintadinha__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Decoração de vitrine
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Cobertura de vitrines com impressão em vinil da Galinha Pintadinha no Shopiping Via Brasil.
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__22"
+                                   data-size="3000x2000"
+                                   href="../images/galeria/lonas/big/remow_ed-lona--gal--seminovos__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Lona com mais de 14m de extensão para concessionária, incluindo serviço de instalação."
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/lonas/big/remow_ed-lona--gal--seminovos__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Letreiro para concessionária
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Lona com mais de 14m de extensão para concessionária, incluindo serviço de instalação.
+                                </figcaption>
+                            </figure>
+                            <!-- ^ 10/04/2018 ^ -->
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__1"
+                                   data-size="3000x2000"
+                                   href="../images/galeria/adesivo/big/remow_ed-adesivo--gal--botafogo__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Adesivação de ambiente completo para o Clube de Regatas Botafogo. Envelopamento inclusive da mesa de totó."
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/adesivo/big/remow_ed-adesivo--gal--botafogo__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Decoração de ambiente
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Adesivação de ambiente completo para o Clube de Regatas Botafogo. Envelopamento inclusive da mesa de totó.
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__2" 
+                                   data-size="3000x2000"
+                                   href="../images/galeria/adesivo/big/remow_ed-adesivo--gal--comlurb__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Envelopamento de caçamba de caminhão para a empresa Comlurb para o festival de música Rock in Rio."
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/adesivo/big/remow_ed-adesivo--gal--comlurb__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Envelopamento de caçamba de caminhão
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Envelopamento de caçamba de caminhão para a empresa Comlurb para o festival de música Rock in Rio.
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__3" 
+                                   data-size="3000x2000"
+                                   href="../images/galeria/adesivo/big/remow_ed-adesivo--gal--criare__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Decoração com adesivo perfurado para a empresa Criare"
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/adesivo/big/remow_ed-adesivo--gal--criare__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Decoração de frente de loja
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Decoração com adesivo perfurado para a empresa Criare
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__4" 
+                                   data-size="3000x2000"
+                                   href="../images/galeria/adesivo/big/remow_ed-adesivo--gal--diversao__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Envelopamento em adesivo de carro completo para a empresa Espaço diversão"
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/adesivo/big/remow_ed-adesivo--gal--diversao__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Envelopamento de carro
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Envelopamento em adesivo de carro completo para a empresa Espaço diversão
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__5" 
+                                   data-size="3000x2000"
+                                   href="../images/galeria/adesivo/big/remow_ed-adesivo--gal--docealegria__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Adesivação da frente da casa de festa infantil Doce Alegria Buffet"
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/adesivo/big/remow_ed-adesivo--gal--docealegria__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Decoração de Casa de Festa Infantil
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Adesivação da frente da casa de festa infantil Doce Alegria Buffet
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__6" 
+                                   data-size="3000x2000"
+                                   href="../images/galeria/adesivo/big/remow_ed-adesivo--gal--fgv__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Arte impressa em adesivo para decoração de ambiente na Fundação Getúlio Vargas."
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/adesivo/big/remow_ed-adesivo--gal--fgv__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Decoração em parede
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Arte impressa em adesivo para decoração de ambiente na Fundação Getúlio Vargas.
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__7" 
+                                   data-size="3000x2000"
+                                   href="../images/galeria/adesivo/big/remow_ed-adesivo--gal--fitbox__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Carro envelopado completamente com adesivo para a empresa My Fit Box"
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/adesivo/big/remow_ed-adesivo--gal--fitbox__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Envelopamento de carro
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Carro envelopado completamente com adesivo para a empresa My Fit Box
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__8" 
+                                   data-size="3000x2000"
+                                   href="../images/galeria/adesivo/big/remow_ed-adesivo--gal--freezer__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Arte impressa para adesivação de freezer"
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/adesivo/big/remow_ed-adesivo--gal--freezer__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Envelopamento de freezer
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Arte impressa para adesivação de freezer
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__9" 
+                                   data-size="3000x2000"
+                                   href="../images/galeria/adesivo/big/remow_ed-adesivo--gal--gelfruta__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Envelopamento de caminhão em adesivo para a empresa Geladinho Gel Fruta"
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/adesivo/big/remow_ed-adesivo--gal--gelfruta__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Adesivação em caminhão
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Envelopamento de caminhão em adesivo para a empresa Geladinho Gel Fruta
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__10" 
+                                   data-size="3000x2000"
+                                   href="../images/galeria/adesivo/big/remow_ed-adesivo--gal--obaoba2__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Decoração das paredes na Pizzaria e Restaurante Oba Oba"
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/adesivo/big/remow_ed-adesivo--gal--obaoba2__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Decoração de parede
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Decoração das paredes na Pizzaria e Restaurante Oba Oba
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__11" 
+                                   data-size="3000x2000"
+                                   href="../images/galeria/adesivo/big/remow_ed-adesivo--gal--obaoba__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Envelopamento de geladeiras, com adesivos laminados na Pizzaria e Restaurante Oba Oba."
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/adesivo/big/remow_ed-adesivo--gal--obaoba__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Envelopamento de equipamentos
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Envelopamento de geladeiras, com adesivos laminados na Pizzaria e Restaurante Oba Oba.
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__12" 
+                                   data-size="3000x2000"
+                                   href="../images/galeria/adesivo/big/remow_ed-adesivo--gal--oly2016__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Adesivação das lanchonetes das Olímpiadas de Verão Rio 2016"
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/adesivo/big/remow_ed-adesivo--gal--oly2016__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Decoração de quiosque
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Adesivação das lanchonetes das Olímpiadas de Verão Rio 2016
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__13" 
+                                   data-size="3000x2000"
+                                   href="../images/galeria/adesivo/big/remow_ed-adesivo--gal--saopaulo__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Adesivação de paredes da parte administrativa do São Paulo Futebol Clube"
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/adesivo/big/remow_ed-adesivo--gal--saopaulo__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Decoração de ambientes
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Adesivação de paredes da parte administrativa do São Paulo Futebol Clube
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__14" 
+                                   data-size="3000x2000"
+                                   href="../images/galeria/placa/big/remow_ed-placa--gal--mexicano__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Cardápio mexicano do restaurante Sweet Elô"
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/placa/big/remow_ed-placa--gal--mexicano__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Cardápio em Placa PS com impressão UV
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Cardápio mexicano do restaurante Sweet Elô
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__15" 
+                                   data-size="3000x2000"
+                                   href="../images/galeria/lonas/big/remow_ed-lona--gal--chao__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Arte impressa em lona para pista de dança"
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/lonas/big/remow_ed-lona--gal--chao__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Pista de dança
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Arte impressa em lona para pista de dança
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__16" 
+                                   data-size="3000x2000"
+                                   href="../images/galeria/lonas/big/remow_ed-lona--gal--drogaetica__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Letreiro impresso em lona Back Light para a DrogaÉtica"
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/lonas/big/remow_ed-lona--gal--drogaetica__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Letreiro Back Light
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Letreiro impresso em lona Back Light para a DrogaÉtica
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__17" 
+                                   data-size="3000x2000"
+                                   href="../images/galeria/lonas/big/remow_ed-lona--gal--festa__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Arte impressa em lona para pista de dança"
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/lonas/big/remow_ed-lona--gal--festa__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Pista de dança
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Arte impressa em lona para pista de dança
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__18" 
+                                   data-size="3000x2000"
+                                   href="../images/galeria/lonas/big/remow_ed-lona--gal--festmimo__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Arte impressa em lona com ilhóis para painel de patrocinadores do Mimo Festival de Música."
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/lonas/big/remow_ed-lona--gal--festmimo__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Painel de patrocinadores
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Arte impressa em lona com ilhóis para painel de patrocinadores do Mimo Festival de Música.
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__19" 
+                                   data-size="3000x2000"
+                                   href="../images/galeria/lonas/big/remow_ed-lona--gal--nycc__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Arte impressa em lona para propaganda do filme Ferdinando no NYCC."
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/lonas/big/remow_ed-lona--gal--nycc__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Cartaz de cinema
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Arte impressa em lona para propaganda do filme "Ferdinando" no NYCC.
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__20" 
+                                   data-size="3000x2000"
+                                   href="../images/galeria/lonas/big/remow_ed-lona--gal--uci__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Arte impressa em lona para o UCI Cinemas"
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/lonas/big/remow_ed-lona--gal--uci__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Cartaz de cinema
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Arte impressa em lona para o UCI Cinemas
+                                </figcaption>
+                            </figure>
+
+                            <figure class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4-desktop mdc-card ed-card"
+                                    itemprop="associatedMedia" 
+                                    itemscope 
+                                    itemtype="http://schema.org/ImageObject">
+                                <a class="mdc-card__media mdc-card__media--square ed-fizemos--gallery--card__21" 
+                                   data-size="3000x2000"
+                                   href="../images/galeria/lonas/big/remow_ed-lona--gal--znorte__big.jpg"
+                                   itemprop="contentUrl">
+                                    <img alt="Lona presa por ilhóis para decoração de evento na Z Norte Lounge"
+                                         itemprop="thumbnail"
+                                         src="../images/galeria/lonas/big/remow_ed-lona--gal--znorte__big.jpg"/>
+                                    <div class="mdc-card__media-content">
+                                        <div class="ed-gallery--card__title mdc-typography--subtitle2">
+                                            Painel decorativo
+                                        </div>
+                                    </div>
+                                </a>
+                                <figcaption itemprop="caption description">
+                                    Lona presa por ilhóis para decoração de evento na Z Norte Lounge
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <!-- footer -->
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop"
+                             w3-include-html="../html/footer-inst.html">
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+        
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- JS | MDC -->
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <script type="text/javascript">window.mdc.autoInit();</script>
+        <!-- JS | CUSTOM -->
+        <script src="../js/fullpage.js"></script>
+        <script src="../js/mdc.js"></script>
+        <script src="../js/tab.js"></script>
+        <script src="../js/hover.js"></script>
+        <script src="../js/left-nav.js"></script>
+        <script src="../js/header.js"></script>
+        <script src="../js/destaques.js"></script>
+        <script src="../js/maps.js"></script>
+        <script src="../js/scroll.js"></script>
+        <script src="../js/pedido-front.js"></script>
+        <script src="../plugins/PhotoSwipe/ed-photoswipe.js"></script>
+            <!-- JS | CUSTOM | Contato -->
+            <script src="../contato/contato.js"></script>
+            <!-- JS | CUSTOM | Pedido -->
+            <script src="../pedido/js/mdc-pedido.js"></script>
+            <script src="../pedido/js/clone.js"></script>
+            <script src="../pedido/js/aritmetica.js"></script>
+        <!-- JS PLUGINS | fullPage.js -->
+        <script src="../plugins/fullPage/scrolloverflow.min.js"
+                type="text/javascript"></script>
+        <script src="../plugins/fullPage/jquery.fullpage.min.js"
+                type="text/javascript"></script>
+        <!-- JS PLUGINS | PhotoSwipe -->
+        <script src="../plugins/PhotoSwipe/photoswipe.min.js"></script>
+        <script src="../plugins/PhotoSwipe/photoswipe-ui-default.min.js"></script>
+        <!-- APIs | Google Maps -->
+        <script async
+                defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBO9QcdbuvqPeUeQ_gILDvMHW-YI8OnPWo&callback=initMap"></script>
+        <!-- JS PLUGINS | Include -->
+        <script src="../js/include.js"></script>
+        <script>includeHTML();</script>
+    </body>
+</html>
