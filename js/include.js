@@ -26,5 +26,4 @@ function includeHTML() {
   }
     edMDC();
     edTab();
-    initMap();
 }
