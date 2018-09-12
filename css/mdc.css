@@ -17,6 +17,7 @@
 .mdc-typography--headline3,
 .mdc-typography--headline2,
 .mdc-typography--headline1,
+.mdc-drawer__title,
 .mdc-typography--button{
     font-family: 'Titillium Web', sans-serif !important;
 }

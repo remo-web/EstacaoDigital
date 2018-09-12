@@ -48,12 +48,12 @@ function edMDC() {
     });
     
     //drawer
-    let drawer = new mdc.drawer.MDCTemporaryDrawer(document.querySelector('.mdc-drawer--temporary'));
+    let drawer = new mdc.drawer.MDCDrawer(document.querySelector('.mdc-drawer--modal'));
     document.querySelector('.ed-drawer__icon').addEventListener('click', () => drawer.open = true);
     var drawerClose = document.querySelectorAll('.ed-drawer--item');
     for (var i = 0, dC; dC = drawerClose[i]; i++) {
         dC.addEventListener('click', () => drawer.open = false);
     }
-    mdc.drawer.MDCTemporaryDrawer.attachTo(document.querySelector('.mdc-drawer--temporary'));
+    mdc.drawer.MDCDrawer.attachTo(document.querySelector('.mdc-drawer--modal'));
     
 };

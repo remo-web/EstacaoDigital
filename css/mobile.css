@@ -13,18 +13,19 @@
     }
     .ed-destaque--detalhe__close{display: block; position: absolute; top: 5px; right: 10px;}
     .ed-drawer__icon{background-color: var(--mdc-theme-primary,#6200ee); opacity: .8}
+    .ed-drawer__icon .fa-lg{line-height: 1}
 }
 
 .ed-mobile-header{background-color: transparent; box-shadow: none;}
+.ed-drawer{overflow: scroll}
+.ed-drawer--header{text-align: right}
 .ed-drawer--header__calango{
-    max-height: 50%;
-    width: auto;
-/*
+    max-width: 50%;
+    padding-top: 3rem;
     transform: scaleX(-1);
         -moz-transform: scaleX(-1);
         -o-transform: scaleX(-1);
         -webkit-transform: scaleX(-1);
-*/
 }
 
 .ed-home__phone{
