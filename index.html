@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html class="mdc-typography">
     
-    <head w3-include-html="html/head.html"></head>
+    <head w3-include-head="html/head.html"></head>
     
     <body class="ed-main ed-mobile--body">
         
-        <script src="js/include.js"></script>
-        <script>includeHTML();</script>
+        <!-- JS PLUGINS | Include -->
+        <script src="js/include-head.js"></script>
+        <script>includeHEAD();</script>
         
         <!-- Google Tag Manager (noscript) -->
         <noscript>
@@ -1933,7 +1934,8 @@
                 defer
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBO9QcdbuvqPeUeQ_gILDvMHW-YI8OnPWo&callback=initMap"></script>
         <!-- JS PLUGINS | Include -->
-
+        <script src="js/include.js"></script>
+        <script>includeHTML();</script>
         
         <!-- MAILCHIMP | Pop-up -->
         <script src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"
