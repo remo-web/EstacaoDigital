@@ -168,7 +168,7 @@
 .ed-destaque--lonas,
 .ed-destaque--adesivos,
 .ed-destaque--placas,
-.ed-destaque--tecido{
+.ed-destaque--router{
     background-size: cover;
     background-position: center;
 }
@@ -176,7 +176,7 @@
 .ed-destaque--detalhes{
     position: initial;
     top: initial; left: initial;
-    max-height: 95vh; width: auto;
+    max-height: 90vh; width: auto;
     overflow: auto;
 }
 
@@ -216,9 +216,9 @@
     background-blend-mode: multiply;
 }
 
-/* TECIDO */
+/* ROUTER */
 
-.ed-destaque--tecido{
+.ed-destaque--router{
     background-image: url(../images/remow_ed-tecido--bg.jpg);
     background-color: darkgray;
     background-blend-mode: luminosity;

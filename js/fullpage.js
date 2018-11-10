@@ -1,6 +1,6 @@
 $(document).ready(function() {
     if ( $(window).width() < 1280 || window.Touch ) { 
-        var edSensitivity = 1; 
+        var edSensitivity = 10; 
         var edFixed = '.ed-destaque--detalhes__mobile';
     } else {
         var edSensitivity = 100; 
@@ -20,7 +20,7 @@ $(document).ready(function() {
     });
 	
     $('#fullpage').fullpage({
-        anchors: ['home', 'Lonas', 'Adesivos', 'Placas', 'Tecido', 'TheEnd'],
+        anchors: ['home', 'Lonas', 'Adesivos', 'Placas', 'Router', 'TheEnd'],
         scrollOverflow: true,
         keyboardScrolling: false,
         normalScrollElements:'.fp-kill',
@@ -77,7 +77,7 @@ $('.ed-footer--toslide__placas').click(function(e){
     e.preventDefault();
     $.fn.fullpage.silentMoveTo('Placas');
 });
-$('.ed-footer--toslide__tecido').click(function(e){
+$('.ed-footer--toslide__router').click(function(e){
     e.preventDefault();
-    $.fn.fullpage.silentMoveTo('Tecido');
+    $.fn.fullpage.silentMoveTo('Router');
 });

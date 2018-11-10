@@ -275,3 +275,148 @@ $(function () {
         }
     });
 });
+
+// ROUTER
+$(function () {
+    $('#router-ps-more').click(function() {
+        if (
+            $('.ed-destaque--router__acm').hasClass('animated fadeIn')
+        ) {
+            $('.ed-destaque--router__acm').removeClass('animated fadeIn');
+            $('.ed-destaque--router__acm').addClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__ps').removeClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__ps').addClass('animated fadeIn');
+            
+        } else if (
+            $('.ed-destaque--router__mdf').hasClass('animated fadeIn')
+        ) {
+            $('.ed-destaque--router__mdf').removeClass('animated fadeIn');
+            $('.ed-destaque--router__mdf').addClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__ps').removeClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__ps').addClass('animated fadeIn');
+            
+        } else if (
+            $('.ed-destaque--router__acrilico').hasClass('animated fadeIn')
+        ) {
+            $('.ed-destaque--router__acrilico').removeClass('animated fadeIn');
+            $('.ed-destaque--router__acrilico').addClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__ps').removeClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__ps').addClass('animated fadeIn');
+            
+        } else if (
+            $('.ed-destaque--router__ps').hasClass('animated fadeOut')
+        ) {
+            $('.ed-destaque--router__ps').removeClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__ps').addClass('animated fadeIn');
+        } else {
+            $('.ed-destaque--router__ps').removeClass('ed-hide');
+            $('.ed-destaque--router__ps').addClass('animated fadeIn');
+        }
+    });
+    $('#router-acm-more').click(function() {
+        if (
+            $('.ed-destaque--router__ps').hasClass('animated fadeIn')
+        ) {
+            $('.ed-destaque--router__ps').removeClass('animated fadeIn');
+            $('.ed-destaque--router__ps').addClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__acm').removeClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__acm').addClass('animated fadeIn');
+            
+        } else if (
+            $('.ed-destaque--router__mdf').hasClass('animated fadeIn')
+        ) {
+            $('.ed-destaque--router__mdf').removeClass('animated fadeIn');
+            $('.ed-destaque--router__mdf').addClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__acm').removeClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__acm').addClass('animated fadeIn');
+            
+        } else if (
+            $('.ed-destaque--router__acrilico').hasClass('animated fadeIn')
+        ) {
+            $('.ed-destaque--router__acrilico').removeClass('animated fadeIn');
+            $('.ed-destaque--router__acrilico').addClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__acm').removeClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__acm').addClass('animated fadeIn');
+            
+        } else if (
+            $('.ed-destaque--router__acm').hasClass('animated fadeOut')
+        ) {
+            $('.ed-destaque--router__acm').removeClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__acm').addClass('animated fadeIn');
+        } else {
+            $('.ed-destaque--router__acm').removeClass('ed-hide');
+            $('.ed-destaque--router__acm').addClass('animated fadeIn');
+        }
+    });
+    $('#router-mdf-more').click(function() {
+        if (
+            $('.ed-destaque--router__ps').hasClass('animated fadeIn')
+        ) {
+            $('.ed-destaque--router__ps').removeClass('animated fadeIn');
+            $('.ed-destaque--router__ps').addClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__mdf').removeClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__mdf').addClass('animated fadeIn');
+            
+        } else if (
+            $('.ed-destaque--router__acm').hasClass('animated fadeIn')
+        ) {
+            $('.ed-destaque--router__acm').removeClass('animated fadeIn');
+            $('.ed-destaque--router__acm').addClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__mdf').removeClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__mdf').addClass('animated fadeIn');
+            
+        } else if (
+            $('.ed-destaque--router__acrilico').hasClass('animated fadeIn')
+        ) {
+            $('.ed-destaque--router__acrilico').removeClass('animated fadeIn');
+            $('.ed-destaque--router__acrilico').addClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__mdf').removeClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__mdf').addClass('animated fadeIn');
+            
+        } else if (
+            $('.ed-destaque--router__mdf').hasClass('animated fadeOut')
+        ) {
+            $('.ed-destaque--router__mdf').removeClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__mdf').addClass('animated fadeIn');
+        } else {
+            $('.ed-destaque--router__mdf').removeClass('ed-hide');
+            $('.ed-destaque--router__mdf').addClass('animated fadeIn');
+        }
+    });
+    $('#router-acrilico-more').click(function() {
+        if (
+            $('.ed-destaque--router__ps').hasClass('animated fadeIn')
+        ) {
+            $('.ed-destaque--router__ps').removeClass('animated fadeIn');
+            $('.ed-destaque--router__ps').addClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__acrilico').removeClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__acrilico').addClass('animated fadeIn');
+            
+        } else if (
+            $('.ed-destaque--router__acm').hasClass('animated fadeIn')
+        ) {
+            $('.ed-destaque--router__acm').removeClass('animated fadeIn');
+            $('.ed-destaque--router__acm').addClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__acrilico').removeClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__acrilico').addClass('animated fadeIn');
+            
+        } else if (
+            $('.ed-destaque--router__mdf').hasClass('animated fadeIn')
+        ) {
+            $('.ed-destaque--router__mdf').removeClass('animated fadeIn');
+            $('.ed-destaque--router__mdf').addClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__acrilico').removeClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__acrilico').addClass('animated fadeIn');
+            
+        } else if (
+            $('.ed-destaque--router__acrilico').hasClass('animated fadeOut')
+        ) {
+            $('.ed-destaque--router__acrilico').removeClass('animated fadeOut ed-hide');
+            $('.ed-destaque--router__acrilico').addClass('animated fadeIn');
+        } else {
+            $('.ed-destaque--router__acrilico').removeClass('ed-hide');
+            $('.ed-destaque--router__acrilico').addClass('animated fadeIn');
+        }
+    });
+
+});
