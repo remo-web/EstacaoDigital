@@ -219,12 +219,10 @@
 /* ROUTER */
 
 .ed-destaque--router{
-    background-image: url(../images/remow_ed-tecido--bg.jpg);
+    background-image: url(../images/remow_ed-router--bg.jpg);
     background-color: darkgray;
     background-blend-mode: luminosity;
 }
-
-.ed-destaque--tecido h5{margin: 0}
 
 /* FORMULÁRIO DE PEDIDO */
 
