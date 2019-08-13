@@ -6,12 +6,13 @@ function edMDC() {
     }
     
     //flexible toolbar
-    var toolbar = mdc.toolbar.MDCToolbar.attachTo(document.querySelector('.mdc-toolbar'));
-    toolbar.fixedAdjustElement = document.querySelector('.mdc-toolbar-fixed-adjust');
-    toolbar.listen('MDCToolbar:change', function(evt) {
-        var flexibleExpansionRatio = evt.detail.flexibleExpansionRatio;
-        console.log(flexibleExpansionRatio.toFixed(2));
-    });
+//    var toolbar = mdc.toolbar.MDCToolbar.attachTo(document.querySelector('.mdc-toolbar'));
+//    toolbar.fixedAdjustElement = document.querySelector('.mdc-toolbar-fixed-adjust');
+//    toolbar.listen('MDCToolbar:change', function(evt) {
+//        var flexibleExpansionRatio = evt.detail.flexibleExpansionRatio;
+//        console.log(flexibleExpansionRatio.toFixed(2));
+//    });
+    var topAppBar = mdc.topAppBar.MDCTopAppBar.attachTo(document.querySelector('.mdc-top-app-bar'));
     
     //textfield
     var textFields = document.querySelectorAll('.mdc-text-field')
