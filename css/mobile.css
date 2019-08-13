@@ -12,12 +12,13 @@
         overflow: scroll;
     }
     .ed-destaque--detalhe__close{display: block; position: absolute; top: 5px; right: 10px;}
-    .ed-drawer__icon{background-color: var(--mdc-theme-primary,#6200ee); opacity: .8}
-    .ed-drawer__icon .fa-lg{line-height: 1}
+    .ed-drawer__icon{background-color: var(--mdc-theme-primary,#6200ee); opacity: .8; padding: .5rem;}
+    .ed-drawer__icon .fa-lg{line-height: 1; color: #fff;}
 }
 
 .ed-mobile-header{background-color: transparent; box-shadow: none;}
 .ed-drawer{overflow: scroll}
+.mdc-drawer__content{height: auto;}
 .ed-drawer--header{text-align: right}
 .ed-drawer--header__calango{
     max-width: 50%;
