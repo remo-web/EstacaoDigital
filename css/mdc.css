@@ -68,7 +68,7 @@
 .mdc-toolbar__title{padding: 0}
 .mdc-toolbar__title p{margin: 0}
 */
-.mdc-top-app-bar__row{height: auto;}
+.mdc-top-app-bar__row{height: auto !important;}
 .mdc-tab-bar{margin: 0 20%}
 .mdc-tab .mdc-tab__text-label, .mdc-tab__content > .mdc-tab__icon{color: var(--mdc-theme-text-secondary-on-dark)}
 .mdc-tab--active, .mdc-tab--active .mdc-tab__icon, .mdc-tab--active .mdc-tab__text-label{color: var(--mdc-theme-on-surface, #FFFFFF);}
