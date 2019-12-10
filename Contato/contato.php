@@ -31,7 +31,7 @@ if (empty($_POST["ed-contato-mensagem"])) {
     $mensagem = $_POST["ed-contato-mensagem"];
 }
  
-$To = "embarque@estacaodigitalrio.com.br";
+$To = "producao@estacaodigitalrio.com.br";
 $uglySubject = "[Site | Contato] $assunto";
 $Subject='=?UTF-8?B?'.base64_encode($uglySubject).'?=';
 
