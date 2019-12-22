@@ -1,4 +1,7 @@
 /*=== Common css part ===*/
+
+@import url('https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
 @font-face {
   font-family: 'afterlogic';
   src: url('../../fonts/afterlogic.eot');
@@ -6,6 +9,16 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Exo 2';
+  src: url('https://fonts.googleapis.com/css?family=Exo+2:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+}
+
+* {
+    font-family: 'Exo 2', sans-serif;
+}
+
 .not-exist:before,
 .icon-font:before {
   font-family: 'afterlogic';
@@ -1571,15 +1584,15 @@ html.rtl .buttons {
   border-radius: 4px;
   cursor: pointer;
   display: inline-block;
-  font: bold 10pt Helvetica, Tahoma, Arial, sans-serif;
+  font: bold 10pt 'Exo 2', Helvetica, Tahoma, Arial, sans-serif;
   padding: 5px 12px;
   text-align: center;
   -webkit-transition: background 200ms ease 0s;
   -moz-transition: background 200ms ease 0s;
   -o-transition: background 200ms ease 0s;
   transition: background 200ms ease 0s;
-  background: #43d0bf;
-  border: 1px solid #2db3a3;
+  background: #0F4C81;
+  border: 1px solid #0D3E69;
   color: #ffffff;
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
 }
@@ -1591,13 +1604,13 @@ html.rtl .buttons {
   text-decoration: none;
 }
 .buttons .button:hover {
-  background: #32c8b6;
+  background: #0D3E69;
 }
 .buttons .button.disabled {
-  color: #a1e8df;
+  color: #197ACF;
 }
 .buttons .button.disabled:hover {
-  background: #43d0bf;
+  background: #0F4C81;
 }
 .buttons .button.secondary_button {
   background: #a7afb9;
@@ -1620,6 +1633,7 @@ html.rtl .buttons {
   padding: 10px 16px;
 }
 .buttons.big_single_button .button {
+    text-transform: uppercase;
   display: block;
   height: 30px;
   line-height: 30px;
@@ -3345,7 +3359,7 @@ html.rtl .search_block .extended .search_fieldset .section .row .label {
   border-radius: 0px;
   box-shadow: none;
   color: #555566;
-  font: normal 11pt Helvetica, Tahoma, Arial, sans-serif;
+  font: normal 11pt 'Exo 2', Helvetica, Tahoma, Arial, sans-serif;
   padding: 0;
   width: 100%;
 }
@@ -3531,7 +3545,7 @@ html.rtl .quick_reply .buttons .full_form {
 .tabsbar .item {
   margin: 0px;
   padding: 4px 10px;
-  color: #503d68;
+  color: #3ba7b6;
   display: inline-block;
   font-size: 10.6pt;
   line-height: 120%;
@@ -3549,9 +3563,17 @@ html.rtl .tabsbar .item {
   -moz-animation: highlight 0.5s linear;
   animation: highlight 0.5s linear;
 }
+.tabsbar .item.logo:before {
+    content: 
+}
 .tabsbar .item.logo {
-  display: none;
+  display: block;
   outline: none;
+    height: 62px;
+    width: calc(20% - 25px);
+    background-image: url('../../images/logo-horizontal.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .tabsbar .item.emails {
   cursor: default;
@@ -3563,7 +3585,7 @@ html.rtl .tabsbar .item {
   display: none;
 }
 .tabsbar .item .link {
-  color: inherit;
+  color: rgba(255,255,255,0.9);
   display: inline-block;
   outline: none;
   position: relative;
@@ -3571,13 +3593,13 @@ html.rtl .tabsbar .item {
   vertical-align: middle;
 }
 .tabsbar .item:hover {
-  color: #503d68;
+  color: #3ba7b6;
 }
 .tabsbar .item:hover .text {
   text-decoration: none;
 }
 .tabsbar .item.current {
-  color: #503d68;
+  color: #3ba7b6;
   font-weight: bold;
 }
 .tabsbar .item.expand a,
@@ -3822,7 +3844,7 @@ html {
   min-height: 600px;
 }
 body {
-  font: normal 9pt Helvetica, Tahoma, Arial, sans-serif;
+  font: normal 9pt 'Exo 2', Helvetica, Tahoma, Arial, sans-serif;
   height: 100%;
   background: #1998a4 no-repeat 0 0 / cover url("images/background.jpg");
 }
@@ -3958,7 +3980,7 @@ html.rtl .panel.left_panel .items_list .item > .title.droppableHover .name {
   cursor: pointer !important;
 }
 .panel.left_panel .items_list .item.selected > .title {
-  background: #287B8B;
+  background: #082742;
   color: #ffffff !important;
   text-shadow: none;
 }
@@ -3983,15 +4005,15 @@ html.rtl .panel.left_panel .items_list .item .count {
 }
 .panel.left_panel .items_list .item .count.unseen:hover {
   border-radius: 11px/10px;
-  background: #67a398;
+  background: #082742;
 }
 .panel.left_panel .items_list .item.selected > .title .count.unseen {
   border-radius: 11px/10px;
-  background: #74b7ab;
-  box-shadow: 0px 1px 1px #67a398 inset, 0px 1px 0px rgba(255, 255, 255, 0.3);
+  background: #0F4C81;
+  box-shadow: 0px 1px 1px #082742 inset, 0px 1px 0px rgba(255, 255, 255, 0.3);
 }
 .panel.left_panel .items_list .item.selected > .title .count.unseen:hover {
-  background: #67a398;
+  background: #0D3E69;
 }
 .panel.left_panel .items_list.collapsible .item.accordion .collapse_handler {
   display: inline-block;
@@ -5066,7 +5088,7 @@ html.mobile .LoginLayout {
   display: none;
 }
 .login_panel .header .icon {
-  height: 95px;
+  height: 130px;
   width: 130px;
 }
 .login_panel .header .icon:before {
@@ -5084,16 +5106,17 @@ html.mobile .LoginLayout {
 .login_panel .header .icon:before {
   color: #25AEB8;
   text-shadow: 0 1px 0 #ffffff, 0 -1px 0 #1c868e, -1px -1px #219aa3;
-  content: "\e63c";
+  content: url('../../images/logo.svg');
+/*  content: "\e63c";*/
   display: inline-block;
   font-size: 140px;
   height: 100%;
-  margin-top: -20px;
+  margin-top: -40px;
   vertical-align: middle;
   width: 100%;
 }
 .login_panel .header .icon {
-  height: 95px;
+  height: 130px;
   width: 130px;
 }
 .login_panel .header .icon:before {
@@ -5111,16 +5134,17 @@ html.mobile .LoginLayout {
 .login_panel .header .icon:before {
   color: #25AEB8;
   text-shadow: 0 1px 0 #ffffff, 0 -1px 0 #1c868e, -1px -1px #219aa3;
-  content: "\e63c";
+  content: url('../../images/logo.svg');
+/*  content: "\e63c";*/
   display: inline-block;
   font-size: 140px;
   height: 100%;
-  margin-top: -20px;
+  margin-top: -40px;
   vertical-align: middle;
   width: 100%;
 }
 .login_panel .header .icon {
-  height: 95px;
+  height: 130px;
   width: 130px;
 }
 .login_panel .header .icon:before {
@@ -5138,16 +5162,17 @@ html.mobile .LoginLayout {
 .login_panel .header .icon:before {
   color: #25AEB8;
   text-shadow: 0 1px 0 #ffffff, 0 -1px 0 #1c868e, -1px -1px #219aa3;
-  content: "\e63c";
+  content: url('../../images/logo.svg');
+/*  content: "\e63c";*/
   display: inline-block;
   font-size: 140px;
   height: 100%;
-  margin-top: -20px;
+  margin-top: -40px;
   vertical-align: middle;
   width: 100%;
 }
 .login_panel .header .icon {
-  height: 95px;
+  height: 130px;
   width: 130px;
 }
 .login_panel .header .icon:before {
@@ -5165,11 +5190,12 @@ html.mobile .LoginLayout {
 .login_panel .header .icon:before {
   color: #25AEB8;
   text-shadow: 0 1px 0 #ffffff, 0 -1px 0 #1c868e, -1px -1px #219aa3;
-  content: "\e63c";
+  content: url('../../images/logo.svg');
+/*  content: "\e63c";*/
   display: inline-block;
   font-size: 140px;
   height: 100%;
-  margin-top: -20px;
+  margin-top: -40px;
   vertical-align: middle;
   width: 100%;
 }
@@ -5381,7 +5407,7 @@ html.rtl .login_panel .row.buttons {
 }
 .login_panel .row .value.suffix .text {
   color: #777777;
-  font: 12pt Helvetica, Tahoma, Arial, sans-serif;
+  font: 12pt 'Exo 2', Helvetica, Tahoma, Arial, sans-serif;
 }
 .login_panel .row .placeholder {
   display: inline-block;
@@ -5459,7 +5485,7 @@ html.rtl .login_panel .row .placeholder:before {
   box-shadow: none;
   color: #444;
   display: inline-block;
-  font: 12pt Helvetica, Tahoma, Arial, sans-serif;
+  font: 12pt 'Exo 2', Helvetica, Tahoma, Arial, sans-serif;
   outline: none;
   padding: 1px 0px;
   text-align: left;
@@ -5756,6 +5782,7 @@ html.rtl .LoginLayout .languages.demo {
   padding: 0px;
 }
 .LoginLayout .buttons .button {
+    text-transform: uppercase;
   display: block;
   font-size: 12pt;
   padding: 10px;
@@ -7318,7 +7345,7 @@ html.rtl .panel.compose table.fields .label {
   right: 0;
   top: auto;
   width: auto;
-  background: #43d0bf;
+  background: #0F4C81;
 }
 .compose_popup.minimized .toolbar {
   background: none;
@@ -7435,7 +7462,7 @@ blockquote {
   background: #6fa8de;
 }
 .buttons .contour_button {
-  color: #43d0bf;
+  color: #0F4C81;
 }
 .buttons .contour_button,
 .buttons .contour_button:hover {
@@ -7763,7 +7790,7 @@ html.rtl .panels.settings .folders .items_list .item > .title.droppableHover .na
   cursor: pointer !important;
 }
 .panels.settings .folders .items_list .item.selected > .title {
-  background: #287B8B;
+  background: #082742;
   color: #ffffff !important;
   text-shadow: none;
 }
@@ -7788,15 +7815,15 @@ html.rtl .panels.settings .folders .items_list .item .count {
 }
 .panels.settings .folders .items_list .item .count.unseen:hover {
   border-radius: 11px/10px;
-  background: #67a398;
+  background: #082742;
 }
 .panels.settings .folders .items_list .item.selected > .title .count.unseen {
   border-radius: 11px/10px;
-  background: #74b7ab;
-  box-shadow: 0px 1px 1px #67a398 inset, 0px 1px 0px rgba(255, 255, 255, 0.3);
+  background: #0F4C81;
+  box-shadow: 0px 1px 1px #082742 inset, 0px 1px 0px rgba(255, 255, 255, 0.3);
 }
 .panels.settings .folders .items_list .item.selected > .title .count.unseen:hover {
-  background: #67a398;
+  background: #082742;
 }
 .panels.settings .folders .items_list.collapsible .item.accordion .collapse_handler {
   display: inline-block;
@@ -8584,7 +8611,7 @@ html.mobile .LoginLayout {
   display: none;
 }
 .login_panel .header .icon {
-  height: 95px;
+  height: 130px;
   width: 130px;
 }
 .login_panel .header .icon:before {
@@ -8602,16 +8629,17 @@ html.mobile .LoginLayout {
 .login_panel .header .icon:before {
   color: #25AEB8;
   text-shadow: 0 1px 0 #ffffff, 0 -1px 0 #1c868e, -1px -1px #219aa3;
-  content: "\e63c";
+  content: url('../../images/logo.svg');
+/*  content: "\e63c";*/
   display: inline-block;
   font-size: 140px;
   height: 100%;
-  margin-top: -20px;
+  margin-top: -40px;
   vertical-align: middle;
   width: 100%;
 }
 .login_panel .header .icon {
-  height: 95px;
+  height: 130px;
   width: 130px;
 }
 .login_panel .header .icon:before {
@@ -8629,16 +8657,17 @@ html.mobile .LoginLayout {
 .login_panel .header .icon:before {
   color: #25AEB8;
   text-shadow: 0 1px 0 #ffffff, 0 -1px 0 #1c868e, -1px -1px #219aa3;
-  content: "\e63c";
+  content: url('../../images/logo.svg');
+/*  content: "\e63c";*/
   display: inline-block;
   font-size: 140px;
   height: 100%;
-  margin-top: -20px;
+  margin-top: -40px;
   vertical-align: middle;
   width: 100%;
 }
 .login_panel .header .icon {
-  height: 95px;
+  height: 130px;
   width: 130px;
 }
 .login_panel .header .icon:before {
@@ -8656,16 +8685,17 @@ html.mobile .LoginLayout {
 .login_panel .header .icon:before {
   color: #25AEB8;
   text-shadow: 0 1px 0 #ffffff, 0 -1px 0 #1c868e, -1px -1px #219aa3;
-  content: "\e63c";
+  content: url('../../images/logo.svg');
+/*  content: "\e63c";*/
   display: inline-block;
   font-size: 140px;
   height: 100%;
-  margin-top: -20px;
+  margin-top: -40px;
   vertical-align: middle;
   width: 100%;
 }
 .login_panel .header .icon {
-  height: 95px;
+  height: 130px;
   width: 130px;
 }
 .login_panel .header .icon:before {
@@ -8683,11 +8713,12 @@ html.mobile .LoginLayout {
 .login_panel .header .icon:before {
   color: #25AEB8;
   text-shadow: 0 1px 0 #ffffff, 0 -1px 0 #1c868e, -1px -1px #219aa3;
-  content: "\e63c";
+  content: url('../../images/logo.svg');
+/*  content: "\e63c";*/
   display: inline-block;
   font-size: 140px;
   height: 100%;
-  margin-top: -20px;
+  margin-top: -40px;
   vertical-align: middle;
   width: 100%;
 }
@@ -8899,7 +8930,7 @@ html.rtl .login_panel .row.buttons {
 }
 .login_panel .row .value.suffix .text {
   color: #777777;
-  font: 12pt Helvetica, Tahoma, Arial, sans-serif;
+  font: 12pt 'Exo 2', Helvetica, Tahoma, Arial, sans-serif;
 }
 .login_panel .row .placeholder {
   display: inline-block;
@@ -8977,7 +9008,7 @@ html.rtl .login_panel .row .placeholder:before {
   box-shadow: none;
   color: #444;
   display: inline-block;
-  font: 12pt Helvetica, Tahoma, Arial, sans-serif;
+  font: 12pt 'Exo 2', Helvetica, Tahoma, Arial, sans-serif;
   outline: none;
   padding: 1px 0px;
   text-align: left;
